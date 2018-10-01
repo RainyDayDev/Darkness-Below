@@ -1,0 +1,3220 @@
+fileFormatVersion: 2
+guid: f77dfc434fd134b5483cb08ae2cea2a5
+timeCreated: 1490046329
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: dawnblocker_ortho_0
+    21300002: dawnblocker_ortho_1
+    21300004: dawnblocker_ortho_2
+    21300006: dawnblocker_ortho_3
+    21300008: dawnblocker_ortho_4
+    21300010: dawnblocker_ortho_5
+    21300012: dawnblocker_ortho_6
+    21300014: dawnblocker_ortho_7
+    21300016: dawnblocker_ortho_8
+    21300018: dawnblocker_ortho_9
+    21300020: dawnblocker_ortho_10
+    21300022: dawnblocker_ortho_11
+    21300024: dawnblocker_ortho_12
+    21300026: dawnblocker_ortho_13
+    21300028: dawnblocker_ortho_14
+    21300030: dawnblocker_ortho_15
+    21300032: dawnblocker_ortho_16
+    21300034: dawnblocker_ortho_17
+    21300036: dawnblocker_ortho_18
+    21300038: dawnblocker_ortho_19
+    21300040: dawnblocker_ortho_20
+    21300042: dawnblocker_ortho_21
+    21300044: dawnblocker_ortho_22
+    21300046: dawnblocker_ortho_23
+    21300048: dawnblocker_ortho_24
+    21300050: dawnblocker_ortho_25
+    21300052: dawnblocker_ortho_26
+    21300054: dawnblocker_ortho_27
+    21300056: dawnblocker_ortho_28
+    21300058: dawnblocker_ortho_29
+    21300060: dawnblocker_ortho_30
+    21300062: dawnblocker_ortho_31
+    21300064: dawnblocker_ortho_32
+    21300066: dawnblocker_ortho_33
+    21300068: dawnblocker_ortho_34
+    21300070: dawnblocker_ortho_35
+    21300072: dawnblocker_ortho_36
+    21300074: dawnblocker_ortho_37
+    21300076: dawnblocker_ortho_38
+    21300078: dawnblocker_ortho_39
+    21300080: dawnblocker_ortho_40
+    21300082: dawnblocker_ortho_41
+    21300084: dawnblocker_ortho_42
+    21300086: dawnblocker_ortho_43
+    21300088: dawnblocker_ortho_44
+    21300090: dawnblocker_ortho_45
+    21300092: dawnblocker_ortho_46
+    21300094: dawnblocker_ortho_47
+    21300096: dawnblocker_ortho_48
+    21300098: dawnblocker_ortho_49
+    21300100: dawnblocker_ortho_50
+    21300102: dawnblocker_ortho_51
+    21300104: dawnblocker_ortho_52
+    21300106: dawnblocker_ortho_53
+    21300108: dawnblocker_ortho_54
+    21300110: dawnblocker_ortho_55
+    21300112: dawnblocker_ortho_56
+    21300114: dawnblocker_ortho_57
+    21300116: dawnblocker_ortho_58
+    21300118: dawnblocker_ortho_59
+    21300120: dawnblocker_ortho_60
+    21300122: dawnblocker_ortho_61
+    21300124: dawnblocker_ortho_62
+    21300126: dawnblocker_ortho_63
+    21300128: dawnblocker_ortho_64
+    21300130: dawnblocker_ortho_65
+    21300132: dawnblocker_ortho_66
+    21300134: dawnblocker_ortho_67
+    21300136: dawnblocker_ortho_68
+    21300138: dawnblocker_ortho_69
+    21300140: dawnblocker_ortho_70
+    21300142: dawnblocker_ortho_71
+    21300144: dawnblocker_ortho_72
+    21300146: dawnblocker_ortho_73
+    21300148: dawnblocker_ortho_74
+    21300150: dawnblocker_ortho_75
+    21300152: dawnblocker_ortho_76
+    21300154: dawnblocker_ortho_77
+    21300156: dawnblocker_ortho_78
+    21300158: dawnblocker_ortho_79
+    21300160: dawnblocker_ortho_80
+    21300162: dawnblocker_ortho_81
+    21300164: dawnblocker_ortho_82
+    21300166: dawnblocker_ortho_83
+    21300168: dawnblocker_ortho_84
+    21300170: dawnblocker_ortho_85
+    21300172: dawnblocker_ortho_86
+    21300174: dawnblocker_ortho_87
+    21300176: dawnblocker_ortho_88
+    21300178: dawnblocker_ortho_89
+    21300180: dawnblocker_ortho_90
+    21300182: dawnblocker_ortho_91
+    21300184: dawnblocker_ortho_92
+    21300186: dawnblocker_ortho_93
+    21300188: dawnblocker_ortho_94
+    21300190: dawnblocker_ortho_95
+    21300192: dawnblocker_ortho_96
+    21300194: dawnblocker_ortho_97
+    21300196: dawnblocker_ortho_98
+    21300198: dawnblocker_ortho_99
+    21300200: dawnblocker_ortho_100
+    21300202: dawnblocker_ortho_101
+    21300204: dawnblocker_ortho_102
+    21300206: dawnblocker_ortho_103
+    21300208: dawnblocker_ortho_104
+    21300210: dawnblocker_ortho_105
+    21300212: dawnblocker_ortho_106
+    21300214: dawnblocker_ortho_107
+    21300216: dawnblocker_ortho_108
+    21300218: dawnblocker_ortho_109
+    21300220: dawnblocker_ortho_110
+    21300222: dawnblocker_ortho_111
+    21300224: dawnblocker_ortho_112
+    21300226: dawnblocker_ortho_113
+    21300228: dawnblocker_ortho_114
+    21300230: dawnblocker_ortho_115
+    21300232: dawnblocker_ortho_116
+    21300234: dawnblocker_ortho_117
+    21300236: dawnblocker_ortho_118
+    21300238: dawnblocker_ortho_119
+    21300240: dawnblocker_ortho_120
+    21300242: dawnblocker_ortho_121
+    21300244: dawnblocker_ortho_122
+    21300246: dawnblocker_ortho_123
+    21300248: dawnblocker_ortho_124
+    21300250: dawnblocker_ortho_125
+    21300252: dawnblocker_ortho_126
+    21300254: dawnblocker_ortho_127
+    21300256: dawnblocker_ortho_128
+    21300258: dawnblocker_ortho_129
+    21300260: dawnblocker_ortho_130
+    21300262: dawnblocker_ortho_131
+    21300264: dawnblocker_ortho_132
+    21300266: dawnblocker_ortho_133
+    21300268: dawnblocker_ortho_134
+    21300270: dawnblocker_ortho_135
+    21300272: dawnblocker_ortho_136
+    21300274: dawnblocker_ortho_137
+    21300276: dawnblocker_ortho_138
+    21300278: dawnblocker_ortho_139
+    21300280: dawnblocker_ortho_140
+    21300282: dawnblocker_ortho_141
+    21300284: dawnblocker_ortho_142
+    21300286: dawnblocker_ortho_143
+    21300288: dawnblocker_ortho_144
+    21300290: dawnblocker_ortho_145
+    21300292: dawnblocker_ortho_146
+    21300294: dawnblocker_ortho_147
+    21300296: dawnblocker_ortho_148
+    21300298: dawnblocker_ortho_149
+    21300300: dawnblocker_ortho_150
+    21300302: dawnblocker_ortho_151
+    21300304: dawnblocker_ortho_152
+    21300306: dawnblocker_ortho_153
+    21300308: dawnblocker_ortho_154
+    21300310: dawnblocker_ortho_155
+    21300312: dawnblocker_ortho_156
+    21300314: dawnblocker_ortho_157
+    21300316: dawnblocker_ortho_158
+    21300318: dawnblocker_ortho_159
+    21300320: dawnblocker_ortho_160
+    21300322: dawnblocker_ortho_161
+    21300324: dawnblocker_ortho_162
+    21300326: dawnblocker_ortho_163
+    21300328: dawnblocker_ortho_164
+    21300330: dawnblocker_ortho_165
+    21300332: dawnblocker_ortho_166
+    21300334: dawnblocker_ortho_167
+    21300336: dawnblocker_ortho_168
+    21300338: dawnblocker_ortho_169
+    21300340: dawnblocker_ortho_170
+    21300342: dawnblocker_ortho_171
+    21300344: dawnblocker_ortho_172
+    21300346: dawnblocker_ortho_173
+    21300348: dawnblocker_ortho_174
+    21300350: dawnblocker_ortho_175
+    21300352: dawnblocker_ortho_176
+    21300354: dawnblocker_ortho_177
+    21300356: dawnblocker_ortho_178
+    21300358: dawnblocker_ortho_179
+    21300360: dawnblocker_ortho_180
+    21300362: dawnblocker_ortho_181
+    21300364: dawnblocker_ortho_182
+    21300366: dawnblocker_ortho_183
+    21300368: dawnblocker_ortho_184
+    21300370: dawnblocker_ortho_185
+    21300372: dawnblocker_ortho_186
+    21300374: dawnblocker_ortho_187
+    21300376: dawnblocker_ortho_188
+    21300378: dawnblocker_ortho_189
+    21300380: dawnblocker_ortho_190
+    21300382: dawnblocker_ortho_191
+    21300384: dawnblocker_ortho_192
+    21300386: dawnblocker_ortho_193
+    21300388: dawnblocker_ortho_194
+    21300390: dawnblocker_ortho_195
+    21300392: dawnblocker_ortho_196
+    21300394: dawnblocker_ortho_197
+    21300396: dawnblocker_ortho_198
+    21300398: dawnblocker_ortho_199
+    21300400: dawnblocker_ortho_200
+    21300402: dawnblocker_ortho_201
+    21300404: dawnblocker_ortho_202
+    21300406: dawnblocker_ortho_203
+    21300408: dawnblocker_ortho_204
+    21300410: dawnblocker_ortho_205
+    21300412: dawnblocker_ortho_206
+    21300414: dawnblocker_ortho_207
+    21300416: dawnblocker_ortho_208
+    21300418: dawnblocker_ortho_209
+    21300420: dawnblocker_ortho_210
+    21300422: dawnblocker_ortho_211
+    21300424: dawnblocker_ortho_212
+    21300426: dawnblocker_ortho_213
+    21300428: dawnblocker_ortho_214
+    21300430: dawnblocker_ortho_215
+    21300432: dawnblocker_ortho_216
+    21300434: dawnblocker_ortho_217
+    21300436: dawnblocker_ortho_218
+    21300438: dawnblocker_ortho_219
+    21300440: dawnblocker_ortho_220
+    21300442: dawnblocker_ortho_221
+    21300444: dawnblocker_ortho_222
+    21300446: dawnblocker_ortho_223
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: 0
+    aniso: -1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 500
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: iPhone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: dawnblocker_ortho_0
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 428
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_1
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 428
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_2
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 428
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_3
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 428
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_4
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 428
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_5
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 428
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_6
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 428
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_7
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 428
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_8
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 428
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_9
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 428
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_10
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 428
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_11
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 428
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_12
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 428
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_13
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 428
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_14
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 403
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_15
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 403
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_16
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 405
+        width: 10
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_17
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 403
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_18
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 403
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_19
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 403
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_20
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 403
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_21
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 403
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_22
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 403
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_23
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 405
+        width: 10
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_24
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 403
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_25
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 403
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_26
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 403
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_27
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 403
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_28
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 372
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_29
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 372
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_30
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 372
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_31
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 372
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_32
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 372
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_33
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 372
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_34
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 372
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_35
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 372
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_36
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 372
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_37
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 372
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_38
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 372
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_39
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 372
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_40
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 372
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_41
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 372
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_42
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 347
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_43
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 347
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_44
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 349
+        width: 10
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_45
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 347
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_46
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 347
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_47
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 347
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_48
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 347
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_49
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 347
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_50
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 347
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_51
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 349
+        width: 10
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_52
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 347
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_53
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 347
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_54
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 347
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_55
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 347
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_56
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 316
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_57
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 316
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_58
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 316
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_59
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 316
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_60
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 316
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_61
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 316
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_62
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 316
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_63
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 316
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_64
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 316
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_65
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 316
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_66
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 316
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_67
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 316
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_68
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 316
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_69
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 316
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_70
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 291
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_71
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 291
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_72
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 293
+        width: 10
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_73
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 291
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_74
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 291
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_75
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 291
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_76
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 291
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_77
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 291
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_78
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 291
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_79
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 293
+        width: 10
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_80
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 291
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_81
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 291
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_82
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 291
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_83
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 291
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_84
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 260
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_85
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 260
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_86
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 260
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_87
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 260
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_88
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 260
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_89
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 260
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_90
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 260
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_91
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 260
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_92
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 260
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_93
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 260
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_94
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 260
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_95
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 260
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_96
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 260
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_97
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 260
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_98
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 235
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_99
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 235
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_100
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 237
+        width: 10
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_101
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 235
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_102
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 235
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_103
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 235
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_104
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 235
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_105
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 235
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_106
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 235
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_107
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 237
+        width: 10
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_108
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 235
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_109
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 235
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_110
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 235
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_111
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 235
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_112
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 204
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_113
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 204
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_114
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 204
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_115
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 204
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_116
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 204
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_117
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 204
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_118
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 204
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_119
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 204
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_120
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 204
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_121
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 204
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_122
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 204
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_123
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 204
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_124
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 204
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_125
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 204
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_126
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 179
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_127
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 179
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_128
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 181
+        width: 10
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_129
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 179
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_130
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 179
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_131
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 179
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_132
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 179
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_133
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 179
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_134
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 179
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_135
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 181
+        width: 10
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_136
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 179
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_137
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 179
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_138
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 179
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_139
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 179
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_140
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 148
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_141
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 148
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_142
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 148
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_143
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 148
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_144
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 148
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_145
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 148
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_146
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 148
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_147
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 148
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_148
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 148
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_149
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 148
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_150
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 148
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_151
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 148
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_152
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 148
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_153
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 148
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_154
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 123
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_155
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 123
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_156
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 125
+        width: 10
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_157
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 123
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_158
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 123
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_159
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 123
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_160
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 123
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_161
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 123
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_162
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 123
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_163
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 125
+        width: 10
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_164
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 123
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_165
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 123
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_166
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 123
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_167
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 123
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_168
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 92
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_169
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 92
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_170
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 92
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_171
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 92
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_172
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 92
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_173
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 92
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_174
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 92
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_175
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 92
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_176
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 92
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_177
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 92
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_178
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 92
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_179
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 92
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_180
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 92
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_181
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 92
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_182
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 67
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_183
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 67
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_184
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 69
+        width: 10
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_185
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 67
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_186
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 67
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_187
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 67
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_188
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 67
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_189
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 67
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_190
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 67
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_191
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 69
+        width: 10
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_192
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 67
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_193
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 67
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_194
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 67
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_195
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 67
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_196
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 36
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_197
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 36
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_198
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 36
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_199
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 36
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_200
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 36
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_201
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 36
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_202
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 36
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_203
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 36
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_204
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 36
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_205
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 36
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_206
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 36
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_207
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 36
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_208
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 36
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_209
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 36
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_210
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 11
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_211
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 11
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_212
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 13
+        width: 10
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_213
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 11
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_214
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 11
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_215
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 11
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_216
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 11
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_217
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 11
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_218
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 11
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_219
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 13
+        width: 10
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_220
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 11
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_221
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 11
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_222
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 11
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dawnblocker_ortho_223
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 11
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

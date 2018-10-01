@@ -1,0 +1,1322 @@
+fileFormatVersion: 2
+guid: bef087f8bb95c4fd4aed8e3721d13058
+timeCreated: 1489962352
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: BlueKnightSpriteSheet 1_0
+    21300002: BlueKnightSpriteSheet 1_1
+    21300004: BlueKnightSpriteSheet 1_2
+    21300006: BlueKnightSpriteSheet 1_3
+    21300008: BlueKnightSpriteSheet 1_4
+    21300010: BlueKnightSpriteSheet 1_5
+    21300012: BlueKnightSpriteSheet 1_6
+    21300014: BlueKnightSpriteSheet 1_7
+    21300016: BlueKnightSpriteSheet 1_8
+    21300018: BlueKnightSpriteSheet 1_9
+    21300020: BlueKnightSpriteSheet 1_10
+    21300022: BlueKnightSpriteSheet 1_11
+    21300024: BlueKnightSpriteSheet 1_12
+    21300026: BlueKnightSpriteSheet 1_13
+    21300028: BlueKnightSpriteSheet 1_14
+    21300030: BlueKnightSpriteSheet 1_15
+    21300032: BlueKnightSpriteSheet 1_16
+    21300034: BlueKnightSpriteSheet 1_17
+    21300036: BlueKnightSpriteSheet 1_18
+    21300038: BlueKnightSpriteSheet 1_19
+    21300040: BlueKnightSpriteSheet 1_20
+    21300042: BlueKnightSpriteSheet 1_21
+    21300044: BlueKnightSpriteSheet 1_22
+    21300046: BlueKnightSpriteSheet 1_23
+    21300048: BlueKnightSpriteSheet 1_24
+    21300050: BlueKnightSpriteSheet 1_25
+    21300052: BlueKnightSpriteSheet 1_26
+    21300054: BlueKnightSpriteSheet 1_27
+    21300056: BlueKnightSpriteSheet 1_28
+    21300058: BlueKnightSpriteSheet 1_29
+    21300060: BlueKnightSpriteSheet 1_30
+    21300062: BlueKnightSpriteSheet 1_31
+    21300064: BlueKnightSpriteSheet 1_32
+    21300066: BlueKnightSpriteSheet 1_33
+    21300068: BlueKnightSpriteSheet 1_34
+    21300070: BlueKnightSpriteSheet 1_35
+    21300072: BlueKnightSpriteSheet 1_36
+    21300074: BlueKnightSpriteSheet 1_37
+    21300076: BlueKnightSpriteSheet 1_38
+    21300078: BlueKnightSpriteSheet 1_39
+    21300080: BlueKnightSpriteSheet 1_40
+    21300082: BlueKnightSpriteSheet 1_41
+    21300084: BlueKnightSpriteSheet 1_42
+    21300086: BlueKnightSpriteSheet 1_43
+    21300088: BlueKnightSpriteSheet 1_44
+    21300090: BlueKnightSpriteSheet 1_45
+    21300092: BlueKnightSpriteSheet 1_46
+    21300094: BlueKnightSpriteSheet 1_47
+    21300096: BlueKnightSpriteSheet 1_48
+    21300098: BlueKnightSpriteSheet 1_49
+    21300100: BlueKnightSpriteSheet 1_50
+    21300102: BlueKnightSpriteSheet 1_51
+    21300104: BlueKnightSpriteSheet 1_52
+    21300106: BlueKnightSpriteSheet 1_53
+    21300108: BlueKnightSpriteSheet 1_54
+    21300110: BlueKnightSpriteSheet 1_55
+    21300112: BlueKnightSpriteSheet 1_56
+    21300114: BlueKnightSpriteSheet 1_57
+    21300116: BlueKnightSpriteSheet 1_58
+    21300118: BlueKnightSpriteSheet 1_59
+    21300120: BlueKnightSpriteSheet 1_60
+    21300122: BlueKnightSpriteSheet 1_61
+    21300124: BlueKnightSpriteSheet 1_62
+    21300126: BlueKnightSpriteSheet 1_63
+    21300128: BlueKnightSpriteSheet 1_64
+    21300130: BlueKnightSpriteSheet 1_65
+    21300132: BlueKnightSpriteSheet 1_66
+    21300134: BlueKnightSpriteSheet 1_67
+    21300136: BlueKnightSpriteSheet 1_68
+    21300138: BlueKnightSpriteSheet 1_69
+    21300140: BlueKnightSpriteSheet 1_70
+    21300142: BlueKnightSpriteSheet 1_71
+    21300144: BlueKnightSpriteSheet 1_72
+    21300146: BlueKnightSpriteSheet 1_73
+    21300148: BlueKnightSpriteSheet 1_74
+    21300150: BlueKnightSpriteSheet 1_75
+    21300152: BlueKnightSpriteSheet 1_76
+    21300154: BlueKnightSpriteSheet 1_77
+    21300156: BlueKnightSpriteSheet 1_78
+    21300158: BlueKnightSpriteSheet 1_79
+    21300160: BlueKnightSpriteSheet 1_80
+    21300162: BlueKnightSpriteSheet 1_81
+    21300164: BlueKnightSpriteSheet 1_82
+    21300166: BlueKnightSpriteSheet 1_83
+    21300168: BlueKnightSpriteSheet 1_84
+    21300170: BlueKnightSpriteSheet 1_85
+    21300172: BlueKnightSpriteSheet 1_86
+    21300174: BlueKnightSpriteSheet 1_87
+    21300176: BlueKnightSpriteSheet 1_88
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: BlueKnightSpriteSheet 1_0
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 996
+        width: 109
+        height: 121
+      alignment: 9
+      pivot: {x: 0.37473676, y: 0.44357932}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlueKnightSpriteSheet 1_1
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 1117
+        width: 122
+        height: 118
+      alignment: 9
+      pivot: {x: 0.39571455, y: 0.44740424}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlueKnightSpriteSheet 1_2
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 1117
+        width: 116
+        height: 118
+      alignment: 9
+      pivot: {x: 0.38229555, y: 0.4211074}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlueKnightSpriteSheet 1_3
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 1117
+        width: 126
+        height: 118
+      alignment: 9
+      pivot: {x: 0.44828144, y: 0.41058764}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlueKnightSpriteSheet 1_4
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 1117
+        width: 129
+        height: 118
+      alignment: 9
+      pivot: {x: 0.46391734, y: 0.36588198}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlueKnightSpriteSheet 1_5
+      rect:
+        serializedVersion: 2
+        x: 707
+        y: 1117
+        width: 124
+        height: 118
+      alignment: 9
+      pivot: {x: 0.5350352, y: 0.373771}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlueKnightSpriteSheet 1_6
+      rect:
+        serializedVersion: 2
+        x: 851
+        y: 1117
+        width: 134
+        height: 118
+      alignment: 9
+      pivot: {x: 0.54168385, y: 0.34747314}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlueKnightSpriteSheet 1_7
+      rect:
+        serializedVersion: 2
+        x: 994
+        y: 1117
+        width: 127
+        height: 118
+      alignment: 9
+      pivot: {x: 0.6099527, y: 0.30802685}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlueKnightSpriteSheet 1_8
+      rect:
+        serializedVersion: 2
+        x: 1144
+        y: 1117
+        width: 131
+        height: 118
+      alignment: 9
+      pivot: {x: 0.60103166, y: 0.30539715}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlueKnightSpriteSheet 1_9
+      rect:
+        serializedVersion: 2
+        x: 1289
+        y: 1117
+        width: 134
+        height: 118
+      alignment: 9
+      pivot: {x: 0.63894516, y: 0.30539715}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlueKnightSpriteSheet 1_10
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 996
+        width: 109
+        height: 121
+      alignment: 9
+      pivot: {x: 0.35480827, y: 0.43845034}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlueKnightSpriteSheet 1_11
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 996
+        width: 109
+        height: 121
+      alignment: 9
+      pivot: {x: 0.33203292, y: 0.41793343}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlueKnightSpriteSheet 1_12
+      rect:
+        serializedVersion: 2
+        x: 506
+        y: 996
+        width: 124
+        height: 121
+      alignment: 9
+      pivot: {x: 0.2997988, y: 0.41536894}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlueKnightSpriteSheet 1_13
+      rect:
+        serializedVersion: 2
+        x: 642
+        y: 996
+        width: 142
+        height: 121
+      alignment: 9
+      pivot: {x: 0.29895234, y: 0.41024}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlueKnightSpriteSheet 1_14
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 996
+        width: 141
+        height: 121
+      alignment: 9
+      pivot: {x: 0.29092428, y: 0.37690067}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlueKnightSpriteSheet 1_15
+      rect:
+        serializedVersion: 2
+        x: 923
+        y: 996
+        width: 137
+        height: 121
+      alignment: 9
+      pivot: {x: 0.31653056, y: 0.34869033}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlueKnightSpriteSheet 1_16
+      rect:
+        serializedVersion: 2
+        x: 1059
+        y: 996
+        width: 139
+        height: 121
+      alignment: 9
+      pivot: {x: 0.33926237, y: 0.33586788}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlueKnightSpriteSheet 1_17
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 996
+        width: 132
+        height: 121
+      alignment: 9
+      pivot: {x: 0.34249324, y: 0.30252856}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlueKnightSpriteSheet 1_18
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 865
+        width: 99
+        height: 121
+      alignment: 9
+      pivot: {x: 0.4103933, y: 0.39835933}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlueKnightSpriteSheet 1_19
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 865
+        width: 105
+        height: 121
+      alignment: 9
+      pivot: {x: 0.46159726, y: 0.40002543}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlueKnightSpriteSheet 1_20
+      rect:
+        serializedVersion: 2
+        x: 347
+        y: 865
+        width: 117
+        height: 121
+      alignment: 9
+      pivot: {x: 0.4586432, y: 0.39835933}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlueKnightSpriteSheet 1_21
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 865
+        width: 98
+        height: 121
+      alignment: 9
+      pivot: {x: 0.44856793, y: 0.39835933}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlueKnightSpriteSheet 1_22
+      rect:
+        serializedVersion: 2
+        x: 598
+        y: 865
+        width: 111
+        height: 121
+      alignment: 9
+      pivot: {x: 0.48183683, y: 0.4100231}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlueKnightSpriteSheet 1_23
+      rect:
+        serializedVersion: 2
+        x: 707
+        y: 865
+        width: 126
+        height: 121
+      alignment: 9
+      pivot: {x: 0.5560046, y: 0.39835933}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlueKnightSpriteSheet 1_24
+      rect:
+        serializedVersion: 2
+        x: 848
+        y: 865
+        width: 117
+        height: 121
+      alignment: 9
+      pivot: {x: 0.45692015, y: 0.38836166}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlueKnightSpriteSheet 1_25
+      rect:
+        serializedVersion: 2
+        x: 992
+        y: 865
+        width: 97
+        height: 121
+      alignment: 9
+      pivot: {x: 0.36281815, y: 0.3950266}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlueKnightSpriteSheet 1_26
+      rect:
+        serializedVersion: 2
+        x: 1118
+        y: 865
+        width: 87
+        height: 121
+      alignment: 9
+      pivot: {x: 0.391081, y: 0.3950266}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlueKnightSpriteSheet 1_27
+      rect:
+        serializedVersion: 2
+        x: 1240
+        y: 865
+        width: 97
+        height: 121
+      alignment: 9
+      pivot: {x: 0.37736842, y: 0.40169153}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlueKnightSpriteSheet 1_28
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 625
+        width: 76
+        height: 110
+      alignment: 9
+      pivot: {x: 0.28815803, y: 0.50406605}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlueKnightSpriteSheet 1_29
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 625
+        width: 79
+        height: 110
+      alignment: 9
+      pivot: {x: 0.3273387, y: 0.5044267}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlueKnightSpriteSheet 1_30
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 625
+        width: 83
+        height: 110
+      alignment: 9
+      pivot: {x: 0.34374192, y: 0.510164}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlueKnightSpriteSheet 1_31
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 625
+        width: 89
+        height: 110
+      alignment: 9
+      pivot: {x: 0.40452594, y: 0.51626253}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlueKnightSpriteSheet 1_32
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 625
+        width: 84
+        height: 110
+      alignment: 9
+      pivot: {x: 0.35689217, y: 0.5196949}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlueKnightSpriteSheet 1_33
+      rect:
+        serializedVersion: 2
+        x: 620
+        y: 625
+        width: 79
+        height: 110
+      alignment: 9
+      pivot: {x: 0.33866012, y: 0.50406605}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlueKnightSpriteSheet 1_34
+      rect:
+        serializedVersion: 2
+        x: 728
+        y: 625
+        width: 75
+        height: 110
+      alignment: 9
+      pivot: {x: 0.2883146, y: 0.50813156}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlueKnightSpriteSheet 1_35
+      rect:
+        serializedVersion: 2
+        x: 835
+        y: 625
+        width: 72
+        height: 110
+      alignment: 9
+      pivot: {x: 0.2422265, y: 0.50442284}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlueKnightSpriteSheet 1_36
+      rect:
+        serializedVersion: 2
+        x: 938
+        y: 625
+        width: 73
+        height: 110
+      alignment: 9
+      pivot: {x: 0.23498368, y: 0.50203305}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlueKnightSpriteSheet 1_37
+      rect:
+        serializedVersion: 2
+        x: 1041
+        y: 625
+        width: 74
+        height: 110
+      alignment: 9
+      pivot: {x: 0.24919334, y: 0.49796697}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlueKnightSpriteSheet 1_38
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 502
+        width: 95
+        height: 121
+      alignment: 9
+      pivot: {x: 0.4504886, y: 0.383382}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlueKnightSpriteSheet 1_39
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 502
+        width: 96
+        height: 121
+      alignment: 9
+      pivot: {x: 0.4510045, y: 0.383382}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlueKnightSpriteSheet 1_40
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 502
+        width: 96
+        height: 121
+      alignment: 9
+      pivot: {x: 0.44750467, y: 0.38060513}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlueKnightSpriteSheet 1_41
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 502
+        width: 96
+        height: 121
+      alignment: 9
+      pivot: {x: 0.45800367, y: 0.38893518}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlueKnightSpriteSheet 1_42
+      rect:
+        serializedVersion: 2
+        x: 494
+        y: 502
+        width: 97
+        height: 121
+      alignment: 9
+      pivot: {x: 0.43419152, y: 0.38893518}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlueKnightSpriteSheet 1_43
+      rect:
+        serializedVersion: 2
+        x: 596
+        y: 502
+        width: 98
+        height: 121
+      alignment: 9
+      pivot: {x: 0.44171953, y: 0.38893518}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlueKnightSpriteSheet 1_44
+      rect:
+        serializedVersion: 2
+        x: 699
+        y: 502
+        width: 97
+        height: 121
+      alignment: 9
+      pivot: {x: 0.42380044, y: 0.39448836}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlueKnightSpriteSheet 1_45
+      rect:
+        serializedVersion: 2
+        x: 801
+        y: 502
+        width: 97
+        height: 121
+      alignment: 9
+      pivot: {x: 0.4411187, y: 0.38615835}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlueKnightSpriteSheet 1_46
+      rect:
+        serializedVersion: 2
+        x: 903
+        y: 502
+        width: 96
+        height: 121
+      alignment: 9
+      pivot: {x: 0.44750467, y: 0.38615835}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlueKnightSpriteSheet 1_47
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 407
+        width: 95
+        height: 95
+      alignment: 9
+      pivot: {x: 0.3481426, y: 0.4487382}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlueKnightSpriteSheet 1_48
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 407
+        width: 90
+        height: 95
+      alignment: 9
+      pivot: {x: 0.33690932, y: 0.46200657}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlueKnightSpriteSheet 1_49
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 407
+        width: 81
+        height: 95
+      alignment: 9
+      pivot: {x: 0.25357658, y: 0.4572616}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlueKnightSpriteSheet 1_50
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 407
+        width: 81
+        height: 95
+      alignment: 9
+      pivot: {x: 0.26531568, y: 0.46200657}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlueKnightSpriteSheet 1_51
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 407
+        width: 81
+        height: 95
+      alignment: 9
+      pivot: {x: 0.2547306, y: 0.46651933}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlueKnightSpriteSheet 1_52
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 407
+        width: 80
+        height: 95
+      alignment: 9
+      pivot: {x: 0.24734268, y: 0.46596617}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlueKnightSpriteSheet 1_53
+      rect:
+        serializedVersion: 2
+        x: 679
+        y: 407
+        width: 81
+        height: 95
+      alignment: 9
+      pivot: {x: 0.26828644, y: 0.46375412}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlueKnightSpriteSheet 1_54
+      rect:
+        serializedVersion: 2
+        x: 776
+        y: 407
+        width: 81
+        height: 95
+      alignment: 9
+      pivot: {x: 0.2547306, y: 0.46200657}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlueKnightSpriteSheet 1_55
+      rect:
+        serializedVersion: 2
+        x: 873
+        y: 407
+        width: 80
+        height: 95
+      alignment: 9
+      pivot: {x: 0.26859587, y: 0.46177432}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlueKnightSpriteSheet 1_56
+      rect:
+        serializedVersion: 2
+        x: 959
+        y: 407
+        width: 90
+        height: 95
+      alignment: 9
+      pivot: {x: 0.35144517, y: 0.45892078}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlueKnightSpriteSheet 1_57
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 309
+        width: 75
+        height: 99
+      alignment: 9
+      pivot: {x: 0.30129507, y: 0.47163868}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlueKnightSpriteSheet 1_58
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 309
+        width: 76
+        height: 99
+      alignment: 9
+      pivot: {x: 0.30106816, y: 0.46509376}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlueKnightSpriteSheet 1_59
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 309
+        width: 82
+        height: 99
+      alignment: 9
+      pivot: {x: 0.33932942, y: 0.47818363}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlueKnightSpriteSheet 1_60
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 309
+        width: 84
+        height: 99
+      alignment: 9
+      pivot: {x: 0.36372486, y: 0.47600177}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlueKnightSpriteSheet 1_61
+      rect:
+        serializedVersion: 2
+        x: 473
+        y: 309
+        width: 86
+        height: 99
+      alignment: 9
+      pivot: {x: 0.36187106, y: 0.47382024}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlueKnightSpriteSheet 1_62
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 309
+        width: 78
+        height: 99
+      alignment: 9
+      pivot: {x: 0.29786173, y: 0.47818363}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlueKnightSpriteSheet 1_63
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 309
+        width: 77
+        height: 99
+      alignment: 9
+      pivot: {x: 0.28682163, y: 0.4869101}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlueKnightSpriteSheet 1_64
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 309
+        width: 76
+        height: 99
+      alignment: 9
+      pivot: {x: 0.286858, y: 0.4869101}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlueKnightSpriteSheet 1_65
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 309
+        width: 75
+        height: 99
+      alignment: 9
+      pivot: {x: 0.28689617, y: 0.49127352}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlueKnightSpriteSheet 1_66
+      rect:
+        serializedVersion: 2
+        x: 958
+        y: 309
+        width: 75
+        height: 99
+      alignment: 9
+      pivot: {x: 0.29265544, y: 0.4869101}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlueKnightSpriteSheet 1_67
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 218
+        width: 90
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlueKnightSpriteSheet 1_68
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 119
+        width: 92
+        height: 97
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlueKnightSpriteSheet 1_69
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 119
+        width: 92
+        height: 97
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlueKnightSpriteSheet 1_70
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 124
+        width: 89
+        height: 97
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlueKnightSpriteSheet 1_71
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 121
+        width: 82
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlueKnightSpriteSheet 1_72
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 121
+        width: 92
+        height: 97
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlueKnightSpriteSheet 1_73
+      rect:
+        serializedVersion: 2
+        x: 551
+        y: 121
+        width: 92
+        height: 97
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlueKnightSpriteSheet 1_74
+      rect:
+        serializedVersion: 2
+        x: 647
+        y: 119
+        width: 92
+        height: 97
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlueKnightSpriteSheet 1_75
+      rect:
+        serializedVersion: 2
+        x: 742
+        y: 121
+        width: 92
+        height: 97
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlueKnightSpriteSheet 1_76
+      rect:
+        serializedVersion: 2
+        x: 834
+        y: 121
+        width: 92
+        height: 97
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlueKnightSpriteSheet 1_77
+      rect:
+        serializedVersion: 2
+        x: 925
+        y: 119
+        width: 97
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlueKnightSpriteSheet 1_78
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 22
+        width: 74
+        height: 99
+      alignment: 9
+      pivot: {x: 0.2943539, y: 0.4909584}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlueKnightSpriteSheet 1_79
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 22
+        width: 74
+        height: 99
+      alignment: 9
+      pivot: {x: 0.2943542, y: 0.48794433}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlueKnightSpriteSheet 1_80
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 22
+        width: 74
+        height: 99
+      alignment: 9
+      pivot: {x: 0.2943544, y: 0.47588825}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlueKnightSpriteSheet 1_81
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 22
+        width: 74
+        height: 99
+      alignment: 9
+      pivot: {x: 0.29032198, y: 0.48493034}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlueKnightSpriteSheet 1_82
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 22
+        width: 73
+        height: 99
+      alignment: 9
+      pivot: {x: 0.27518705, y: 0.4909584}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlueKnightSpriteSheet 1_83
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 22
+        width: 74
+        height: 99
+      alignment: 9
+      pivot: {x: 0.2822575, y: 0.5000005}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlueKnightSpriteSheet 1_84
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 22
+        width: 74
+        height: 99
+      alignment: 9
+      pivot: {x: 0.27419302, y: 0.4939724}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlueKnightSpriteSheet 1_85
+      rect:
+        serializedVersion: 2
+        x: 635
+        y: 22
+        width: 75
+        height: 99
+      alignment: 9
+      pivot: {x: 0.28118247, y: 0.4909584}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlueKnightSpriteSheet 1_86
+      rect:
+        serializedVersion: 2
+        x: 713
+        y: 22
+        width: 75
+        height: 99
+      alignment: 9
+      pivot: {x: 0.29311767, y: 0.48493034}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlueKnightSpriteSheet 1_87
+      rect:
+        serializedVersion: 2
+        x: 791
+        y: 22
+        width: 74
+        height: 99
+      alignment: 9
+      pivot: {x: 0.29032198, y: 0.4909584}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlueKnightSpriteSheet 1_88
+      rect:
+        serializedVersion: 2
+        x: 869
+        y: 22
+        width: 74
+        height: 99
+      alignment: 9
+      pivot: {x: 0.29032198, y: 0.4909584}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
