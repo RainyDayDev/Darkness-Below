@@ -34,6 +34,7 @@ public class enemyHeavy : MonoBehaviour {
 	private Vector3 tracker;
 
 	public Material material;
+	private float colourValue;
     // Use this for initialization
     void start()
     {
@@ -51,6 +52,11 @@ public class enemyHeavy : MonoBehaviour {
     // Update is called once per frame
 	void Update()
 	{
+		if(colourValue > 0)
+		{
+			material.SetFloat("_FlashAmount", colourValue);
+			colourValue -= .05f;
+		}
 		tracker = transform.position;
 		player = FindObjectOfType<Player>();
 		if (mapGenerator == null)
@@ -171,6 +177,7 @@ public class enemyHeavy : MonoBehaviour {
 		health -= damage;
 		text.text = health + "/" + maxHealth;
 		material.SetColor("_FlashColor", Color.red);
+		colourValue = .9f;
 		if (health <= 0)
 		{
 			state_change (3);

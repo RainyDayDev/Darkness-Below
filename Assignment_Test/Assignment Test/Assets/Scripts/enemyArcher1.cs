@@ -28,6 +28,7 @@ public class enemyArcher1 : MonoBehaviour {
 	public HealthPickup heart;
 	Animator archer_anim;
 	public Material material;
+	private float colourValue;
     // Use this for initialization
     void start()
     {
@@ -48,6 +49,11 @@ public class enemyArcher1 : MonoBehaviour {
 
     // Update is called once per frame
     void Update () {
+		if(colourValue > 0)
+		{
+			material.SetFloat("_FlashAmount", colourValue);
+			colourValue -= .05f;
+		}
 		if (mapGenerator == null) {
 			mapGenerator = FindObjectOfType<MapGenerator> ();
 		}
@@ -147,6 +153,7 @@ public class enemyArcher1 : MonoBehaviour {
             state = Attacking;
         }
 		material.SetColor("_FlashColor", Color.red);
+		colourValue = .9f;
         health -= damage;
 		text.text = health + "/100";
         if(health <= 0){

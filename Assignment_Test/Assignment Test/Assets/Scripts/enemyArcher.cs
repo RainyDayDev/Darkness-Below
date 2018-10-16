@@ -36,6 +36,7 @@ public class enemyArcher : MonoBehaviour {
 	private bool facingLeft = true;
 	private Vector3 tracker;
 	public Material material;
+	private float colourValue;
 
     // Use this for initialization
     void start()
@@ -51,6 +52,11 @@ public class enemyArcher : MonoBehaviour {
 
     // Update is called once per frame
     void Update () {
+		if(colourValue > 0)
+		{
+			material.SetFloat("_FlashAmount", colourValue);
+			colourValue -= .05f;
+		}
 		tracker = transform.position;
 		player = FindObjectOfType<Player> ();
 		if (mapGenerator == null) {
@@ -164,6 +170,7 @@ public class enemyArcher : MonoBehaviour {
     {
         health -= damage;
 		material.SetColor("_FlashColor", Color.red);
+		colourValue = .9f;
 		text.text = health + "/"+maxHealth;
         if(health <= 0){
 			state_change (3);
