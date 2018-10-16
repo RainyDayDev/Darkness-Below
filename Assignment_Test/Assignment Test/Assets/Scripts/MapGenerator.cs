@@ -9,6 +9,7 @@ public class MapGenerator : MonoBehaviour {
 	public int height;
 	public string seed;
 	public bool useRandomSeed;
+
 	public GameObject player;
 	public GameObject stairs;
 	public GameObject exit;
@@ -32,6 +33,7 @@ public class MapGenerator : MonoBehaviour {
 	public GameObject torch;
 	List<GameObject> torchList;
 	public bool bossSpawned = false;
+	public bool spawnEnemies = true;
 
 	void Start() {
 		EnemyList = new List<Enemy> ();
@@ -248,7 +250,9 @@ public class MapGenerator : MonoBehaviour {
 			remainingRooms [remainingRooms.Count - 1].isExitRoom = true;
 			smallest_size = remainingRooms [remainingRooms.Count - 1].size;
 			remainingRooms [0].accesibleFromMainRoom = true;
-			PopulateDungeon (remainingRooms);
+			if (spawnEnemies == true) {
+				PopulateDungeon (remainingRooms);
+			}
 			ConnectedClosestRooms (remainingRooms);
 		} else {
 			spawn = findBossSpawn (remainingRooms [remainingRooms.Count - 1], map, 0);

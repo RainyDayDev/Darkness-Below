@@ -106,12 +106,13 @@ public class Player : MonoBehaviour {
 
 
 	public void ApplyDamage(int damage){
-		hit_sound.Play ();
+		
 		health -= damage;
 		if (damage < 0) {
 			material.SetColor("_FlashColor", Color.green);
 		} else {
 			material.SetColor("_FlashColor", Color.red);
+			hit_sound.Play ();
 		}
 		healthSlider.value = health;
         colourValue = .9f;
