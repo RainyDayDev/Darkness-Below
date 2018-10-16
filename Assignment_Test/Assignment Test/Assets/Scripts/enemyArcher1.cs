@@ -27,7 +27,7 @@ public class enemyArcher1 : MonoBehaviour {
 	public MoneyPickup gem;
 	public HealthPickup heart;
 	Animator archer_anim;
-
+	public Material material;
     // Use this for initialization
     void start()
     {
@@ -146,6 +146,7 @@ public class enemyArcher1 : MonoBehaviour {
         {
             state = Attacking;
         }
+		material.SetColor("_FlashColor", Color.red);
         health -= damage;
 		text.text = health + "/100";
         if(health <= 0){

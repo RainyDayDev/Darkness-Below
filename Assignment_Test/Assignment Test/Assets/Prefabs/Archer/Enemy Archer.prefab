@@ -43,7 +43,7 @@ GameObject:
   - component: {fileID: 61112254850309230}
   - component: {fileID: 114715492873236112}
   m_Layer: 0
-  m_Name: Enemy Stairs
+  m_Name: Enemy Archer
   m_TagString: EnemyArcher
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -233,6 +233,7 @@ MonoBehaviour:
   potion: {fileID: 114180402540039812, guid: bf9dee8d0f46b4240b9539fdca6fc8c1, type: 2}
   key: {fileID: 114634447161954462, guid: 2e4f9c59896d34d8f95b69af540c020c, type: 2}
   maxHealth: 0
+  material: {fileID: 2100000, guid: c5ec9610bddf44631ada4e3816e42dad, type: 2}
 --- !u!114 &114867990475675606
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -297,7 +298,7 @@ SpriteRenderer:
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: c5ec9610bddf44631ada4e3816e42dad, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

@@ -35,6 +35,7 @@ public class enemyArcher : MonoBehaviour {
 	private bool facingRight = false;
 	private bool facingLeft = true;
 	private Vector3 tracker;
+	public Material material;
 
     // Use this for initialization
     void start()
@@ -162,6 +163,7 @@ public class enemyArcher : MonoBehaviour {
     public void ApplyDamage(float damage)
     {
         health -= damage;
+		material.SetColor("_FlashColor", Color.red);
 		text.text = health + "/"+maxHealth;
         if(health <= 0){
 			state_change (3);

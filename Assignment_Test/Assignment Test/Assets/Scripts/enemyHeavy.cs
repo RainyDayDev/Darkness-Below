@@ -33,6 +33,7 @@ public class enemyHeavy : MonoBehaviour {
 	private bool facingLeft = true;
 	private Vector3 tracker;
 
+	public Material material;
     // Use this for initialization
     void start()
     {
@@ -169,6 +170,7 @@ public class enemyHeavy : MonoBehaviour {
 	{
 		health -= damage;
 		text.text = health + "/" + maxHealth;
+		material.SetColor("_FlashColor", Color.red);
 		if (health <= 0)
 		{
 			state_change (3);
