@@ -43,6 +43,7 @@ public class enemyLight : MonoBehaviour {
         mapGenerator = FindObjectOfType<MapGenerator>();
 		health = health + 10 * player.level;
 		maxHealth = health;
+		GetComponent<Renderer>().material.CopyPropertiesFromMaterial(material);
     }
 
     void state_change(int to_change)
@@ -54,8 +55,8 @@ public class enemyLight : MonoBehaviour {
     {
 		if(colourValue > 0)
 		{
-			material.SetFloat("_FlashAmount", colourValue);
-			colourValue -= .05f;
+			GetComponent<Renderer>().material.SetFloat("_FlashAmount", colourValue);
+			this.colourValue -= .05f;
 		}
 		tracker = transform.position;
         player = FindObjectOfType<Player>();
@@ -176,8 +177,10 @@ public class enemyLight : MonoBehaviour {
     {
         health -= damage;
 		text.text = health + "/" + maxHealth;
-		material.SetColor("_FlashColor", Color.red);
+		GetComponent<Renderer>().material.SetColor("_FlashColor", Color.red);
 		colourValue = .9f;
+
+
         if (health <= 0)
         {
 			state_change (3);

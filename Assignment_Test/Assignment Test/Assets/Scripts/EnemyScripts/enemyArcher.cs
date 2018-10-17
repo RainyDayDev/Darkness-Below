@@ -43,6 +43,7 @@ public class enemyArcher : MonoBehaviour {
     {
 		archer_anim = GetComponent<Animator> ();
 		mapGenerator = FindObjectOfType<MapGenerator> ();
+		GetComponent<Renderer>().material.CopyPropertiesFromMaterial(material);
     }
 
 
@@ -54,7 +55,7 @@ public class enemyArcher : MonoBehaviour {
     void Update () {
 		if(colourValue > 0)
 		{
-			material.SetFloat("_FlashAmount", colourValue);
+			GetComponent<Renderer>().material.SetFloat("_FlashAmount", colourValue);
 			colourValue -= .05f;
 		}
 		tracker = transform.position;
@@ -169,7 +170,7 @@ public class enemyArcher : MonoBehaviour {
     public void ApplyDamage(float damage)
     {
         health -= damage;
-		material.SetColor("_FlashColor", Color.red);
+		GetComponent<Renderer>().material.SetColor("_FlashColor", Color.red);
 		colourValue = .9f;
 		text.text = health + "/"+maxHealth;
         if(health <= 0){
