@@ -26,7 +26,7 @@ public class AreaAttack : MonoBehaviour {
         if (other.tag == "Player")
         {
             Player enemy = other.GetComponent<Player>();
-            enemy.ApplyDamage(damage + 10 * enemy.level);
+            enemy.ApplyDamage(damage + 3 * enemy.level);
             Destroy(gameObject);
         }
     }

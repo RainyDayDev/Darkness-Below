@@ -26,7 +26,7 @@ public class areaAttackHeavy : MonoBehaviour {
         if (other.tag == "Player")
         {
             Player enemy = other.GetComponent<Player>();
-            enemy.ApplyDamage(damage + 20 * enemy.level);
+            enemy.ApplyDamage(damage + 5 * enemy.level);
             Destroy(gameObject);
         }
     }
