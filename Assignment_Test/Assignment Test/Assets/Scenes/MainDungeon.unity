@@ -514,6 +514,7 @@ MonoBehaviour:
   randomFillPercent: 50
   torch: {fileID: 1087395233632278, guid: a2b74de6ff8914235bb1ad4d35e7462c, type: 2}
   bossSpawned: 0
+  spawnEnemies: 1
 --- !u!114 &1742375595
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -585,7 +586,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: c9b716f57678c46cb958f0e358df116e, type: 2}
+  - {fileID: 2100000, guid: 45316d3775b8b41de87dddcad1ab4a87, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

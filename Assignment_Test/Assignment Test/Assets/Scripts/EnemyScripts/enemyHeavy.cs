@@ -41,7 +41,8 @@ public class enemyHeavy : MonoBehaviour {
 		player = FindObjectOfType<Player> ();
 		light_anim = GetComponent<Animator>();
 		mapGenerator = FindObjectOfType<MapGenerator>();
-		health = health + 10 * player.level;
+		int random = Random.Range (4, 8);
+		health = health + random * player.level;
 		maxHealth = health;
 		GetComponent<Renderer>().material.CopyPropertiesFromMaterial(material);
     }
@@ -70,7 +71,8 @@ public class enemyHeavy : MonoBehaviour {
 		}
 		else if (light_anim == null)
 		{
-			health = health + player.level * 10;
+			int random = Random.Range (4, 8);
+			health = health + random * player.level;
 			maxHealth = health;
 			text.text = health + "/" + maxHealth;
 			light_anim = GetComponent<Animator>();
@@ -194,19 +196,20 @@ public class enemyHeavy : MonoBehaviour {
 	public void Drop()
 	{
 		float range = Random.Range(0, 100);
-		if (range >= 95)
+		if (range >= 99) {
+			Instantiate (key, transform.position, transform.rotation);
+		}
+		else if (range >= 90)
 		{
 			//Instantiate potion
 			Instantiate(potion, transform.position, transform.rotation);
 		}
-		else if (range >= 60 && range < 95)
+		else if (range >= 70 && range < 90)
 		{
 			Instantiate(heart, transform.position, transform.rotation);
 			//Instantiate heart
 		}
-		if (range >= 98) {
-			Instantiate (key, transform.position, transform.rotation);
-		} else {
+		else if(range >= 40 && range < 70) {
 			//Instantiate money
 			int money = Random.Range (player.GetComponent<Player>().level, player.GetComponent<Player> ().level * 5);
 			gem.value = money;

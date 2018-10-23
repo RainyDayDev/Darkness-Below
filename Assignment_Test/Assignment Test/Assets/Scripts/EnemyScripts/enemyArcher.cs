@@ -43,6 +43,9 @@ public class enemyArcher : MonoBehaviour {
     {
 		archer_anim = GetComponent<Animator> ();
 		mapGenerator = FindObjectOfType<MapGenerator> ();
+		player = FindObjectOfType<Player> ();
+		int random = Random.Range (1, 3);
+		health = health + random * player.level;
 		GetComponent<Renderer>().material.CopyPropertiesFromMaterial(material);
     }
 
@@ -65,7 +68,8 @@ public class enemyArcher : MonoBehaviour {
 		}else if (player == null) {
 			player = FindObjectOfType<Player> ();
 		}else if (archer_anim == null) {
-			health = health + player.level * 10;
+			int random = Random.Range (1, 3);
+			health = health + random * player.level;
 			maxHealth = health;
 			text.text = health + "/" + maxHealth;
 			archer_anim = GetComponent<Animator> ();

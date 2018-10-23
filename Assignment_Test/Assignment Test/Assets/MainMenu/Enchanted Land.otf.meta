@@ -1,19 +1,18 @@
 fileFormatVersion: 2
-guid: 22ad4a3f312294647b80c854402f42dd
-timeCreated: 1491590683
+guid: f83574b1089d547b4a4bc04a9a01ff1f
+timeCreated: 1540324289
 licenseType: Free
 TrueTypeFontImporter:
   serializedVersion: 4
-  fontSize: 100
+  fontSize: 40
   forceTextureCase: -1
   characterSpacing: 0
   characterPadding: 1
   includeFontData: 1
-  fontName: Greed
+  fontName: Enchanted Land
   fontNames:
-  - Greed
-  fallbackFontReferences:
-  - {fileID: 12800000, guid: 258aa1a8156a548ad963c1267306d81b, type: 3}
+  - Enchanted Land
+  fallbackFontReferences: []
   customCharacters: 
   fontRenderingMode: 0
   ascentCalculationMode: 1

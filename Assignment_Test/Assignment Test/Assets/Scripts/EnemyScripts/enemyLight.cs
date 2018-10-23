@@ -41,7 +41,8 @@ public class enemyLight : MonoBehaviour {
 		player = FindObjectOfType<Player> ();
         light_anim = GetComponent<Animator>();
         mapGenerator = FindObjectOfType<MapGenerator>();
-		health = health + 10 * player.level;
+		int random = Random.Range (1, 5);
+		health = health + random * player.level;
 		maxHealth = health;
 		GetComponent<Renderer>().material.CopyPropertiesFromMaterial(material);
     }
@@ -70,7 +71,8 @@ public class enemyLight : MonoBehaviour {
         }
         else if (light_anim == null)
         {
-            health = health + player.level * 10;
+			int random = Random.Range (1, 5);
+			health = health + random * player.level;
             maxHealth = health;
             text.text = health + "/" + maxHealth;
             light_anim = GetComponent<Animator>();

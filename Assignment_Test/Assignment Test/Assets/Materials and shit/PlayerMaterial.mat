@@ -27,11 +27,11 @@ Material:
       second: 0
     - first:
         name: _FlashAmount
-      second: 0.049999844
+      second: 0.24999984
     m_Colors:
     - first:
         name: _Color
       second: {r: 1, g: 1, b: 1, a: 1}
     - first:
         name: _FlashColor
-      second: {r: 0, g: 1, b: 0, a: 1}
+      second: {r: 1, g: 0, b: 0, a: 1}

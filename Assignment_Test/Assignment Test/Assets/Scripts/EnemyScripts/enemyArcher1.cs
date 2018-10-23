@@ -16,7 +16,7 @@ public class enemyArcher1 : MonoBehaviour {
     public int state = Patrolling;
     private float speed = 2;
     private Transform startPoint;
-    public GameObject player;
+    public Player player;
     public float health = 100;
     public float healthTreshold;
     public int healRate = 1;
@@ -35,7 +35,7 @@ public class enemyArcher1 : MonoBehaviour {
 		archer_anim = GetComponent<Animator> ();
 		mapGenerator = FindObjectOfType<MapGenerator> ();
         startPoint = transform;
-        player = GameObject.FindWithTag("Player");
+		player = FindObjectOfType<Player>();
         //health = health * level number
         healthTreshold = health * 2 / 10;
         healthCap = health;
@@ -57,7 +57,6 @@ public class enemyArcher1 : MonoBehaviour {
 		if (mapGenerator == null) {
 			mapGenerator = FindObjectOfType<MapGenerator> ();
 		}
-        player = GameObject.FindWithTag("Player");
 		if (archer_anim == null) {
 			archer_anim = GetComponent<Animator> ();
 		} else {
