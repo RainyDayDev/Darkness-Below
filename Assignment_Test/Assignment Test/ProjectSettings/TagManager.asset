@@ -23,6 +23,7 @@ TagManager:
   - Potion
   - Key
   - Boss
+  - Item
   layers:
   - Default
   - TransparentFX
