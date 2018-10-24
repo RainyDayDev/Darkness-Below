@@ -26,5 +26,14 @@ Material:
     - PixelSnap: 0
     - _FlashAmount: 0.5499999
     m_Colors:
+<<<<<<< HEAD
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _FlashColor: {r: 1, g: 0, b: 0, a: 1}
+=======
+    - first:
+        name: _Color
+      second: {r: 1, g: 1, b: 1, a: 1}
+    - first:
+        name: _FlashColor
+      second: {r: 1, g: 0, b: 0, a: 1}
+>>>>>>> 7612ba7831a22e585f774fb725874499b9327429

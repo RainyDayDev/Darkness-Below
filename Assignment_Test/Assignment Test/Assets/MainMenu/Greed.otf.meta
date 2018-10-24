@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 22ad4a3f312294647b80c854402f42dd
+timeCreated: 1491590683
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 100
+  forceTextureCase: -1
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Greed
+  fontNames:
+  - Greed
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 258aa1a8156a548ad963c1267306d81b, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

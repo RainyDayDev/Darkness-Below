@@ -27,7 +27,7 @@ Material:
       second: 0
     - first:
         name: _FlashAmount
-      second: 0
+      second: 0.049999844
     m_Colors:
     - first:
         name: _Color
