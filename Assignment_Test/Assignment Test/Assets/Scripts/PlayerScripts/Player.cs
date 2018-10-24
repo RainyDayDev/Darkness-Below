@@ -11,6 +11,7 @@ public class Player : MonoBehaviour {
 	public float attack_time_heavy;
 	public float attack_time_magic;
 	public float health = 100;
+    public float targetHealth = 100;
 	public float baseHealth = 100;
 	public float maxHealth = 100;
 	public float damage = 15;
@@ -106,21 +107,21 @@ public class Player : MonoBehaviour {
 
 
 	public void ApplyDamage(int damage){
-		
-		health -= damage;
+        //health -= damage;
+        targetHealth -= damage;
 		if (damage < 0) {
 			material.SetColor("_FlashColor", Color.green);
 		} else {
 			material.SetColor("_FlashColor", Color.red);
 			hit_sound.Play ();
 		}
-		healthSlider.value = health;
+		//healthSlider.value = health;
         colourValue = .9f;
-		if (health > maxHealth) {
-			health = maxHealth;
+		if (targetHealth > maxHealth) {
+			targetHealth = maxHealth;
 		
 		}
-		healthText.text = health + "/" + maxHealth;
+		healthText.text = targetHealth + "/" + maxHealth;
 	}
 	public void EquipLeftRing(GameObject ring){
 		Ring newRing = ring.GetComponent<Ring>();
@@ -323,6 +324,11 @@ public class Player : MonoBehaviour {
         {
             material.SetFloat("_FlashAmount", colourValue);
             colourValue -= .05f;
+        }
+        if((int)targetHealth != (int)health){
+            health = Mathf.Lerp(health, targetHealth, 2*Time.deltaTime);
+            healthSlider.value = health;
+
         }
     }
 }
