@@ -21,7 +21,7 @@ public class Ring : MonoBehaviour {
     }
 
 	void Start () {
-        /*
+
 		player = FindObjectOfType<Player> ();
 		if (SceneManager.GetActiveScene ().name == "Tavern") {
 			isTavern = true;
@@ -44,7 +44,7 @@ public class Ring : MonoBehaviour {
 			statsSet = true;
 			value = healthBonus + damageBonus * 5;
 		}
-		*/
+		
 	}
    
 
@@ -67,10 +67,20 @@ public class Ring : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         if(inTrigger){
-            if(Input.GetKeyDown(KeyCode.E)){
+            if(Input.GetKeyDown(KeyCode.E) && isTavern == false){
                 player = FindObjectOfType<Player>();
                 player.EquipRing(this.gameObject);
+            }else if (Input.GetKeyDown(KeyCode.E) && isTavern){
+                player = FindObjectOfType<Player>();
+                if(player.money >= value){
+                    player.money -= this.value;
+                    player.moneyCount.text = "x " + player.money;
+                    player.EquipRing(this.gameObject);
+
+                }
+
             }
+
 
         }
 	/*	

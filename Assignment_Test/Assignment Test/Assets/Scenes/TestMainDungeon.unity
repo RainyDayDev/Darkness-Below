@@ -186,18 +186,6 @@ Transform:
   m_Father: {fileID: 1742375596}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &203781824 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 114052370714104144, guid: 570b28286caf9469f95903e13224ae91,
-    type: 2}
-  m_PrefabInternal: {fileID: 1522192097}
-  m_Script: {fileID: 11500000, guid: 65a6edd4cc4994349b53bff1544e44b7, type: 3}
---- !u!114 &203781825 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 114581103564725238, guid: 570b28286caf9469f95903e13224ae91,
-    type: 2}
-  m_PrefabInternal: {fileID: 1522192097}
-  m_Script: {fileID: 11500000, guid: 65a6edd4cc4994349b53bff1544e44b7, type: 3}
 --- !u!1 &507976797
 GameObject:
   m_ObjectHideFlags: 0
@@ -520,46 +508,6 @@ Prefab:
     - target: {fileID: 224639290764242498, guid: 570b28286caf9469f95903e13224ae91,
         type: 2}
       propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 212367331763681352, guid: 570b28286caf9469f95903e13224ae91,
-        type: 2}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: acb818ec32e30419db6640d0dc1f7bf0, type: 2}
-    - target: {fileID: 114186692968317824, guid: 570b28286caf9469f95903e13224ae91,
-        type: 2}
-      propertyPath: material
-      value: 
-      objectReference: {fileID: 2100000, guid: acb818ec32e30419db6640d0dc1f7bf0, type: 2}
-    - target: {fileID: 224205565979792318, guid: 570b28286caf9469f95903e13224ae91,
-        type: 2}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224205565979792318, guid: 570b28286caf9469f95903e13224ae91,
-        type: 2}
-      propertyPath: m_SizeDelta.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224627324802570446, guid: 570b28286caf9469f95903e13224ae91,
-        type: 2}
-      propertyPath: m_AnchoredPosition.y
-      value: -0.099999905
-      objectReference: {fileID: 0}
-    - target: {fileID: 114186692968317824, guid: 570b28286caf9469f95903e13224ae91,
-        type: 2}
-      propertyPath: leftRing
-      value: 
-      objectReference: {fileID: 203781825}
-    - target: {fileID: 114186692968317824, guid: 570b28286caf9469f95903e13224ae91,
-        type: 2}
-      propertyPath: rightRing
-      value: 
-      objectReference: {fileID: 203781824}
-    - target: {fileID: 114186692968317824, guid: 570b28286caf9469f95903e13224ae91,
-        type: 2}
-      propertyPath: leftRingEquipped
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
