@@ -510,6 +510,18 @@ Prefab:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114186692968317824, guid: 570b28286caf9469f95903e13224ae91,
+        type: 2}
+      propertyPath: leftRing
+      value: 
+      objectReference: {fileID: 1423911103252990, guid: 3639a400d851f4053ab1c79276d544e4,
+        type: 2}
+    - target: {fileID: 114186692968317824, guid: 570b28286caf9469f95903e13224ae91,
+        type: 2}
+      propertyPath: rightRing
+      value: 
+      objectReference: {fileID: 1423911103252990, guid: 3639a400d851f4053ab1c79276d544e4,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 570b28286caf9469f95903e13224ae91, type: 2}
   m_IsPrefabAsset: 0

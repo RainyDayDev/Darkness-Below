@@ -15,9 +15,9 @@ public class Ring : MonoBehaviour {
 	public int value = 0;
 	// Use this for initialization
 
-    public Ring(){
-        healthBonus = 5;
-        damageBonus = 5;
+    public Ring(int health, int damage){
+        healthBonus = health;
+        damageBonus = damage;
     }
 
 	void Start () {
