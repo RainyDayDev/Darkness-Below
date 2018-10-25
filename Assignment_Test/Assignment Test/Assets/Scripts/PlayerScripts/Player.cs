@@ -47,8 +47,8 @@ public class Player : MonoBehaviour {
 	public bool didDie = false;
 	float heavyTimer;
 	float magicTimer;
-	//sounds
 
+	//sounds
 	public AudioSource heavy_sound;
 	public AudioSource light_sound;
 	public AudioSource magic_sound;
@@ -80,6 +80,8 @@ public class Player : MonoBehaviour {
 		keyText.text = "x " + key;
 		damageText.text = "" + damage;
 		healthText.text = health + "/" + maxHealth;
+        rightRingEquipped = false;
+        leftRingEquipped = false;
         //material = new Material(Shader.Find("Custom/FlashingRed"));
     }
 
@@ -106,23 +108,31 @@ public class Player : MonoBehaviour {
 	}
 
 
-	public void ApplyDamage(int damage){
+    public void ApplyDamage(int damage)
+    {
         //health -= damage;
         targetHealth -= damage;
-		if (damage < 0) {
-			material.SetColor("_FlashColor", Color.green);
-		} else {
-			material.SetColor("_FlashColor", Color.red);
-			hit_sound.Play ();
-		}
-		//healthSlider.value = health;
+        if (damage < 0)
+        {
+            material.SetColor("_FlashColor", Color.green);
+        }
+        else
+        {
+            material.SetColor("_FlashColor", Color.red);
+            hit_sound.Play();
+        }
+        //healthSlider.value = health;
         colourValue = .9f;
-		if (targetHealth > maxHealth) {
-			targetHealth = maxHealth;
-		
-		}
-		healthText.text = targetHealth + "/" + maxHealth;
-	}
+        if (targetHealth > maxHealth)
+        {
+            targetHealth = maxHealth;
+
+        }
+        healthText.text = targetHealth + "/" + maxHealth;
+    }
+
+//This code physically hurts to look at. Probably a better way to do this
+/*
 	public void EquipLeftRing(GameObject ring){
 		Ring newRing = ring.GetComponent<Ring>();
 		leftRing.damageBonus = newRing.damageBonus;
@@ -185,7 +195,39 @@ public class Player : MonoBehaviour {
 		ringMenu.SetActive (false);
 		Destroy (ring);
 	}
-		
+*/		
+    public void EquipRing(GameObject ring){
+        if(rightRingEquipped == false){
+            Ring newRing = ring.GetComponent<Ring>();
+            rightRing.damageBonus = newRing.damageBonus;
+            rightRing.healthBonus = newRing.healthBonus;
+            damage = damage + rightRing.damageBonus;
+            maxHealth = maxHealth + rightRing.healthBonus;
+            healthSlider.maxValue = maxHealth;
+            healthText.text = health + "/" + maxHealth;
+            damageText.text = "" + damage;
+            rightRingEquipped = true;
+            Destroy(ring.gameObject);
+        }
+        else if (leftRingEquipped == false){
+            Ring newRing = ring.GetComponent<Ring>();
+            leftRing.damageBonus = newRing.damageBonus;
+            leftRing.healthBonus = newRing.healthBonus;
+            damage = damage + leftRing.damageBonus;
+            maxHealth = maxHealth + leftRing.healthBonus;
+            healthSlider.maxValue = maxHealth;
+            healthText.text = health + "/" + maxHealth;
+            damageText.text = "" + damage;
+            leftRingEquipped = true;
+            Destroy(ring.gameObject);
+        }
+        else{
+            //bring up the ring menu
+
+        }
+
+
+    }
 
 	// Update is called once per frame
 	void Update () {
@@ -311,7 +353,7 @@ public class Player : MonoBehaviour {
 
 
 
-
+        //Drink potion
 		if (Input.GetKeyDown (KeyCode.P)) {
 			if (potionCount > 0) {
 				ApplyDamage (-20);
@@ -320,11 +362,14 @@ public class Player : MonoBehaviour {
 			}
 		}
 
+        //Hit flash
         if(colourValue > 0)
         {
             material.SetFloat("_FlashAmount", colourValue);
             colourValue -= .05f;
         }
+
+        //Healthslider smooth transition
         if((int)targetHealth != (int)health){
             health = Mathf.Lerp(health, targetHealth, 2*Time.deltaTime);
             healthSlider.value = health;
