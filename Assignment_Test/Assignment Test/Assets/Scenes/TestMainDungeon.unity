@@ -510,31 +510,24 @@ Prefab:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 212367331763681352, guid: 570b28286caf9469f95903e13224ae91,
-        type: 2}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: acb818ec32e30419db6640d0dc1f7bf0, type: 2}
     - target: {fileID: 114186692968317824, guid: 570b28286caf9469f95903e13224ae91,
         type: 2}
-      propertyPath: material
+      propertyPath: leftRing
       value: 
-      objectReference: {fileID: 2100000, guid: acb818ec32e30419db6640d0dc1f7bf0, type: 2}
-    - target: {fileID: 224205565979792318, guid: 570b28286caf9469f95903e13224ae91,
+      objectReference: {fileID: 1423911103252990, guid: 3639a400d851f4053ab1c79276d544e4,
         type: 2}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224205565979792318, guid: 570b28286caf9469f95903e13224ae91,
+    - target: {fileID: 114186692968317824, guid: 570b28286caf9469f95903e13224ae91,
         type: 2}
-      propertyPath: m_SizeDelta.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224627324802570446, guid: 570b28286caf9469f95903e13224ae91,
+      propertyPath: rightRing
+      value: 
+      objectReference: {fileID: 1423911103252990, guid: 3639a400d851f4053ab1c79276d544e4,
         type: 2}
+<<<<<<< HEAD
       propertyPath: m_AnchoredPosition.y
       value: -0.099999905
       objectReference: {fileID: 0}
+=======
+>>>>>>> d0956cbe9c98ede60666f69bc268ab2dbe4e2428
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 570b28286caf9469f95903e13224ae91, type: 2}
   m_IsPrefabAsset: 0
@@ -655,7 +648,7 @@ MonoBehaviour:
   randomFillPercent: 50
   torch: {fileID: 1087395233632278, guid: a2b74de6ff8914235bb1ad4d35e7462c, type: 2}
   bossSpawned: 0
-  spawnEnemies: 1
+  spawnEnemies: 0
 --- !u!114 &1742375595
 MonoBehaviour:
   m_ObjectHideFlags: 0

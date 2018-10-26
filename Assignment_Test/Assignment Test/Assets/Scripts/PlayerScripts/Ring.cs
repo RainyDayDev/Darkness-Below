@@ -8,13 +8,20 @@ public class Ring : MonoBehaviour {
 	public int healthBonus;
 	public int damageBonus;
 	bool inTrigger = false;
-	Player player;
+	public Player player;
 	public string description;
 	bool statsSet = false;
 	public bool isTavern = false;
 	public int value = 0;
 	// Use this for initialization
+
+    public Ring(int health, int damage){
+        healthBonus = health;
+        damageBonus = damage;
+    }
+
 	void Start () {
+
 		player = FindObjectOfType<Player> ();
 		if (SceneManager.GetActiveScene ().name == "Tavern") {
 			isTavern = true;
@@ -37,7 +44,10 @@ public class Ring : MonoBehaviour {
 			statsSet = true;
 			value = healthBonus + damageBonus * 5;
 		}
+		
 	}
+   
+
 	public void setRing(Ring newRing){
 		healthBonus = newRing.healthBonus;
 		damageBonus = newRing.damageBonus;
@@ -56,15 +66,33 @@ public class Ring : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-		if (player == null) {
+        if(inTrigger){
+            if(Input.GetKeyDown(KeyCode.E) && isTavern == false){
+                player = FindObjectOfType<Player>();
+                player.EquipRing(this.gameObject);
+            }else if (Input.GetKeyDown(KeyCode.E) && isTavern){
+                player = FindObjectOfType<Player>();
+                if(player.money >= value){
+                    player.money -= this.value;
+                    player.moneyCount.text = "x " + player.money;
+                    player.EquipRing(this.gameObject);
+
+                }
+
+            }
+
+
+        }
+	/*	
+        if (player == null) {
 			player = FindObjectOfType<Player> ();
-		} /*else if (statsSet == false) {
+		} else if (statsSet == false) {
 			int random = Random.Range (1, 4);
 			healthBonus = 10 + player.level * random;
 			damageBonus = 10 + player.level * random;
 			description = "Health Bonus = " + healthBonus + "\nDamage Bonus = " + damageBonus;
 			statsSet = true;
-		}*/ else {
+		} else {
 			if (inTrigger) {
 				if (Input.GetKeyDown (KeyCode.E) && isTavern == false) {
 					if (player.rightRingEquipped == false && player.leftRingEquipped == true) {
@@ -169,7 +197,9 @@ public class Ring : MonoBehaviour {
 					player.moneyCount.text = "x " + player.money;
 					Destroy (gameObject);
 				}
+				
 			}
 		}
+        */
 	}
 }
