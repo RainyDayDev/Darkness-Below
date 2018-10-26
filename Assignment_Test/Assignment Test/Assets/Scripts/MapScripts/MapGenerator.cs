@@ -32,6 +32,7 @@ public class MapGenerator : MonoBehaviour {
 	bool isBossRoom = false;
 	public GameObject torch;
 	List<GameObject> torchList;
+    List<GameObject> itemList;
 	public bool bossSpawned = false;
 	public bool spawnEnemies = true;
 
@@ -65,6 +66,13 @@ public class MapGenerator : MonoBehaviour {
 			Destroy (torchList [i].gameObject);
 		}
 		torchList = new List<GameObject> ();
+
+        Item[] items = FindObjectsOfType<Item>();
+        for (int i = 0; i < items.Length; i++){
+            Destroy(items[i].gameObject);
+        }
+        itemList = new List<GameObject>();
+
 		if (currentPlayer.GetComponent<Player> ().level % 5 == 0) {
 			width = 30;
 			height = 30;
