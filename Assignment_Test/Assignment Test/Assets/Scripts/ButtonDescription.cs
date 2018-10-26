@@ -17,7 +17,7 @@ public class ButtonDescription : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-		left.text = "Left Ring:\n" + player.leftRing.GetComponent<Ring>().description;
-        right.text = "Right Ring:\n" + player.rightRing.GetComponent<Ring>().description;
+		left.text = "Left Ring:\n" + player.leftRing.description;
+		right.text = "Right Ring:\n" + player.rightRing.description;
 	}
 }

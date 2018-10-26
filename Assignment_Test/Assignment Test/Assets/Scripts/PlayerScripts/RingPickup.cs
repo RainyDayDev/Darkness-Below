@@ -14,8 +14,7 @@ public class RingPickup : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-		/*
-        time += Time.deltaTime;
+		time += Time.deltaTime;
 		Vector3 y = new Vector3 (0.0f, 1.0f, 0.0f);
 		Vector3 x = new Vector3 (1.0f, 0.0f, 0.0f);
 		if (time <= 0.1f) {
@@ -25,6 +24,5 @@ public class RingPickup : MonoBehaviour {
 		if (time > 0.1f && transform.position.y > startPos.y) {
 			transform.Translate (-y * Time.deltaTime * 4);
 		}
-		*/
 	}
 }

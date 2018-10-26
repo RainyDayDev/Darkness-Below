@@ -31,8 +31,8 @@ Material:
     m_Colors:
 <<<<<<< HEAD
     - _Color: {r: 1, g: 1, b: 1, a: 1}
-<<<<<<< HEAD
     - _FlashColor: {r: 1, g: 0, b: 0, a: 1}
+<<<<<<< HEAD
 =======
     - _FlashColor: {r: 0, g: 1, b: 0, a: 1}
 >>>>>>> d0956cbe9c98ede60666f69bc268ab2dbe4e2428
@@ -44,3 +44,5 @@ Material:
         name: _FlashColor
       second: {r: 1, g: 0, b: 0, a: 1}
 >>>>>>> parent of 750e09a... It tells me to do this
+=======
+>>>>>>> parent of ca1f37d... Merge branch 'master' of https://github.com/RainyDayDev/Darkness-Below
