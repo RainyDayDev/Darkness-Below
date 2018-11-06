@@ -67,12 +67,6 @@ public class MapGenerator : MonoBehaviour {
 		}
 		torchList = new List<GameObject> ();
 
-        Item[] items = FindObjectsOfType<Item>();
-        for (int i = 0; i < items.Length; i++){
-            Destroy(items[i].gameObject);
-        }
-        itemList = new List<GameObject>();
-
 		if (currentPlayer.GetComponent<Player> ().level % 5 == 0) {
 			width = 30;
 			height = 30;

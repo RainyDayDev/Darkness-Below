@@ -413,5 +413,6 @@ public class Player : MonoBehaviour {
             health = Mathf.Lerp(health, targetHealth, 2 * Time.deltaTime);
             healthSlider.value = health;
         }
+
     }
 }
