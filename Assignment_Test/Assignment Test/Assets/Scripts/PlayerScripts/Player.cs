@@ -377,6 +377,7 @@ public class Player : MonoBehaviour {
 			money = 0;
 			moneyCount.text = "x " + money;
 			healthSlider.value = maxHealth;
+            targetHealth = maxHealth;
 
 
 

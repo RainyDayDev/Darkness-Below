@@ -35,6 +35,8 @@ public class enemyHeavy : MonoBehaviour {
 
 	public Material material;
 	private float colourValue;
+
+    private float attackDistance = 1f;
     // Use this for initialization
     void start()
     {
@@ -61,97 +63,112 @@ public class enemyHeavy : MonoBehaviour {
 		}
 		tracker = transform.position;
 		player = FindObjectOfType<Player>();
-		if (mapGenerator == null)
-		{
-			mapGenerator = FindObjectOfType<MapGenerator>();
-		}
-		else if (player == null)
-		{
-			player = FindObjectOfType<Player>();
-		}
-		else if (light_anim == null)
-		{
-			int random = Random.Range (4, 8);
-			health = health + random * player.level;
-			maxHealth = health;
-			text.text = health + "/" + maxHealth;
-			light_anim = GetComponent<Animator>();
-		}
-		else
-		{
-			switch (state)
-			{
-			//Moves around a bit
-			case Patrolling:
+        if (mapGenerator == null)
+        {
+            mapGenerator = FindObjectOfType<MapGenerator>();
+        }
+        else if (player == null)
+        {
+            player = FindObjectOfType<Player>();
+        }
+        else if (light_anim == null)
+        {
+            int random = Random.Range(4, 8);
+            health = health + random * player.level;
+            maxHealth = health;
+            text.text = health + "/" + maxHealth;
+            light_anim = GetComponent<Animator>();
+        }
+        else
+        {
+            switch (state)
+            {
+                //Moves around a bit
+                case Patrolling:
 
-				state_change(1);
-				wander();
-				if ((player.transform.position - transform.position).magnitude < detectionDistance)
-				{
-					state = Attacking;
-				}
+                    state_change(1);
+                    wander();
+                    if ((player.transform.position - transform.position).magnitude < detectionDistance)
+                    {
+                        state = Attacking;
+                    }
 
-				break;
-				//Moves in towards player and attacks 
-			case Attacking:
+                    break;
+                //Moves in towards player and attacks 
+                case Attacking:
 
-				moveTo (player.transform);
-				if (timing <= 0) {
-					state_change (1);
-				} else {
-					timing -= Time.deltaTime;
-				}
-				//state_change(1);
+                    moveTo(player.transform);
+                    if (timing <= 0)
+                    {
+                        state_change(1);
+                    }
+                    else
+                    {
+                        timing -= Time.deltaTime;
+                    }
+                    //state_change(1);
 
-				if ((player.transform.position - transform.position).magnitude < 1 && timer <= 0)
-				{
-					state_change(2);
-					Instantiate(attack, transform.position, transform.rotation);
-					timer = 4.5f;
-					timing = 1f;
-				}
-				timer -= Time.deltaTime;
-				if ((player.transform.position - transform.position).magnitude > detectionDistance * 3 / 2)// eventually replace this with a raycast to see if the enemy can see them... maybe
-				{
-					state = Patrolling;
-				}
-				break;
-			case Dying:
-				if (timing <= 0) {
-					Destroy (gameObject);
-				}
-				timing -= Time.deltaTime;
-				break;
-			}
-			Vector3 flip = new Vector3 (0, 180, -2 * transform.eulerAngles.z);
-			if (transform.position.x - tracker.x > 0) {
-				if (facingLeft) {
-					transform.localEulerAngles = transform.eulerAngles + flip;
-					text.transform.localEulerAngles = text.transform.localEulerAngles + flip;
-					facingLeft = false;
-					facingRight = true;
-				}
-			} else {
-				if (facingRight) {
-					transform.localEulerAngles = transform.eulerAngles + flip;
-					text.transform.localEulerAngles = text.transform.localEulerAngles + flip;
-					facingLeft = true;
-					facingRight = false;
-				}
-			}
-		}
+                    if ((player.transform.position - transform.position).magnitude < 1 && timer <= 0)
+                    {
+                        state_change(2);
+                        Instantiate(attack, transform.position, transform.rotation);
+                        timer = 4.5f;
+                        timing = 1f;
+                    }
+                    timer -= Time.deltaTime;
+                    if ((player.transform.position - transform.position).magnitude > detectionDistance * 3 / 2)// eventually replace this with a raycast to see if the enemy can see them... maybe
+                    {
+                        state = Patrolling;
+                    }
+                    break;
+                case Dying:
+                    if (timing <= 0)
+                    {
+                        Destroy(gameObject);
+                    }
+                    timing -= Time.deltaTime;
+                    break;
+            }
+            Vector3 flip = new Vector3(0, 180, -2 * transform.eulerAngles.z);
+            if (transform.position.x - tracker.x > 0)
+            {
+                if (facingLeft)
+                {
+                    transform.localEulerAngles = transform.eulerAngles + flip;
+                    text.transform.localEulerAngles = text.transform.localEulerAngles + flip;
+                    facingLeft = false;
+                    facingRight = true;
+                }
+            }
+            else if (transform.position.x - tracker.x < 0)
+            {
+                if (facingRight)
+                {
+                    transform.localEulerAngles = transform.eulerAngles + flip;
+                    text.transform.localEulerAngles = text.transform.localEulerAngles + flip;
+                    facingLeft = true;
+                    facingRight = false;
+                }
+            }
+        }
 	}
 
 
-	public void moveTo(Transform place)
-	{
-		Vector3 temp = (place.position - transform.position).normalized;
-		temp.z = 0;
-		gameObject.transform.position += temp * speed * Time.deltaTime;
-	}
+    public void moveTo(Transform place)
+    {
+        Vector3 direction = (place.position - transform.position).normalized;
 
-	//Choose a random direction and wanders for 2 seconds
-	public void wander()
+        direction.z = 0;
+        Vector3 distance = place.position - transform.position;
+
+        if (Mathf.Abs(distance.x) >= attackDistance || Mathf.Abs(distance.y) >= attackDistance)
+        {
+            gameObject.transform.position += direction * speed * Time.deltaTime;
+        }
+    }
+
+    //Choose a random direction and wanders for 2 seconds
+    public void wander()
 	{
 		Vector3 temp;
 		if (tester)

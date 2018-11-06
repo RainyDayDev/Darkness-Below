@@ -35,6 +35,7 @@ public class enemyLight : MonoBehaviour {
 	public Material material;
 	private float colourValue;
 
+    private float attackDistance = 1f;
     // Use this for initialization
     void start()
     {
@@ -123,15 +124,16 @@ public class enemyLight : MonoBehaviour {
 				timing -= Time.deltaTime;
 				break;
             }
+
 			Vector3 flip = new Vector3 (0, 180, -2 * transform.eulerAngles.z);
-			if (transform.position.x - tracker.x >= 0) {
+			if (transform.position.x - tracker.x > 0) {
 				if (facingLeft) {
 					transform.localEulerAngles = transform.eulerAngles + flip;
 					text.transform.localEulerAngles = text.transform.localEulerAngles + flip;
 					facingLeft = false;
 					facingRight = true;
 				}
-			} else {
+			} else if (transform.position.x - tracker.x < 0) {
 				if (facingRight) {
 					transform.localEulerAngles = transform.eulerAngles + flip;
 					text.transform.localEulerAngles = text.transform.localEulerAngles + flip;
@@ -145,9 +147,15 @@ public class enemyLight : MonoBehaviour {
     //Move towards the transform given, will eventually have to impliment A*
     public void moveTo(Transform place)
     {
-        Vector3 temp = (place.position - transform.position).normalized;
-        temp.z = 0;
-        gameObject.transform.position += temp * speed * Time.deltaTime;
+        Vector3 direction = (place.position - transform.position).normalized;
+
+        direction.z = 0;
+        Vector3 distance = place.position - transform.position;
+
+        if (Mathf.Abs(distance.x) >= attackDistance || Mathf.Abs(distance.y) >= attackDistance)
+        {
+            gameObject.transform.position += direction * speed * Time.deltaTime;
+        }
     }
 
     //Choose a random direction and wanders for 2 seconds
@@ -216,5 +224,15 @@ public class enemyLight : MonoBehaviour {
 			gem.value = money;
 			Instantiate (gem, transform.position, transform.rotation);
 		}
-	}
+
+    }
+
+
+    void OnDrawGizmosSelected()
+    {
+        // Draw a yellow sphere at the transform's position
+        Gizmos.color = Color.yellow;
+        Gizmos.DrawWireSphere(transform.position, attackDistance);
+    }
+
 }

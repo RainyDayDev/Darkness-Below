@@ -642,7 +642,7 @@ MonoBehaviour:
   randomFillPercent: 50
   torch: {fileID: 1087395233632278, guid: a2b74de6ff8914235bb1ad4d35e7462c, type: 2}
   bossSpawned: 0
-  spawnEnemies: 0
+  spawnEnemies: 1
 --- !u!114 &1742375595
 MonoBehaviour:
   m_ObjectHideFlags: 0
