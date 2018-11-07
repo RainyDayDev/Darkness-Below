@@ -1378,9 +1378,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ab0cdd18a4e1405195b2d0c9fc0da6a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lockMovement: 0
   speed: 3
   running_speed: 1.5
-  attack_time_light: 0.5
+  attack_time_light: 0.14
   attack_time_heavy: 0.5
   attack_time_magic: 0.5
   health: 100
@@ -1396,9 +1397,9 @@ MonoBehaviour:
   magic_spawn: {fileID: 114511997845482170}
   level: 1
   curDirection: {x: 0, y: 0, z: 0}
-  leftRing: {fileID: 114581103564725238}
+  leftRing: {fileID: 0}
   leftRingEquipped: 0
-  rightRing: {fileID: 114052370714104144}
+  rightRing: {fileID: 0}
   rightRingEquipped: 0
   ringMenu: {fileID: 1508378380559134}
   isRingMenuShowing: 0

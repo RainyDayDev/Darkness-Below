@@ -8,17 +8,20 @@ public class sword_attack : MonoBehaviour {
 	public Player player;
 	public float scaling;
 	public GameObject knight;
+    public float time_of_attack;
 
 	// Use this for initialization
 
 	void Start () {
 		knight = GameObject.FindGameObjectWithTag("Player");
 		facing_right = player.facing_right;
+        time_of_attack = 0.14f;
+        knight.GetComponent<Player>().lockMovement = true;
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		knight = GameObject.FindGameObjectWithTag("Player");
+        knight = GameObject.FindGameObjectWithTag("Player");
 		transform.position = knight.transform.position;
 
 
@@ -33,16 +36,13 @@ public class sword_attack : MonoBehaviour {
 			}
 
 		} 
-
-
-
-		transform.Rotate (Vector3.forward * Time.deltaTime * speed);
-
-	
-
-		if(transform.eulerAngles.z> 135){
-			Destroy (gameObject);
-		}
+        //transform.Rotate (Vector3.forward * Time.deltaTime * speed);
+        if(time_of_attack <=0){
+            knight.GetComponent<Player>().lockMovement = false;
+            Destroy (gameObject);
+        }else{
+            time_of_attack -= Time.deltaTime;
+        }
 	}
 
 	void OnTriggerEnter2D(Collider2D other){

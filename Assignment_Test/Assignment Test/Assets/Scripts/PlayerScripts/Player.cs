@@ -5,7 +5,9 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour {
-	public float speed;
+    //base control----------------------------------------------------------
+    public bool lockMovement =false;
+    public float speed;
 	public float running_speed;
 	public float attack_time_light;
 	public float attack_time_heavy;
@@ -18,21 +20,29 @@ public class Player : MonoBehaviour {
 	public float baseDamage = 15;
 	Vector3 last_position;
 	Animator anim;
-	public GameObject light_attack;
+
+    //attack prefabs---------------------------------------------------------
+    public GameObject light_attack;
 	public GameObject heavy_attack;
 	public magic_spawn magic_spawn;
 	public int level = 1;
-	public Vector3 curDirection;
+
+    //krises ring confusion--------------------------------------------------
+    public Vector3 curDirection;
 	public GameObject leftRing;
 	public bool leftRingEquipped;
 	public GameObject rightRing;
 	public bool rightRingEquipped;
 	public GameObject ringMenu;
 	public bool isRingMenuShowing = false;
-	public int money = 0;
+
+    //Fake inventory---------------------------------------------------------
+    public int money = 0;
 	public int potionCount = 3;
 	public int maxPotions = 3;
 	public int key = 0;
+
+    //UI---------------------------------------------------------------------
 	public Text moneyCount;
 	public Slider healthSlider;
 	public Text healthText;
@@ -48,8 +58,8 @@ public class Player : MonoBehaviour {
 	float heavyTimer;
 	float magicTimer;
 
-	//sounds
-	public AudioSource heavy_sound;
+    //sounds------------------------------------------------------------------
+    public AudioSource heavy_sound;
 	public AudioSource light_sound;
 	public AudioSource magic_sound;
 	public AudioSource hit_sound;
@@ -264,8 +274,13 @@ public class Player : MonoBehaviour {
 
     }
 
-	// Update is called once per frame
-	void Update () {
+
+
+
+
+
+    // Update is called once per frame----------------------------------------
+    void Update () {
 		if (ringMenu == null) {
 			ringMenu = GameObject.FindGameObjectWithTag ("RingMenu");
 		}
@@ -275,63 +290,94 @@ public class Player : MonoBehaviour {
 			healthText.text = health + "/" + maxHealth;
 		}
 		Vector3 temp = transform.position;
-		//MOVEMENT------------------------------------------------------------
+
+
+	//MOVEMENT------------------------------------------------------------
 		Vector3 y = new Vector3( 0.0f, 1.0f, 0.0f);
 		Vector3 x = new Vector3( 1.0f, 0.0f, 0.0f);
 		Vector3 flip = new Vector3(0, 180, -2 * transform.eulerAngles.z);
 
-		if (Input.GetKey (KeyCode.W) && Input.GetKey(KeyCode.LeftShift)){
-			transform.Translate (y * Time.deltaTime * speed * running_speed);
-			state_change (2);
-		}else{
-			if(Input.GetKey(KeyCode.W)){
-				transform.Translate (y * Time.deltaTime * speed);
-				state_change (1);
-			}
-		}
-		if(Input.GetKey(KeyCode.S) && Input.GetKey(KeyCode.LeftShift)) {
-			transform.Translate (-y * Time.deltaTime * speed * running_speed);
-			state_change (2);
-		}else{ 
-			if(Input.GetKey(KeyCode.S)) {
-				transform.Translate (-y * Time.deltaTime * speed);
-				state_change (1);
-			}
-		}
-		if(Input.GetKey (KeyCode.A) && Input.GetKey(KeyCode.LeftShift)) {
-			transform.Translate (-x * Time.deltaTime * speed * running_speed);
-			if(facing_right == true){
-				transform.localEulerAngles = transform.eulerAngles + flip;
-				facing_right = false;
-			}
-			state_change (2);
-		}else{
-			if (Input.GetKey(KeyCode.A)) {
-				transform.Translate (-x * Time.deltaTime * speed);
-				if(facing_right == true){
-					transform.localEulerAngles = transform.eulerAngles + flip;
-					facing_right = false;
-				}
-				state_change (1);
-			}
-		}
-		if(Input.GetKey (KeyCode.D) && Input.GetKey(KeyCode.LeftShift)) {
-			transform.Translate (-x * Time.deltaTime * speed * running_speed);
-			if(facing_right == false){
-				transform.localEulerAngles = transform.eulerAngles + flip;
-				facing_right = true;
-			}
-			state_change (2);
-		}else{			
-			if (Input.GetKey(KeyCode.D)) {
-				transform.Translate (-x * Time.deltaTime * speed);
-				if(facing_right == false){
-					transform.localEulerAngles = transform.eulerAngles + flip;
-					facing_right = true;
-				}
-				state_change (1);
-			}
-		}
+
+        /*
+Movement to do
+-simplify running to one if statement
+
+
+        */
+        if (!lockMovement){
+            if (Input.GetKey(KeyCode.W) && Input.GetKey(KeyCode.LeftShift))
+            {
+                transform.Translate(y * Time.deltaTime * speed * running_speed);
+                state_change(2);
+            }
+            else
+            {
+                if (Input.GetKey(KeyCode.W))
+                {
+                    transform.Translate(y * Time.deltaTime * speed);
+                    state_change(1);
+                }
+            }
+            if (Input.GetKey(KeyCode.S) && Input.GetKey(KeyCode.LeftShift))
+            {
+                transform.Translate(-y * Time.deltaTime * speed * running_speed);
+                state_change(2);
+            }
+            else
+            {
+                if (Input.GetKey(KeyCode.S))
+                {
+                    transform.Translate(-y * Time.deltaTime * speed);
+                    state_change(1);
+                }
+            }
+            if (Input.GetKey(KeyCode.A) && Input.GetKey(KeyCode.LeftShift))
+            {
+                transform.Translate(-x * Time.deltaTime * speed * running_speed);
+                if (facing_right == true)
+                {
+                    transform.localEulerAngles = transform.eulerAngles + flip;
+                    facing_right = false;
+                }
+                state_change(2);
+            }
+            else
+            {
+                if (Input.GetKey(KeyCode.A))
+                {
+                    transform.Translate(-x * Time.deltaTime * speed);
+                    if (facing_right == true)
+                    {
+                        transform.localEulerAngles = transform.eulerAngles + flip;
+                        facing_right = false;
+                    }
+                    state_change(1);
+                }
+            }
+            if (Input.GetKey(KeyCode.D) && Input.GetKey(KeyCode.LeftShift))
+            {
+                transform.Translate(-x * Time.deltaTime * speed * running_speed);
+                if (facing_right == false)
+                {
+                    transform.localEulerAngles = transform.eulerAngles + flip;
+                    facing_right = true;
+                }
+                state_change(2);
+            }
+            else
+            {
+                if (Input.GetKey(KeyCode.D))
+                {
+                    transform.Translate(-x * Time.deltaTime * speed);
+                    if (facing_right == false)
+                    {
+                        transform.localEulerAngles = transform.eulerAngles + flip;
+                        facing_right = true;
+                    }
+                    state_change(1);
+                }
+            }
+            }
 
 		//IDLE_CHECK------------------------------------------------------------
 		if (last_position == transform.position) {
