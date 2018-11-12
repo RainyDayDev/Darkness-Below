@@ -66,5 +66,6 @@ public class sword_attack : MonoBehaviour {
 			enemy.ApplyDamage((int)(knight.GetComponent<Player>().damage * scaling));
 			Destroy (gameObject);
 		}
-	}
+        knight.GetComponent<Player>().lockMovement = false;
+    }
 }

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using UnityEngine.EventSystems;
 
 public class Player : MonoBehaviour {
     //base control----------------------------------------------------------
@@ -141,146 +142,15 @@ public class Player : MonoBehaviour {
         healthText.text = targetHealth + "/" + maxHealth;
     }
 
-//This code physically hurts to look at. Probably a better way to do this
-/*
-	public void EquipLeftRing(GameObject ring){
-		Ring newRing = ring.GetComponent<Ring>();
-		leftRing.damageBonus = newRing.damageBonus;
-		leftRing.healthBonus = newRing.healthBonus;
-		//leftRing = ring.GetComponent<Ring> ();
-		leftRingEquipped = true;
-		damage = baseDamage + leftRing.damageBonus + rightRing.damageBonus;
-		maxHealth = baseHealth + leftRing.healthBonus + rightRing.healthBonus;
-		ringMenu.SetActive (false);
-		Destroy (ring);
-	}
-
-	public void LeftRingDamage(int newDamage){
-		leftRing.damageBonus = newDamage;
-		damage = baseDamage + leftRing.damageBonus + rightRing.damageBonus;
-		Time.timeScale = 1;
-		damageText.text = "" + damage;
-		ringMenu.SetActive (false);
-	}
-
-	public void LeftRingHealth(int newHealth){
-		leftRing.healthBonus = newHealth;
-		maxHealth = baseHealth + leftRing.healthBonus + rightRing.healthBonus;
-		healthSlider.maxValue = maxHealth;
-		healthText.text = health + "/" + maxHealth;
-		Time.timeScale = 1;
-		ringMenu.SetActive (false);
-	}
-
-	public void LeftRingDescription(string description){
-		leftRing.description = description;
-
-	}
-	public void RightRingDescription(string description){
-		rightRing.description = description;
-
-	}
-	public void RightRingDamage(int newDamage){
-		rightRing.damageBonus = newDamage;
-		damage = baseDamage + leftRing.damageBonus + rightRing.damageBonus;
-		Time.timeScale = 1;
-		damageText.text = "" + damage;
-		ringMenu.SetActive (false);
-	}
-
-	public void RightRingHealth(int newHealth){
-		rightRing.healthBonus = newHealth;
-		maxHealth = baseHealth + leftRing.healthBonus + rightRing.healthBonus;
-		healthSlider.maxValue = maxHealth;
-		healthText.text = health + "/" + maxHealth;
-		Time.timeScale = 1;
-		ringMenu.SetActive (false);
-	}
-
-	public void EquipRightRing(GameObject ring){
-		rightRing = ring.GetComponent<Ring> ();
-		rightRingEquipped = true;
-		damage = baseDamage + rightRing.damageBonus;
-		maxHealth = baseHealth + rightRing.healthBonus;
-		ringMenu.SetActive (false);
-		Destroy (ring);
-	}
-*/		
-    public void EquipRing(GameObject ring){
-        if(rightRingEquipped == false){
-            Ring newRing = ring.GetComponent<Ring>();
-            rightRing.GetComponent<Ring>().damageBonus = newRing.damageBonus;
-            rightRing.GetComponent<Ring>().healthBonus = newRing.healthBonus;
-            if (isRingMenuShowing)
-            {
-                damage = baseDamage + leftRing.GetComponent<Ring>().damageBonus + rightRing.GetComponent<Ring>().damageBonus;
-                maxHealth = baseHealth + leftRing.GetComponent<Ring>().healthBonus + rightRing.GetComponent<Ring>().healthBonus;
-            }
-            else
-            {
-                damage = damage + leftRing.GetComponent<Ring>().damageBonus;
-                maxHealth = maxHealth + leftRing.GetComponent<Ring>().healthBonus;
-            }
-            healthSlider.maxValue = maxHealth;
-            healthText.text = health + "/" + maxHealth;
-            damageText.text = "" + damage;
-            rightRingEquipped = true;
-            if (isRingMenuShowing)
-            {
-                ringMenu.SetActive(false);
-                Time.timeScale = 1;
-                isRingMenuShowing = false;
-            }
-            Destroy(ring.gameObject);
-        }
-        else if (leftRingEquipped == false){
-            Ring newRing = ring.GetComponent<Ring>();
-            leftRing.GetComponent<Ring>().damageBonus = newRing.damageBonus;
-            leftRing.GetComponent<Ring>().healthBonus = newRing.healthBonus;
-            if(isRingMenuShowing){
-                damage = baseDamage + leftRing.GetComponent<Ring>().damageBonus + rightRing.GetComponent<Ring>().damageBonus;
-                maxHealth = baseHealth + leftRing.GetComponent<Ring>().healthBonus + rightRing.GetComponent<Ring>().healthBonus;
-            }else{
-                damage = damage + leftRing.GetComponent<Ring>().damageBonus;
-                maxHealth = maxHealth + leftRing.GetComponent<Ring>().healthBonus;
-            }
-            healthSlider.maxValue = maxHealth;
-            healthText.text = health + "/" + maxHealth;
-            damageText.text = "" + damage;
-            leftRingEquipped = true;
-            if(isRingMenuShowing){
-                ringMenu.SetActive(false);
-                Time.timeScale = 1;
-                isRingMenuShowing = false;
-            }
-            Destroy(ring.gameObject);
-        }
-        else{
-            //bring up the ring menu
-            middle.text = "Which ring would you like to replace?\n" + ring.GetComponent<Ring>().description;
-            leftButton.onClick.AddListener(delegate {
-                leftRingEquipped = false;
-                EquipRing(ring);
-            });
-            rightButton.onClick.AddListener(delegate {
-                rightRingEquipped = false;
-                EquipRing(ring);
-            });
-            Time.timeScale = 0;
-            isRingMenuShowing = true;
-            ringMenu.SetActive(true);
-        }
-
-
-    }
-
-
 
 
 
 
     // Update is called once per frame----------------------------------------
     void Update () {
+        if (Time.timeScale == 0) {
+            return;
+        }
 		if (ringMenu == null) {
 			ringMenu = GameObject.FindGameObjectWithTag ("RingMenu");
 		}
@@ -290,6 +160,8 @@ public class Player : MonoBehaviour {
 			healthText.text = health + "/" + maxHealth;
 		}
 		Vector3 temp = transform.position;
+
+        //Inventory
 
 
 	//MOVEMENT------------------------------------------------------------
@@ -387,13 +259,13 @@ Movement to do
 		//ATTACKING-------------------------------------------------------------
 		if (attack_count < 0) {
 			//light attack
-			if (Input.GetKey (KeyCode.J)) {
+			if (Input.GetKey (KeyCode.J) || Input.GetMouseButtonDown(0)) {
 				Instantiate (light_attack, transform.position, transform.rotation);
 				state_change (3);
 				light_sound.Play ();
 			}
 			//heavy attack
-			if (Input.GetKey (KeyCode.K) && heavyTimer <= 0) {
+			if ((Input.GetKey (KeyCode.K) || Input.GetMouseButtonDown(0)) && heavyTimer <= 0) {
 				Instantiate (heavy_attack, transform.position, transform.rotation);
 				state_change (4);
 				heavy_sound.Play ();
