@@ -198,7 +198,7 @@ public class enemyLight : MonoBehaviour {
 			timing = .7f;
 			state = Dying;
 			text.text = "";
-            //Destroy(gameObject);
+            Destroy(gameObject);
         }
     }
 

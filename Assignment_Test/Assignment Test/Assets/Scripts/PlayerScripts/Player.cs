@@ -259,13 +259,13 @@ Movement to do
 		//ATTACKING-------------------------------------------------------------
 		if (attack_count < 0) {
 			//light attack
-			if (Input.GetKey (KeyCode.J) || Input.GetMouseButtonDown(0)) {
+			if (Input.GetKey (KeyCode.J)) {
 				Instantiate (light_attack, transform.position, transform.rotation);
 				state_change (3);
 				light_sound.Play ();
 			}
 			//heavy attack
-			if ((Input.GetKey (KeyCode.K) || Input.GetMouseButtonDown(0)) && heavyTimer <= 0) {
+			if ((Input.GetKey (KeyCode.K)) && heavyTimer <= 0) {
 				Instantiate (heavy_attack, transform.position, transform.rotation);
 				state_change (4);
 				heavy_sound.Play ();

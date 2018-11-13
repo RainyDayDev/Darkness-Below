@@ -9,6 +9,7 @@ public class sword_attack : MonoBehaviour {
 	public float scaling;
 	public GameObject knight;
     public float time_of_attack;
+    CharacterStats myStats;
 
 	// Use this for initialization
 
@@ -17,6 +18,7 @@ public class sword_attack : MonoBehaviour {
 		facing_right = player.facing_right;
         time_of_attack = 0.14f;
         knight.GetComponent<Player>().lockMovement = true;
+        myStats = knight.GetComponent<CharacterStats>();
 	}
 	
 	// Update is called once per frame
@@ -52,20 +54,25 @@ public class sword_attack : MonoBehaviour {
 
 			Destroy (gameObject);
 		} else if (other.tag == "EnemyLight") {
-			enemyLight enemy = other.GetComponent<enemyLight> ();
-			enemy.ApplyDamage ((int)(knight.GetComponent<Player> ().damage * scaling));
-
-			Destroy (gameObject);
+            //CharacterStats enemy = other.GetComponent<CharacterStats> ();
+            enemyLight enemy = other.GetComponent<enemyLight>();
+            //enemy.ApplyDamage ((int)(knight.GetComponent<Player> ().damage * scaling));
+            enemy.ApplyDamage(myStats.damage.GetValue());
+            Debug.Log(transform.name + " did " + myStats.damage.GetValue());
+            //enemy.TakeDamage(myStats.damage.GetValue());
+            Destroy (gameObject);
 		} else if (other.tag == "EnemyHeavy") {
 			enemyHeavy enemy = other.GetComponent<enemyHeavy> ();
-			enemy.ApplyDamage ((int)(knight.GetComponent<Player> ().damage * scaling));
-
-			Destroy (gameObject);
+			//enemy.ApplyDamage ((int)(knight.GetComponent<Player> ().damage * scaling));
+            enemy.ApplyDamage(myStats.damage.GetValue());
+            Debug.Log(transform.name + " did " + myStats.damage.GetValue());
+            Destroy (gameObject);
 		} else if (other.tag == "Boss") {
 			Boss enemy = other.GetComponent<Boss> ();
 			enemy.ApplyDamage((int)(knight.GetComponent<Player>().damage * scaling));
 			Destroy (gameObject);
 		}
+
         knight.GetComponent<Player>().lockMovement = false;
     }
 }
