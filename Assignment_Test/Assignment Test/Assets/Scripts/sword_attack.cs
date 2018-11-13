@@ -48,31 +48,34 @@ public class sword_attack : MonoBehaviour {
 	}
 
 	void OnTriggerEnter2D(Collider2D other){
-		if (other.tag == "EnemyArcher") {
-			enemyArcher enemy = other.GetComponent<enemyArcher> ();
-			enemy.ApplyDamage ((int)(knight.GetComponent<Player> ().damage * scaling));
 
-			Destroy (gameObject);
-		} else if (other.tag == "EnemyLight") {
+        if (other.tag == "EnemyArcher") {
+            enemyArcher enemy = other.GetComponent<enemyArcher> ();
+            enemy.ApplyDamage ((int)(knight.GetComponent<Player> ().damage * scaling));
+
+            Destroy (gameObject);
+
+        } else if (other.tag == "EnemyLight") {
             //CharacterStats enemy = other.GetComponent<CharacterStats> ();
+
+            //enemy.TakeDamage(myStats.damage.GetValue());
+
             enemyLight enemy = other.GetComponent<enemyLight>();
             //enemy.ApplyDamage ((int)(knight.GetComponent<Player> ().damage * scaling));
             enemy.ApplyDamage(myStats.damage.GetValue());
-            Debug.Log(transform.name + " did " + myStats.damage.GetValue());
-            //enemy.TakeDamage(myStats.damage.GetValue());
-            Destroy (gameObject);
-		} else if (other.tag == "EnemyHeavy") {
-			enemyHeavy enemy = other.GetComponent<enemyHeavy> ();
-			//enemy.ApplyDamage ((int)(knight.GetComponent<Player> ().damage * scaling));
+            Destroy(gameObject);
+        }
+        else if (other.tag == "EnemyHeavy") {
+            enemyHeavy enemy = other.GetComponent<enemyHeavy> ();
             enemy.ApplyDamage(myStats.damage.GetValue());
-            Debug.Log(transform.name + " did " + myStats.damage.GetValue());
-            Destroy (gameObject);
-		} else if (other.tag == "Boss") {
-			Boss enemy = other.GetComponent<Boss> ();
-			enemy.ApplyDamage((int)(knight.GetComponent<Player>().damage * scaling));
-			Destroy (gameObject);
-		}
+            Destroy(gameObject);
 
+        } else if (other.tag == "Boss") {
+            Boss enemy = other.GetComponent<Boss> ();
+            enemy.ApplyDamage((int)(knight.GetComponent<Player>().damage * scaling));
+            Destroy (gameObject);
+                }
+                
         knight.GetComponent<Player>().lockMovement = false;
     }
 }

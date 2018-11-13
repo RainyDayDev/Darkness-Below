@@ -72,6 +72,9 @@ public class Player : MonoBehaviour {
 
 	float attack_count;
 	public bool facing_right = false;
+
+    public PlayerStats stats;
+
 	// Use this for initialization
 
 	void Awake(){
@@ -90,9 +93,13 @@ public class Player : MonoBehaviour {
 		potionText.text = "x " + potionCount + "/" + maxPotions;
 		keyText.text = "x " + key;
 		damageText.text = "" + damage;
-		healthText.text = health + "/" + maxHealth;
+		//healthText.text = health + "/" + maxHealth;
         rightRingEquipped = false;
         leftRingEquipped = false;
+        stats = GetComponent<PlayerStats>();
+        stats.maxHealth = (int)maxHealth;
+        stats.currentHealth = (int)maxHealth;
+
         //material = new Material(Shader.Find("Custom/FlashingRed"));
     }
 
@@ -122,7 +129,10 @@ public class Player : MonoBehaviour {
     public void ApplyDamage(int damage)
     {
         //health -= damage;
-        targetHealth -= damage;
+
+        //targetHealth -= damage;
+        stats.TakeDamage(damage);
+        targetHealth = stats.currentHealth;
         if (damage < 0)
         {
             material.SetColor("_FlashColor", Color.green);
@@ -134,12 +144,12 @@ public class Player : MonoBehaviour {
         }
         //healthSlider.value = health;
         colourValue = .9f;
-        if (targetHealth > maxHealth)
+        if (stats.currentHealth > (int)maxHealth)
         {
-            targetHealth = maxHealth;
+            stats.currentHealth = (int)maxHealth;
 
         }
-        healthText.text = targetHealth + "/" + maxHealth;
+        healthText.text = stats.currentHealth + "/" + stats.maxHealth;
     }
 
 
@@ -259,13 +269,13 @@ Movement to do
 		//ATTACKING-------------------------------------------------------------
 		if (attack_count < 0) {
 			//light attack
-			if (Input.GetKey (KeyCode.J)) {
+			if (Input.GetKey (KeyCode.J) || Input.GetMouseButtonDown(0)) {
 				Instantiate (light_attack, transform.position, transform.rotation);
 				state_change (3);
 				light_sound.Play ();
 			}
 			//heavy attack
-			if ((Input.GetKey (KeyCode.K)) && heavyTimer <= 0) {
+			if ((Input.GetKey (KeyCode.K) || Input.GetMouseButtonDown(1)) && heavyTimer <= 0) {
 				Instantiate (heavy_attack, transform.position, transform.rotation);
 				state_change (4);
 				heavy_sound.Play ();
@@ -285,17 +295,17 @@ Movement to do
 		magicTimer -= Time.deltaTime;
 
 		//DYING------------------------------------------------------------------
-		if (health <= 0) {
+		if (stats.currentHealth <= 0) {
 			death_sound.Play ();
 			state_change (7);
 			didDie = true;
 			SceneManager.LoadScene ("Tavern");
-			health = maxHealth;
+			stats.currentHealth = stats.maxHealth;
 			level = 1;
 			money = 0;
 			moneyCount.text = "x " + money;
-			healthSlider.value = maxHealth;
-            targetHealth = maxHealth;
+			healthSlider.value = stats.maxHealth;
+            targetHealth = stats.maxHealth;
 
 
 

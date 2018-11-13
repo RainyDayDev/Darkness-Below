@@ -36,16 +36,28 @@ public class enemyLight : MonoBehaviour {
 	private float colourValue;
 
     private float attackDistance = 1f;
-    // Use this for initialization
-    void start()
+
+    public EnemyStats stats;
+
+    private void Awake()
     {
+        stats = GetComponent<EnemyStats>();
+    }
+
+    // Use this for initialization
+    void Start()
+    {
+        //stats = GetComponent<EnemyStats>();
 		player = FindObjectOfType<Player> ();
         light_anim = GetComponent<Animator>();
         mapGenerator = FindObjectOfType<MapGenerator>();
 		int random = Random.Range (1, 5);
 		health = health + random * player.level;
-		maxHealth = health;
-		GetComponent<Renderer>().material.CopyPropertiesFromMaterial(material);
+		stats.maxHealth = (int)health;
+        stats.currentHealth = stats.maxHealth;
+
+        text.text = stats.currentHealth + "/" + stats.maxHealth;
+        GetComponent<Renderer>().material.CopyPropertiesFromMaterial(material);
     }
 
     void state_change(int to_change)
@@ -185,8 +197,9 @@ public class enemyLight : MonoBehaviour {
     //Applies damage to player and sets the shader colour
     public void ApplyDamage(float damage)
     {
-        health -= damage;
-		text.text = health + "/" + maxHealth;
+        //health -= damage;
+        stats.TakeDamage((int)damage);
+		text.text = stats.currentHealth + "/" + stats.maxHealth;
 		GetComponent<Renderer>().material.SetColor("_FlashColor", Color.red);
 		colourValue = .9f;
 

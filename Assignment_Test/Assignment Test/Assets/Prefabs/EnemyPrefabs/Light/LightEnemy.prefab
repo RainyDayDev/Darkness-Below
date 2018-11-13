@@ -43,6 +43,7 @@ GameObject:
   - component: {fileID: 114991731801475684}
   - component: {fileID: 114285385973658444}
   - component: {fileID: 70472176733516494}
+  - component: {fileID: 114287176325019070}
   m_Layer: 0
   m_Name: LightEnemy
   m_TagString: EnemyLight
@@ -162,6 +163,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 0
+--- !u!114 &114287176325019070
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1382510602678524}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a718347d5f621946a13487932275e00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage:
+    baseValue: 10
+  armor:
+    baseValue: 0
+  maxHealth: 20
+  currentHealth: 0
 --- !u!114 &114822483716374850
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -240,6 +258,7 @@ MonoBehaviour:
   attack: {fileID: 1761714432850362, guid: 3235410e86632be45a8852ace57adf20, type: 2}
   maxHealth: 0
   material: {fileID: 2100000, guid: 5bdf8de937d764e17becd134cf880110, type: 2}
+  stats: {fileID: 0}
 --- !u!212 &212688899615311346
 SpriteRenderer:
   m_ObjectHideFlags: 1

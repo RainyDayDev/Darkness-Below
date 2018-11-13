@@ -39,6 +39,7 @@ GameObject:
   - component: {fileID: 50584225041653422}
   - component: {fileID: 70290651182674514}
   - component: {fileID: 58233303904186614}
+  - component: {fileID: 68813762425581410}
   m_Layer: 0
   m_Name: light_attack
   m_TagString: light_attack
@@ -82,7 +83,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1514744479111350}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.2, y: -2.99, z: 0}
+  m_LocalPosition: {x: 4.9105434, y: -2.232924, z: 0}
   m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_Children:
   - {fileID: 4350970817109242}
@@ -129,17 +130,17 @@ CircleCollider2D:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1514744479111350}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -1.21, y: 0.03}
   serializedVersion: 2
   m_Radius: 0.775105
---- !u!70 &70290651182674514
-CapsuleCollider2D:
+--- !u!68 &68813762425581410
+EdgeCollider2D:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -148,6 +149,29 @@ CapsuleCollider2D:
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: 0, y: 0}
+  - {x: 0.13, y: 0.78}
+  - {x: -1.34, y: 0.69}
+  - {x: -3.21, y: 0.28}
+  - {x: -3.18, y: -0.12}
+  - {x: -2.9, y: -0.39}
+  - {x: -0.1, y: -0.84}
+  - {x: 0.01, y: 0.15}
+--- !u!70 &70290651182674514
+CapsuleCollider2D:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1514744479111350}
+  m_Enabled: 0
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -1.79, y: 0.04}
