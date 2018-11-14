@@ -14,12 +14,10 @@ public class Arrow : MonoBehaviour {
 			player.ApplyDamage(player.level * 2 + 10);
             Destroy(gameObject);
         }
-
         if(other.tag == "Wall")
         {
             Destroy(gameObject);
         }
-
     }
 
 	void OnCollisionEnter2D(Collision2D other){

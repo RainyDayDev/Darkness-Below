@@ -13,7 +13,10 @@ public class Player : MonoBehaviour {
 	public float attack_time_light;
 	public float attack_time_heavy;
 	public float attack_time_magic;
-	public float health = 100;
+    float heavyTimer;
+    float magicTimer;
+    float lightTimer;
+    public float health = 100;
     public float targetHealth = 100;
 	public float baseHealth = 100;
 	public float maxHealth = 100;
@@ -56,8 +59,7 @@ public class Player : MonoBehaviour {
 	public GameObject deathText;
 	public bool isSpawned = false;
 	public bool didDie = false;
-	float heavyTimer;
-	float magicTimer;
+	
 
     //sounds------------------------------------------------------------------
     public AudioSource heavy_sound;
@@ -126,6 +128,7 @@ public class Player : MonoBehaviour {
 	}
 
 
+
     public void ApplyDamage(int damage)
     {
         //health -= damage;
@@ -141,6 +144,7 @@ public class Player : MonoBehaviour {
         {
             material.SetColor("_FlashColor", Color.red);
             hit_sound.Play();
+
         }
         //healthSlider.value = health;
         colourValue = .9f;
@@ -187,6 +191,7 @@ Movement to do
 
         */
         if (!lockMovement){
+            //MOVEMENT--------------------------------------------------------------
             if (Input.GetKey(KeyCode.W) && Input.GetKey(KeyCode.LeftShift))
             {
                 transform.Translate(y * Time.deltaTime * speed * running_speed);
@@ -259,40 +264,44 @@ Movement to do
                     state_change(1);
                 }
             }
+        }
+        //IDLE_CHECK------------------------------------------------------------
+        if (last_position == transform.position){
+                state_change(0);
             }
+           
 
-		//IDLE_CHECK------------------------------------------------------------
-		if (last_position == transform.position) {
-			state_change (0);
-		}
+		
 		last_position = transform.position;
 		//ATTACKING-------------------------------------------------------------
 		if (attack_count < 0) {
 			//light attack
 			if (Input.GetKey (KeyCode.J) || Input.GetMouseButtonDown(0)) {
-				Instantiate (light_attack, transform.position, transform.rotation);
-				state_change (3);
+                state_change(3);
+                Instantiate (light_attack, transform.position, transform.rotation);
 				light_sound.Play ();
+                lightTimer = .14f;
 			}
 			//heavy attack
 			if ((Input.GetKey (KeyCode.K) || Input.GetMouseButtonDown(1)) && heavyTimer <= 0) {
-				Instantiate (heavy_attack, transform.position, transform.rotation);
-				state_change (4);
+                state_change(4);
+                Instantiate (heavy_attack, transform.position, transform.rotation);
 				heavy_sound.Play ();
-				heavyTimer = 3;
+				heavyTimer = 2;
 			}
 			//magic attack
 			if (Input.GetKey (KeyCode.L) && magicTimer <= 0) {
-				magic_spawn.fire ();
-				state_change (5);
+                state_change(5);
+                magic_spawn.fire ();
 				magic_sound.Play ();
-				magicTimer = 5;
+                magicTimer = 4;
 			}
 		}else {
 			attack_count -= Time.deltaTime;
 		}
 		heavyTimer -= Time.deltaTime;
 		magicTimer -= Time.deltaTime;
+        lightTimer -= Time.deltaTime;
 
 		//DYING------------------------------------------------------------------
 		if (stats.currentHealth <= 0) {
