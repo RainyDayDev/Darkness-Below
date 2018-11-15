@@ -81,6 +81,7 @@ public class Player : MonoBehaviour {
 
 	void Awake(){
 		DontDestroyOnLoad (gameObject);
+        stats = GetComponent<PlayerStats>();
 	}
 
 	void Start () {

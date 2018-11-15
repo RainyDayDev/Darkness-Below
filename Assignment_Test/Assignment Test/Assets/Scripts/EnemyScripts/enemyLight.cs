@@ -85,10 +85,10 @@ public class enemyLight : MonoBehaviour {
         else if (light_anim == null)
         {
 			int random = Random.Range (1, 5);
-			health = health + random * player.level;
-            maxHealth = health;
-            text.text = health + "/" + maxHealth;
-            light_anim = GetComponent<Animator>();
+			//health = health + random * player.level;
+            //maxHealth = health;
+            //text.text = health + "/" + maxHealth;
+            //light_anim = GetComponent<Animator>();
         }
         else
         {
@@ -204,14 +204,13 @@ public class enemyLight : MonoBehaviour {
 		colourValue = .9f;
 
 
-        if (health <= 0)
+        if (stats.currentHealth <= 0)
         {
 			state_change (3);
             Drop();
 			timing = .7f;
 			state = Dying;
 			text.text = "";
-            Destroy(gameObject);
         }
     }
 

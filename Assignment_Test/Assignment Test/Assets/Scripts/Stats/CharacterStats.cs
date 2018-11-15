@@ -4,6 +4,8 @@ public class CharacterStats : MonoBehaviour {
 
     public Stat damage;
     public Stat armor;
+    public Stat magic;
+    public Stat health;
 
     public int maxHealth;
     public int currentHealth;

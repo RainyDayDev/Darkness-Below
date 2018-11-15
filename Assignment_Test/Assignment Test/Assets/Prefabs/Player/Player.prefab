@@ -370,6 +370,7 @@ GameObject:
   - component: {fileID: 82157001045950292}
   - component: {fileID: 82866099377428070}
   - component: {fileID: 81757594418160744}
+  - component: {fileID: 114493877054927108}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -650,7 +651,7 @@ CapsuleCollider2D:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1616387904537734}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
@@ -1397,9 +1398,9 @@ MonoBehaviour:
   magic_spawn: {fileID: 114511997845482170}
   level: 1
   curDirection: {x: 0, y: 0, z: 0}
-  leftRing: {fileID: 0}
+  leftRing: {fileID: 1423911103252990, guid: 3639a400d851f4053ab1c79276d544e4, type: 2}
   leftRingEquipped: 0
-  rightRing: {fileID: 0}
+  rightRing: {fileID: 1423911103252990, guid: 3639a400d851f4053ab1c79276d544e4, type: 2}
   rightRingEquipped: 0
   ringMenu: {fileID: 1508378380559134}
   isRingMenuShowing: 0
@@ -1426,6 +1427,7 @@ MonoBehaviour:
   death_sound: {fileID: 82668509476262876}
   material: {fileID: 2100000, guid: acb818ec32e30419db6640d0dc1f7bf0, type: 2}
   facing_right: 0
+  stats: {fileID: 0}
 --- !u!114 &114257064925237716
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1643,6 +1645,27 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &114493877054927108
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1616387904537734}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35d1bfd065cc8514dbe55d226b65fd6a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage:
+    baseValue: 15
+  armor:
+    baseValue: 0
+  magic:
+    baseValue: 15
+  health:
+    baseValue: 0
+  maxHealth: 100
+  currentHealth: 0
 --- !u!114 &114501596215542816
 MonoBehaviour:
   m_ObjectHideFlags: 1

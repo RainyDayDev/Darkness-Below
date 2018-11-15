@@ -38,15 +38,26 @@ public class enemyArcher : MonoBehaviour {
 	public Material material;
 	private float colourValue;
 
+    public EnemyStats stats;
+
+    private void Awake()
+    {
+        stats = GetComponent<EnemyStats>();
+    }
+
     // Use this for initialization
-    void start()
+    void Start()
     {
 		archer_anim = GetComponent<Animator> ();
 		mapGenerator = FindObjectOfType<MapGenerator> ();
 		player = FindObjectOfType<Player> ();
 		int random = Random.Range (1, 3);
 		health = health + random * player.level;
-		GetComponent<Renderer>().material.CopyPropertiesFromMaterial(material);
+        stats.maxHealth = (int)health;
+        stats.currentHealth = stats.maxHealth;
+
+        text.text = stats.currentHealth + "/" + stats.maxHealth;
+        GetComponent<Renderer>().material.CopyPropertiesFromMaterial(material);
     }
 
 
@@ -68,11 +79,13 @@ public class enemyArcher : MonoBehaviour {
 		}else if (player == null) {
 			player = FindObjectOfType<Player> ();
 		}else if (archer_anim == null) {
-			int random = Random.Range (1, 3);
-			health = health + random * player.level;
-			maxHealth = health;
-			text.text = health + "/" + maxHealth;
-			archer_anim = GetComponent<Animator> ();
+            int random = Random.Range(1, 3);
+           //health = health + random * player.level;
+            //stats.maxHealth = (int)health;
+            //stats.currentHealth = stats.maxHealth;
+
+            //text.text = stats.currentHealth + "/" + stats.maxHealth;
+            archer_anim = GetComponent<Animator> ();
 		} else {
 			
 			switch (state) {
@@ -173,16 +186,19 @@ public class enemyArcher : MonoBehaviour {
 
     public void ApplyDamage(float damage)
     {
-        health -= damage;
-		GetComponent<Renderer>().material.SetColor("_FlashColor", Color.red);
-		colourValue = .9f;
-		text.text = health + "/"+maxHealth;
-        if(health <= 0){
-			state_change (3);
-			Drop();
-			timing = .7f;
-			state = Dying;
-			text.text = "";
+        stats.TakeDamage((int)damage);
+        text.text = stats.currentHealth + "/" + stats.maxHealth;
+        GetComponent<Renderer>().material.SetColor("_FlashColor", Color.red);
+        colourValue = .9f;
+
+
+        if (stats.currentHealth <= 0)
+        {
+            state_change(3);
+            Drop();
+            timing = .7f;
+            state = Dying;
+            text.text = "";
         }
     }
 

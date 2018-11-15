@@ -10,7 +10,7 @@ public class EnemyStats : CharacterStats {
 
         //add death animation
 
-        Destroy(gameObject);
+        //Destroy(gameObject);
     }
 
 }

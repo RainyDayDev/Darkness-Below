@@ -6,7 +6,7 @@ public class Interactable : MonoBehaviour {
 
     public float radius = 0.5f;
 
-    Transform player;
+    public Transform player;
     bool canInteract;
 
     private void Start()
@@ -20,15 +20,18 @@ public class Interactable : MonoBehaviour {
 
     private void Update()
     {
+
         float distance = Vector3.Distance(player.position, transform.position);
         if (distance <= radius && Input.GetKeyDown(KeyCode.E))
         {
             Interact();
             canInteract = true;
         }
-        else if (distance > radius && canInteract) {
+        else if (distance > radius && canInteract)
+        {
             canInteract = false;
         }
+        
 
         
     }

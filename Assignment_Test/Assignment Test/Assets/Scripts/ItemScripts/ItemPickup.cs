@@ -4,8 +4,17 @@ public class ItemPickup : Interactable {
 
     public Item item;
 
+    private void Start()
+    {
+    }
+
     public override void Interact()
     {
+        if (item == null) {
+            Equipment newItem = ScriptableObject.CreateInstance<Equipment>();
+            newItem.init(1, 1, 1, 1);
+            item = newItem;
+        }
         base.Interact();
 
         PickUp();

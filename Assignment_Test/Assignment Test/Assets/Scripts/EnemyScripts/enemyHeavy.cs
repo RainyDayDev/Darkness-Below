@@ -36,7 +36,15 @@ public class enemyHeavy : MonoBehaviour {
 	public Material material;
 	private float colourValue;
 
+    public EnemyStats stats;
+
     private float attackDistance = 1f;
+
+    private void Awake()
+    {
+        stats = GetComponent<EnemyStats>();
+    }
+
     // Use this for initialization
     void start()
     {
@@ -45,8 +53,11 @@ public class enemyHeavy : MonoBehaviour {
 		mapGenerator = FindObjectOfType<MapGenerator>();
 		int random = Random.Range (4, 8);
 		health = health + random * player.level;
-		maxHealth = health;
-		GetComponent<Renderer>().material.CopyPropertiesFromMaterial(material);
+        stats.maxHealth = (int)health;
+        stats.currentHealth = stats.maxHealth;
+
+        text.text = stats.currentHealth + "/" + stats.maxHealth;
+        GetComponent<Renderer>().material.CopyPropertiesFromMaterial(material);
     }
 
     void state_change(int to_change)
@@ -194,20 +205,21 @@ public class enemyHeavy : MonoBehaviour {
 	//Applies damage to player and sets the shader colour
 	public void ApplyDamage(float damage)
 	{
-		health -= damage;
-		text.text = health + "/" + maxHealth;
-		GetComponent<Renderer>().material.SetColor("_FlashColor", Color.red);
-		colourValue = .9f;
-		if (health <= 0)
-		{
-			state_change (3);
-			Drop();
-			timing = .7f;
-			state = Dying;
-			text.text = "";
-			//Destroy(gameObject);
-		}
-	}
+        stats.TakeDamage((int)damage);
+        text.text = stats.currentHealth + "/" + stats.maxHealth;
+        GetComponent<Renderer>().material.SetColor("_FlashColor", Color.red);
+        colourValue = .9f;
+
+
+        if (stats.currentHealth <= 0)
+        {
+            state_change(3);
+            Drop();
+            timing = .7f;
+            state = Dying;
+            text.text = "";
+        }
+    }
 
 
 	public void Drop()

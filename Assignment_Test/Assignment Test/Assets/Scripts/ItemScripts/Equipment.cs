@@ -8,6 +8,15 @@ public class Equipment : Item {
     public EquipmentSlot equipSlot;
     public int armorModifier;
     public int damageModifier;
+    public int healthModifier;
+    public int magicModifier;
+
+    public void init(int armorMod, int damageMod, int healthMod, int magicMod) {
+        this.armorModifier = armorMod;
+        this.damageModifier = damageMod;
+        this.healthModifier = healthMod;
+        this.magicModifier = magicMod;
+    }
 
     public override void Use()
     {

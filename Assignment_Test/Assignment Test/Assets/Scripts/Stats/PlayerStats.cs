@@ -14,10 +14,14 @@ public class PlayerStats : CharacterStats {
         {
             armor.AddModifier(newItem.armorModifier);
             damage.AddModifier(newItem.damageModifier);
+            health.AddModifier(newItem.healthModifier);
+            magic.AddModifier(newItem.magicModifier);
         }
         if (oldItem != null) {
             armor.RemoveModifier(oldItem.armorModifier);
             damage.RemoveModifier(oldItem.damageModifier);
+            health.AddModifier(oldItem.healthModifier);
+            magic.AddModifier(oldItem.magicModifier);
         }
     }
 

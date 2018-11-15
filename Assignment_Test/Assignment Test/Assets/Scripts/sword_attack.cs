@@ -39,11 +39,12 @@ public class sword_attack : MonoBehaviour {
 
 		} 
         //transform.Rotate (Vector3.forward * Time.deltaTime * speed);
-        if(time_of_attack <=0){
+        if(time_of_attack <= 0){
             knight.GetComponent<Player>().lockMovement = false;
             Destroy (gameObject);
         }else{
             time_of_attack -= Time.deltaTime;
+            //knight.GetComponent<Player>().lockMovement = true;
         }
 	}
 
@@ -51,8 +52,8 @@ public class sword_attack : MonoBehaviour {
 
         if (other.tag == "EnemyArcher") {
             enemyArcher enemy = other.GetComponent<enemyArcher> ();
-            enemy.ApplyDamage ((int)(knight.GetComponent<Player> ().damage * scaling));
-
+            enemy.ApplyDamage (myStats.damage.GetValue());
+            knight.GetComponent<Player>().lockMovement = false;
             Destroy (gameObject);
 
         } else if (other.tag == "EnemyLight") {
@@ -63,19 +64,22 @@ public class sword_attack : MonoBehaviour {
             enemyLight enemy = other.GetComponent<enemyLight>();
             //enemy.ApplyDamage ((int)(knight.GetComponent<Player> ().damage * scaling));
             enemy.ApplyDamage(myStats.damage.GetValue());
+            knight.GetComponent<Player>().lockMovement = false;
             Destroy(gameObject);
         }
         else if (other.tag == "EnemyHeavy") {
             enemyHeavy enemy = other.GetComponent<enemyHeavy> ();
             enemy.ApplyDamage(myStats.damage.GetValue());
+            knight.GetComponent<Player>().lockMovement = false;
             Destroy(gameObject);
 
         } else if (other.tag == "Boss") {
             Boss enemy = other.GetComponent<Boss> ();
-            enemy.ApplyDamage((int)(knight.GetComponent<Player>().damage * scaling));
+            enemy.ApplyDamage(myStats.damage.GetValue());
+            knight.GetComponent<Player>().lockMovement = false;
             Destroy (gameObject);
-                }
+        }
                 
-        knight.GetComponent<Player>().lockMovement = false;
+
     }
 }
