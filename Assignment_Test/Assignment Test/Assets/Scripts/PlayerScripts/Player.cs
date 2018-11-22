@@ -91,7 +91,7 @@ public class Player : MonoBehaviour {
 		curDirection = new Vector3 ();
 		ringMenu.SetActive (false);
 		PlayerPrefs.SetInt ("HighestLevel", level);
-		healthSlider.maxValue = maxHealth;
+		
 		moneyCount.text = "x " + money;
 		potionText.text = "x " + potionCount + "/" + maxPotions;
 		keyText.text = "x " + key;
@@ -102,8 +102,18 @@ public class Player : MonoBehaviour {
         stats = GetComponent<PlayerStats>();
         stats.maxHealth = (int)maxHealth;
         stats.currentHealth = (int)maxHealth;
+        healthSlider.maxValue = stats.maxHealth;
 
         //material = new Material(Shader.Find("Custom/FlashingRed"));
+    }
+
+
+    public void updateUI() {
+        damageText.text = "" + stats.damage;
+        healthText.text = stats.currentHealth + "/" + stats.maxHealth;
+        healthSlider.maxValue = stats.maxHealth;
+
+
     }
 
 	//changes variables for animation state machine
@@ -149,9 +159,9 @@ public class Player : MonoBehaviour {
         }
         //healthSlider.value = health;
         colourValue = .9f;
-        if (stats.currentHealth > (int)maxHealth)
+        if (stats.currentHealth > (int)stats.maxHealth)
         {
-            stats.currentHealth = (int)maxHealth;
+            stats.currentHealth = (int)stats.maxHealth;
 
         }
         healthText.text = stats.currentHealth + "/" + stats.maxHealth;
@@ -170,9 +180,9 @@ public class Player : MonoBehaviour {
 			ringMenu = GameObject.FindGameObjectWithTag ("RingMenu");
 		}
 		if (SceneManager.GetActiveScene ().name == "Tavern") {
-			health = maxHealth;
-			healthSlider.value = health;
-			healthText.text = health + "/" + maxHealth;
+			stats.currentHealth = stats.maxHealth;
+			healthSlider.value = stats.currentHealth;
+			healthText.text = stats.currentHealth + "/" + stats.maxHealth;
 		}
 		Vector3 temp = transform.position;
 

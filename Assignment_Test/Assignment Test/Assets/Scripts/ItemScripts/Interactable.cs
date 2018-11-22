@@ -20,7 +20,9 @@ public class Interactable : MonoBehaviour {
 
     private void Update()
     {
-
+        if (player == null) {
+            player = FindObjectOfType<Player>().transform;
+        }
         float distance = Vector3.Distance(player.position, transform.position);
         if (distance <= radius && Input.GetKeyDown(KeyCode.E))
         {

@@ -1663,7 +1663,7 @@ MonoBehaviour:
   magic:
     baseValue: 15
   health:
-    baseValue: 0
+    baseValue: 100
   maxHealth: 100
   currentHealth: 0
 --- !u!114 &114501596215542816

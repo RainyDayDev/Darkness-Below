@@ -5,7 +5,8 @@ public class InventorySlot : MonoBehaviour {
 
     public Image icon;
     public Button removeButton;
-
+    public Text descriptionText;
+    public Image descriptionImage;
     Item item;
 
     public void AddItem(Item newItem) {
@@ -13,6 +14,9 @@ public class InventorySlot : MonoBehaviour {
         icon.sprite = item.icon;
         icon.enabled = true;
         removeButton.interactable = true;
+        descriptionText.enabled = true;
+        descriptionImage.enabled = true;
+        descriptionText.text = newItem.description;
 
     }
 
@@ -22,8 +26,11 @@ public class InventorySlot : MonoBehaviour {
         icon.sprite = null;
         icon.enabled = false;
         removeButton.interactable = false;
+        descriptionText.enabled = false;
+        descriptionImage.enabled = false;
 
     }
+
 
 
     public void OnRemoveButton() {
