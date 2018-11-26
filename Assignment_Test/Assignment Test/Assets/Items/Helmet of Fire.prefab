@@ -110,4 +110,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radius: 0.5
   player: {fileID: 0}
-  item: {fileID: 11400000, guid: 9a2e7022a89628e49a3ac08300d93d40, type: 2}
+  item: {fileID: 11400000, guid: a6704cc40480ac5418f9e0c35934bc15, type: 2}

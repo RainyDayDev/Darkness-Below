@@ -20,15 +20,15 @@ public class PlayerStats : CharacterStats {
             health.AddModifier(newItem.healthModifier);
             magic.AddModifier(newItem.magicModifier);
             maxHealth = health.GetValue();
-            player.updateUI();
         }
         if (oldItem != null) {
             armor.RemoveModifier(oldItem.armorModifier);
             damage.RemoveModifier(oldItem.damageModifier);
-            health.AddModifier(oldItem.healthModifier);
-            magic.AddModifier(oldItem.magicModifier);
-            player.updateUI();
+            health.RemoveModifier(oldItem.healthModifier);
+            magic.RemoveModifier(oldItem.magicModifier);
+            maxHealth = health.GetValue();
         }
+        player.updateUI();
     }
 
 }
