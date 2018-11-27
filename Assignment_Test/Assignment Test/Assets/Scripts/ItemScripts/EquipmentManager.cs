@@ -15,7 +15,9 @@ public class EquipmentManager : MonoBehaviour {
 
     #endregion
 
+    public Transform equipmentParent;
     Equipment[] currentEquipment;
+    EquipmentSlotUI[] currentEquipmentUI;
     Inventory inventory;
 
     public delegate void OnEquipmentChanged(Equipment newItem, Equipment oldItem);
@@ -26,6 +28,7 @@ public class EquipmentManager : MonoBehaviour {
         inventory = Inventory.instance;
         int numSlots = System.Enum.GetNames(typeof(EquipmentSlot)).Length;
         currentEquipment = new Equipment[numSlots];
+        currentEquipmentUI = equipmentParent.GetComponentsInChildren<EquipmentSlotUI>();
     }
 
     public void Equip(Equipment newItem) {
@@ -42,6 +45,7 @@ public class EquipmentManager : MonoBehaviour {
             onEquipmentChanged.Invoke(newItem, oldItem);
         }
         currentEquipment[slotIndex] = newItem;
+        currentEquipmentUI[slotIndex].AddItem(newItem);
 
     }
 
@@ -50,6 +54,7 @@ public class EquipmentManager : MonoBehaviour {
             Equipment oldItem = currentEquipment[slotIndex];
             inventory.Add(oldItem);
             currentEquipment[slotIndex] = null;
+            currentEquipmentUI[slotIndex].ClearSlot();
             if (onEquipmentChanged != null)
             {
                 onEquipmentChanged.Invoke(null, oldItem);

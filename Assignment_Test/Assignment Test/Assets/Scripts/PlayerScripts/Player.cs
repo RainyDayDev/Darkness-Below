@@ -59,7 +59,10 @@ public class Player : MonoBehaviour {
 	public GameObject deathText;
 	public bool isSpawned = false;
 	public bool didDie = false;
-	
+
+    //Equipment UI-----------------------------------------------------------
+    public Text equipmentText;
+
 
     //sounds------------------------------------------------------------------
     public AudioSource heavy_sound;
@@ -103,15 +106,16 @@ public class Player : MonoBehaviour {
         stats.maxHealth = (int)maxHealth;
         stats.currentHealth = (int)maxHealth;
         healthSlider.maxValue = stats.maxHealth;
-
+        equipmentText.text = "Health =" + stats.maxHealth + "\nArmor = " + stats.armor.GetValue() + "\nDamage =" + stats.damage.GetValue() + "\nMagic = " + stats.magic.GetValue();
         //material = new Material(Shader.Find("Custom/FlashingRed"));
     }
 
 
     public void updateUI() {
-        damageText.text = "" + stats.damage;
+        damageText.text = "" + stats.damage.GetValue();
         healthText.text = stats.currentHealth + "/" + stats.maxHealth;
         healthSlider.maxValue = stats.maxHealth;
+        equipmentText.text = "Health ="+stats.maxHealth +"\nArmor = "+stats.armor.GetValue()+ "\nDamage =" + stats.damage.GetValue()+ "\nMagic = "+stats.magic.GetValue();
 
 
     }

@@ -6,6 +6,7 @@ public class InventoryUI : MonoBehaviour {
     InventorySlot[] slots;
     Inventory inventory;
     public GameObject inventoryUI;
+    public GameObject equipmentUI;
 	// Use this for initialization
 	void Start () {
         inventory = Inventory.instance;
@@ -17,6 +18,7 @@ public class InventoryUI : MonoBehaviour {
 	void Update () {
         if (Input.GetButtonDown("Inventory")) {
             inventoryUI.SetActive(!inventoryUI.activeSelf);
+            equipmentUI.SetActive(!equipmentUI.activeSelf);
             if (inventoryUI.activeSelf)
             {
                 Time.timeScale = 0;

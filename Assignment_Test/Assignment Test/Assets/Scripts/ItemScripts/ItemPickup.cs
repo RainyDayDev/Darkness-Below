@@ -12,6 +12,8 @@ public class ItemPickup : Interactable {
     {
         if (item == null) {
             Equipment newItem = ScriptableObject.CreateInstance<Equipment>();
+            newItem.equipSlot = EquipmentSlot.Chest;
+
             newItem.init(1, 1, 1, 1);
             item = newItem;
         }

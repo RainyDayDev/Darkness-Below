@@ -19,6 +19,10 @@ public class Equipment : Item {
         this.description = "Health +" + healthMod + "\nArmor +" + armorMod + "\nDamage +" + damageMod + "\nMagic +" + magicMod;
     }
 
+    void Start() {
+        this.description = "Health +" + this.healthModifier + "\nArmor +" + this.armorModifier + "\nDamage +" + this.damageModifier + "\nMagic +" + this.magicModifier;
+    }
+
     public override void Use()
     {
         base.Use();
