@@ -7,8 +7,13 @@ public class InventoryUI : MonoBehaviour {
     Inventory inventory;
     public GameObject inventoryUI;
     public GameObject equipmentUI;
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    private void Awake()
+    {
+        DontDestroyOnLoad(this);
+    }
+
+    void Start () {
         inventory = Inventory.instance;
         inventory.onItemChangedCallback += UpdateUI;
         slots = itemsParent.GetComponentsInChildren<InventorySlot>();

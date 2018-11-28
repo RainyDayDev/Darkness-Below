@@ -244,6 +244,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   magic_speed: 5
   rotation_speed: 0
+  explosion: {fileID: 100000, guid: 0ac53a594a4c2420982f877e49310386, type: 2}
 --- !u!212 &212860354722656210
 SpriteRenderer:
   m_ObjectHideFlags: 1

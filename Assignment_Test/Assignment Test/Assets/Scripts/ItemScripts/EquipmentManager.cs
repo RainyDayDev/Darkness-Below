@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class EquipmentManager : MonoBehaviour {
 
@@ -19,6 +20,7 @@ public class EquipmentManager : MonoBehaviour {
     Equipment[] currentEquipment;
     EquipmentSlotUI[] currentEquipmentUI;
     Inventory inventory;
+    public Text equipmentText;
 
     public delegate void OnEquipmentChanged(Equipment newItem, Equipment oldItem);
     public OnEquipmentChanged onEquipmentChanged;
@@ -29,6 +31,7 @@ public class EquipmentManager : MonoBehaviour {
         int numSlots = System.Enum.GetNames(typeof(EquipmentSlot)).Length;
         currentEquipment = new Equipment[numSlots];
         currentEquipmentUI = equipmentParent.GetComponentsInChildren<EquipmentSlotUI>();
+
     }
 
     public void Equip(Equipment newItem) {

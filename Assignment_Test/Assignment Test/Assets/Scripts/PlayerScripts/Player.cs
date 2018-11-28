@@ -111,6 +111,7 @@ public class Player : MonoBehaviour {
         stats.maxHealth = (int)maxHealth;
         stats.currentHealth = (int)maxHealth;
         healthSlider.maxValue = stats.maxHealth;
+        equipmentText = EquipmentManager.instance.equipmentText;
         equipmentText.text = "Health =" + stats.maxHealth + "\nArmor = " + stats.armor.GetValue() + "\nDamage =" + stats.damage.GetValue() + "\nMagic = " + stats.magic.GetValue();
         //material = new Material(Shader.Find("Custom/FlashingRed"));
     }
@@ -316,7 +317,7 @@ Movement to do
 				heavyTimer = 2;
 			}
 			//magic attack
-			if (Input.GetKey (KeyCode.L) && magicTimer <= 0) {
+			if ((Input.GetKey (KeyCode.L) || Input.GetMouseButtonDown(2)) && magicTimer <= 0) {
                 state_change(5);
                 magic_spawn.fire ();
 				magic_sound.Play ();

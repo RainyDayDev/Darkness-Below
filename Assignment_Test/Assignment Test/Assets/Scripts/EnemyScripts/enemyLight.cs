@@ -19,7 +19,7 @@ public class enemyLight : MonoBehaviour {
     public HealthPickup heart;
 	public PotionPickup potion;
 	public KeyPickup key;
-
+    public float knockback;
     private Vector3 wandering;
     private bool tester = true;
     private float testing = 2.0f;
@@ -34,6 +34,7 @@ public class enemyLight : MonoBehaviour {
 	private Vector3 tracker;
 	public Material material;
 	private float colourValue;
+    public GameObject successfulAttack;
 
     private float attackDistance = 1f;
 
@@ -119,7 +120,8 @@ public class enemyLight : MonoBehaviour {
                     if ((player.transform.position - transform.position).magnitude < 1 && timer <= 0)
                     {
                         state_change(2);
-                        Instantiate(attack, transform.position, transform.rotation);
+                        GameObject go = Instantiate(attack, transform.position, transform.rotation) as GameObject;
+                        go.SendMessage("TheStart", facingRight);
                         timer = 3;
 						timing = 1f;
                     }
@@ -202,7 +204,15 @@ public class enemyLight : MonoBehaviour {
 		text.text = stats.currentHealth + "/" + stats.maxHealth;
 		GetComponent<Renderer>().material.SetColor("_FlashColor", Color.red);
 		colourValue = .9f;
-
+        Instantiate(successfulAttack, transform.position, transform.rotation);
+        if (isRight == 1)
+        {
+            this.GetComponent<Rigidbody2D>().velocity = new Vector3(knockback, 0f, 0f);
+        }
+        else if (isRight == 2)
+        {
+            this.GetComponent<Rigidbody2D>().velocity = new Vector3(-knockback, 0f, 0f);
+        }
 
         if (stats.currentHealth <= 0)
         {

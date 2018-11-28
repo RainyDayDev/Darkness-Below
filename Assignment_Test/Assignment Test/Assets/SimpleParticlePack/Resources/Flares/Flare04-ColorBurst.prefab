@@ -10,6 +10,7 @@ GameObject:
   - component: {fileID: 400000}
   - component: {fileID: 19800000}
   - component: {fileID: 19900000}
+  - component: {fileID: 114368628622849032}
   m_Layer: 0
   m_Name: Flare04-ColorBurst
   m_TagString: Untagged
@@ -25,7 +26,7 @@ Transform:
   m_GameObject: {fileID: 100000}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.46, y: 0.55, z: 0.48}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -109,7 +110,7 @@ ParticleSystem:
     startLifetime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 5
+      scalar: 1.85
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -162,7 +163,7 @@ ParticleSystem:
     startSpeed:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 5
+      scalar: 3.21
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -278,7 +279,7 @@ ParticleSystem:
     startSize:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 1
+      scalar: 1.05
       minScalar: 1
       maxCurve:
         serializedVersion: 2
@@ -653,15 +654,15 @@ ParticleSystem:
   ShapeModule:
     serializedVersion: 5
     enabled: 1
-    type: 0
+    type: 10
     angle: 25
     length: 5
     boxThickness: {x: 0, y: 0, z: 0}
-    radiusThickness: 1
+    radiusThickness: 0.41
     donutRadius: 0.2
     m_Position: {x: 0, y: 0, z: 0}
     m_Rotation: {x: 0, y: 0, z: 0}
-    m_Scale: {x: 1, y: 1, z: 1}
+    m_Scale: {x: 0.29, y: 0.38, z: 0.67}
     placementMode: 0
     m_MeshMaterialIndex: 0
     m_MeshNormalOffset: 0
@@ -677,14 +678,14 @@ ParticleSystem:
     m_TextureClipChannel: 3
     m_TextureClipThreshold: 0
     m_TextureUVChannel: 0
-    m_TextureColorAffectsParticles: 1
+    m_TextureColorAffectsParticles: 0
     m_TextureAlphaAffectsParticles: 1
     m_TextureBilinearFiltering: 0
     randomDirectionAmount: 0
     sphericalDirectionAmount: 0
     randomPositionAmount: 0
     radius:
-      value: 1
+      value: 0.1
       mode: 0
       spread: 0
       speed:
@@ -1307,15 +1308,15 @@ ParticleSystem:
         key6: {r: 0, g: 0, b: 1, a: 0}
         key7: {r: 0, g: 0, b: 1, a: 0}
         ctime0: 0
-        ctime1: 12143
-        ctime2: 18697
-        ctime3: 23708
-        ctime4: 30069
-        ctime5: 37586
-        ctime6: 48958
+        ctime1: 4626
+        ctime2: 9252
+        ctime3: 12143
+        ctime4: 14264
+        ctime5: 18697
+        ctime6: 23901
         ctime7: 48958
-        atime0: 41827
-        atime1: 65535
+        atime0: 26214
+        atime1: 29298
         atime2: 0
         atime3: 0
         atime4: 0
@@ -4663,7 +4664,7 @@ ParticleSystemRenderer:
   m_MaxParticleSize: 0.5
   m_CameraVelocityScale: 0
   m_VelocityScale: 5
-  m_LengthScale: -20
+  m_LengthScale: -5
   m_SortingFudge: 0
   m_NormalDirection: 1
   m_RenderAlignment: 0
@@ -4688,3 +4689,14 @@ Prefab:
   m_SourcePrefab: {fileID: 0}
   m_RootGameObject: {fileID: 100000}
   m_IsPrefabAsset: 1
+--- !u!114 &114368628622849032
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e0e8b7503a784b54818849e671cd559, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

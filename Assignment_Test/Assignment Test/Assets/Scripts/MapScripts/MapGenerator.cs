@@ -67,12 +67,13 @@ public class MapGenerator : MonoBehaviour {
 		}
 		torchList = new List<GameObject> ();
 
-		if (currentPlayer.GetComponent<Player> ().level % 5 == 0) {
+		/*if (currentPlayer.GetComponent<Player> ().level % 5 == 0) {
 			width = 30;
 			height = 30;
 			randomFillPercent = 10;
 			isBossRoom = true;
 		}
+        */
 		smallest_size = 0;
 		map = new int[width,height];
 		RandomFillMap();

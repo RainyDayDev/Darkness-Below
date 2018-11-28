@@ -123,8 +123,8 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 10000
-  m_LinearDrag: 0
+  m_Mass: 1
+  m_LinearDrag: 20
   m_AngularDrag: 0.05
   m_GravityScale: 0
   m_Material: {fileID: 0}
@@ -252,6 +252,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 225e5e9a77948408690dc0c180836811, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  knockback: 50
   detectionDistance: 10
   reloadTime: 7
   reloading: 0
@@ -266,6 +267,7 @@ MonoBehaviour:
   heart: {fileID: 114346352690469944, guid: 69d35fc0c83ec4e7099fb982707a8383, type: 2}
   potion: {fileID: 114180402540039812, guid: bf9dee8d0f46b4240b9539fdca6fc8c1, type: 2}
   key: {fileID: 114634447161954462, guid: 2e4f9c59896d34d8f95b69af540c020c, type: 2}
+  successfulAttack: {fileID: 100000, guid: d321a98408cfc4e0299808f65181aab4, type: 2}
   maxHealth: 0
   material: {fileID: 2100000, guid: c5ec9610bddf44631ada4e3816e42dad, type: 2}
   stats: {fileID: 0}

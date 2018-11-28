@@ -14,6 +14,7 @@ public class Inventory : MonoBehaviour {
             return;
         }
         instance = this;
+        DontDestroyOnLoad(gameObject);
     }
     #endregion
 
@@ -23,6 +24,7 @@ public class Inventory : MonoBehaviour {
     public List<Item> items = new List<Item>();
 
     public int space = 20;
+
 
     public bool Add(Item item) {
         if (!item.isDefaultItem)

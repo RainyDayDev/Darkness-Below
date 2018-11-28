@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.UI;
 public class enemyArcher : MonoBehaviour {
-
+    public float knockback;
     public const int Patrolling = 0;
     public const int Attacking = 1;
 	public const int Dying = 2;
@@ -23,8 +23,8 @@ public class enemyArcher : MonoBehaviour {
 	public HealthPickup heart;
 	public PotionPickup potion;
 	public KeyPickup key;
-
-	Animator archer_anim;
+    public GameObject successfulAttack;
+    Animator archer_anim;
 	public float maxHealth;
 
 
@@ -189,7 +189,16 @@ public class enemyArcher : MonoBehaviour {
         stats.TakeDamage((int)damage);
         text.text = stats.currentHealth + "/" + stats.maxHealth;
         GetComponent<Renderer>().material.SetColor("_FlashColor", Color.red);
+        Instantiate(successfulAttack, transform.position, transform.rotation);
         colourValue = .9f;
+        if (isRight == 1)
+        {
+            this.GetComponent<Rigidbody2D>().velocity = new Vector3(knockback, 0f, 0f);
+        }
+        else if (isRight == 2)
+        {
+            this.GetComponent<Rigidbody2D>().velocity = new Vector3(-knockback, 0f, 0f);
+        }
 
 
         if (stats.currentHealth <= 0)

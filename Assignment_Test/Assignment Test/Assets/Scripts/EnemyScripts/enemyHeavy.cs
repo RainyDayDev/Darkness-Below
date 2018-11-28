@@ -48,7 +48,7 @@ public class enemyHeavy : MonoBehaviour {
     }
 
     // Use this for initialization
-    void start()
+    void Start()
     {
 		player = FindObjectOfType<Player> ();
 		light_anim = GetComponent<Animator>();
@@ -86,10 +86,10 @@ public class enemyHeavy : MonoBehaviour {
         }
         else if (light_anim == null)
         {
-            int random = Random.Range(4, 8);
-            health = health + random * player.level;
-            maxHealth = health;
-            text.text = health + "/" + maxHealth;
+           // int random = Random.Range(4, 8);
+            //health = health + random * player.level;
+            //maxHealth = health;
+            //text.text = health + "/" + maxHealth;
             light_anim = GetComponent<Animator>();
         }
         else

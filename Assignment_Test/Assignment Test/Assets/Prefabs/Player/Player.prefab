@@ -637,7 +637,7 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDrag: 0
+  m_LinearDrag: 20
   m_AngularDrag: 0.05
   m_GravityScale: 0
   m_Material: {fileID: 0}
@@ -1385,12 +1385,14 @@ MonoBehaviour:
   attack_time_light: 0.1
   attack_time_heavy: 0.5
   attack_time_magic: 0.5
+  knockback: 50
   health: 100
   targetHealth: 100
   baseHealth: 100
   maxHealth: 100
   damage: 15
   baseDamage: 15
+  DeathTimer: 1.5
   successfulAttack: {fileID: 100002, guid: d3e0d9dd3a0bb4bf4815b26939dce392, type: 2}
   light_attack: {fileID: 1514744479111350, guid: 10699d1c6da534d0e87ddee7ffebe6a8,
     type: 2}

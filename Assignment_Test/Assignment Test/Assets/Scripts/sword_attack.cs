@@ -44,7 +44,14 @@ public class sword_attack : MonoBehaviour {
 
         if (other.tag == "EnemyArcher") {
             enemyArcher enemy = other.GetComponent<enemyArcher> ();
-            enemy.ApplyDamage (myStats.damage.GetValue(), 0);
+            if (facing_right)
+            {
+                enemy.ApplyDamage(myStats.damage.GetValue(), 1);
+            }
+            else
+            {
+                enemy.ApplyDamage(myStats.damage.GetValue(), 2);
+            }
             knight.GetComponent<Player>().lockMovement = false;
             Destroy (gameObject);
 

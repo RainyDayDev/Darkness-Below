@@ -5,6 +5,7 @@ using UnityEngine;
 public class magic_orb : MonoBehaviour {
 	public float magic_speed;
 	public float rotation_speed;
+    public GameObject explosion;
     CharacterStats myStats;
     GameObject knight;
 	// Use this for initialization
@@ -25,23 +26,21 @@ public class magic_orb : MonoBehaviour {
 		if (other.tag == "EnemyArcher") {
 			enemyArcher enemy = other.GetComponent<enemyArcher> ();
 			enemy.ApplyDamage (myStats.magic.GetValue(), 0);
-			Destroy (gameObject);
+            Instantiate(explosion, transform.position, transform.rotation);
+            Destroy (gameObject);
 		}
 		else if (other.tag == "EnemyLight") {
 			enemyLight enemy = other.GetComponent<enemyLight> ();
             enemy.ApplyDamage(myStats.magic.GetValue(), 0);
-			Destroy (gameObject);
+            Instantiate(explosion, transform.position, transform.rotation);
+            Destroy (gameObject);
 
 		}
 		else if (other.tag == "EnemyHeavy") {
 			enemyHeavy enemy = other.GetComponent<enemyHeavy> ();
 			enemy.ApplyDamage (myStats.magic.GetValue(), 0);
-
-			Destroy (gameObject);
-		}/*else if (other.tag == "Boss") {
-			Boss enemy = other.GetComponent<Boss> ();
-			enemy.ApplyDamage(myStats.magic.GetValue(), 0);
-			Destroy (gameObject);
-		}*/
+            Instantiate(explosion, transform.position, transform.rotation);
+            Destroy (gameObject);
+		}
 	}
 }
