@@ -184,7 +184,7 @@ public class enemyArcher : MonoBehaviour {
         gameObject.transform.position -= temp * speed * Time.deltaTime;
     }
 
-    public void ApplyDamage(float damage)
+    public void ApplyDamage(float damage, int isRight)
     {
         stats.TakeDamage((int)damage);
         text.text = stats.currentHealth + "/" + stats.maxHealth;

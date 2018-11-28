@@ -20,7 +20,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4350970817109242}
   - component: {fileID: 212186056318498814}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Trailing Effect
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39,7 +39,7 @@ GameObject:
   - component: {fileID: 50584225041653422}
   - component: {fileID: 68813762425581410}
   - component: {fileID: 212783429678570392}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: light_attack
   m_TagString: light_attack
   m_Icon: {fileID: 0}
@@ -56,7 +56,7 @@ GameObject:
   - component: {fileID: 4480106615927072}
   - component: {fileID: 212142116236342372}
   - component: {fileID: 95397078331148618}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Slash
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -83,7 +83,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1514744479111350}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.9105434, y: -2.232924, z: 0}
+  m_LocalPosition: {x: -1.2128353, y: -2.087146, z: 0}
   m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_Children:
   - {fileID: 4350970817109242}

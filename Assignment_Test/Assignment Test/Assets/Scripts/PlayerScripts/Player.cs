@@ -13,6 +13,7 @@ public class Player : MonoBehaviour {
 	public float attack_time_light;
 	public float attack_time_heavy;
 	public float attack_time_magic;
+    public float knockback;
     float heavyTimer;
     float magicTimer;
     float lightTimer;
@@ -22,8 +23,11 @@ public class Player : MonoBehaviour {
 	public float maxHealth = 100;
 	public float damage = 15;
 	public float baseDamage = 15;
-	Vector3 last_position;
+    public float DeathTimer = 1.5f;
+    public GameObject successfulAttack;
+    Vector3 last_position;
 	Animator anim;
+
 
     //attack prefabs---------------------------------------------------------
     public GameObject light_attack;
@@ -78,6 +82,7 @@ public class Player : MonoBehaviour {
 	float attack_count;
 	public bool facing_right = false;
 
+
     public PlayerStats stats;
 
 	// Use this for initialization
@@ -123,7 +128,7 @@ public class Player : MonoBehaviour {
 	//changes variables for animation state machine
 	void state_change(int to_change){
 
-		if (to_change == 6 || to_change == 7) {
+		if (to_change == 7) {
 			anim.SetInteger ("x", to_change);
 		}
 
@@ -144,7 +149,7 @@ public class Player : MonoBehaviour {
 
 
 
-    public void ApplyDamage(int damage)
+    public void ApplyDamage(int damage, int isRight)
     {
         //health -= damage;
 
@@ -157,8 +162,14 @@ public class Player : MonoBehaviour {
         }
         else
         {
+            Instantiate(successfulAttack, transform.position, transform.rotation);
             material.SetColor("_FlashColor", Color.red);
             hit_sound.Play();
+            if(isRight==1){
+                this.GetComponent<Rigidbody2D>().velocity = new Vector3(knockback, 0f, 0f);
+            }else if(isRight==2){
+                this.GetComponent<Rigidbody2D>().velocity = new Vector3(-knockback, 0f, 0f);
+            }
 
         }
         //healthSlider.value = health;
@@ -289,13 +300,13 @@ Movement to do
 		
 		last_position = transform.position;
 		//ATTACKING-------------------------------------------------------------
-		if (attack_count < 0) {
+		if (attack_count < 0 && !didDie) {
 			//light attack
-			if (Input.GetKey (KeyCode.J) || Input.GetMouseButtonDown(0)) {
+            if ((Input.GetKey (KeyCode.J) || Input.GetMouseButtonDown(0)) && lightTimer<=0) {
                 state_change(3);
                 Instantiate (light_attack, transform.position, transform.rotation);
 				light_sound.Play ();
-                lightTimer = .14f;
+                lightTimer = 1;
 			}
 			//heavy attack
 			if ((Input.GetKey (KeyCode.K) || Input.GetMouseButtonDown(1)) && heavyTimer <= 0) {
@@ -320,18 +331,22 @@ Movement to do
 
 		//DYING------------------------------------------------------------------
 		if (stats.currentHealth <= 0) {
-			death_sound.Play ();
-			state_change (7);
-			didDie = true;
-			SceneManager.LoadScene ("Tavern");
-			stats.currentHealth = stats.maxHealth;
-			level = 1;
-			money = 0;
-			moneyCount.text = "x " + money;
-			healthSlider.value = stats.maxHealth;
-            targetHealth = stats.maxHealth;
-
-
+            death_sound.Play();
+            state_change(7);
+            lockMovement = true;
+            didDie = true;
+            if (DeathTimer < 0)
+            {
+                SceneManager.LoadScene("Tavern");
+                stats.currentHealth = stats.maxHealth;
+                level = 1;
+                money = 0;
+                moneyCount.text = "x " + money;
+                healthSlider.value = stats.maxHealth;
+                targetHealth = stats.maxHealth;
+                lockMovement = false;
+            }
+            DeathTimer -= Time.deltaTime;
 
 		}
 
@@ -344,7 +359,7 @@ Movement to do
         //Drink potion
 		if (Input.GetKeyDown (KeyCode.P)) {
 			if (potionCount > 0) {
-				ApplyDamage (-20);
+				ApplyDamage (-20, 0);
 				potionCount--;
 				potionText.text = "x " + potionCount + "/" + maxPotions;
 			}

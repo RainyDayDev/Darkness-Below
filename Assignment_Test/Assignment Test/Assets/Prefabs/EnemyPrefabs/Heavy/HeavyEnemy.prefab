@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 223442098450392038}
   - component: {fileID: 114046739572335096}
   - component: {fileID: 114651641522827380}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Canvas (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39,7 +39,7 @@ GameObject:
   - component: {fileID: 224564940189374218}
   - component: {fileID: 222890469919286630}
   - component: {fileID: 114598604802358468}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -58,10 +58,9 @@ GameObject:
   - component: {fileID: 95638713921956922}
   - component: {fileID: 70233315821318864}
   - component: {fileID: 50976599740556608}
-  - component: {fileID: 114851878795378846}
   - component: {fileID: 114599009241516490}
   - component: {fileID: 114025477236666730}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: HeavyEnemy
   m_TagString: EnemyHeavy
   m_Icon: {fileID: 0}
@@ -75,7 +74,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1483707297038420}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.0403137, y: -1.2688041, z: 0}
+  m_LocalPosition: {x: 2.6088953, y: 1.1273026, z: 0}
   m_LocalScale: {x: 0.25, y: 0.25, z: 1}
   m_Children:
   - {fileID: 224795007707162320}
@@ -94,7 +93,7 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDrag: 0
+  m_LinearDrag: 20
   m_AngularDrag: 0.05
   m_GravityScale: 0
   m_Material: {fileID: 0}
@@ -149,6 +148,10 @@ MonoBehaviour:
   damage:
     baseValue: 15
   armor:
+    baseValue: 0
+  magic:
+    baseValue: 0
+  health:
     baseValue: 0
   maxHealth: 30
   currentHealth: 0
@@ -217,6 +220,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 773e9cc56111c4d1fa056d2363de346d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  knockback: 50
   detectionDistance: 10
   state: 0
   player: {fileID: 0}
@@ -229,7 +233,9 @@ MonoBehaviour:
   key: {fileID: 114634447161954462, guid: 2e4f9c59896d34d8f95b69af540c020c, type: 2}
   attack: {fileID: 1614623620613322, guid: 96af88973dca6d145ab66a967aea91fc, type: 2}
   maxHealth: 0
+  successfulAttack: {fileID: 100000, guid: d321a98408cfc4e0299808f65181aab4, type: 2}
   material: {fileID: 2100000, guid: fea89277e2eae4c158684ee572cc3ef6, type: 2}
+  stats: {fileID: 0}
 --- !u!114 &114651641522827380
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -246,18 +252,6 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
---- !u!114 &114851878795378846
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1483707297038420}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7d666b9120e75444ea4b3d702a825ef4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  index: 0
 --- !u!212 &212056301201255198
 SpriteRenderer:
   m_ObjectHideFlags: 1

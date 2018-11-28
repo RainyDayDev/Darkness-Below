@@ -10,12 +10,17 @@ public class sword_attack : MonoBehaviour {
 	public GameObject knight;
     public float time_of_attack;
     CharacterStats myStats;
+    Vector3 z = new Vector3(0.0f, 0.0f, 1.0f);
 
-	// Use this for initialization
+    // Use this for initialization
 
-	void Start () {
+    void Start () {
 		knight = GameObject.FindGameObjectWithTag("Player");
-		facing_right = player.facing_right;
+        facing_right = knight.GetComponent<Player>().facing_right;
+        if (knight.GetComponent<Player>().facing_right)
+        {
+            transform.Rotate(0, 0, -1);
+        }
         time_of_attack = 0.14f;
         knight.GetComponent<Player>().lockMovement = true;
         myStats = knight.GetComponent<CharacterStats>();
@@ -24,20 +29,7 @@ public class sword_attack : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         knight = GameObject.FindGameObjectWithTag("Player");
-		transform.position = knight.transform.position;
-
-
-		if (facing_right!=player.facing_right) {
-			
-			if (player.facing_right) {
-				transform.Rotate(0, 0, -1);
-				facing_right = true;
-			} else {
-				transform.Rotate(0, 0, -1);
-				facing_right = false;
-			}
-
-		} 
+        transform.position = knight.transform.position;
         //transform.Rotate (Vector3.forward * Time.deltaTime * speed);
         if(time_of_attack <= 0){
             knight.GetComponent<Player>().lockMovement = false;
@@ -52,7 +44,7 @@ public class sword_attack : MonoBehaviour {
 
         if (other.tag == "EnemyArcher") {
             enemyArcher enemy = other.GetComponent<enemyArcher> ();
-            enemy.ApplyDamage (myStats.damage.GetValue());
+            enemy.ApplyDamage (myStats.damage.GetValue(), 0);
             knight.GetComponent<Player>().lockMovement = false;
             Destroy (gameObject);
 
@@ -63,22 +55,41 @@ public class sword_attack : MonoBehaviour {
 
             enemyLight enemy = other.GetComponent<enemyLight>();
             //enemy.ApplyDamage ((int)(knight.GetComponent<Player> ().damage * scaling));
-            enemy.ApplyDamage(myStats.damage.GetValue());
+            if (facing_right)
+            {
+                enemy.ApplyDamage(myStats.damage.GetValue(), 1);
+            }else{
+                enemy.ApplyDamage(myStats.damage.GetValue(), 2);
+            }
             knight.GetComponent<Player>().lockMovement = false;
-            Destroy(gameObject);
+            Destroy(gameObject.GetComponent<EdgeCollider2D>());
         }
         else if (other.tag == "EnemyHeavy") {
             enemyHeavy enemy = other.GetComponent<enemyHeavy> ();
-            enemy.ApplyDamage(myStats.damage.GetValue());
+            if (facing_right)
+            {
+                enemy.ApplyDamage(myStats.damage.GetValue(), 1);
+            }
+            else
+            {
+                enemy.ApplyDamage(myStats.damage.GetValue(), 2);
+            }
             knight.GetComponent<Player>().lockMovement = false;
-            Destroy(gameObject);
+            Destroy(gameObject.GetComponent<EdgeCollider2D>());
 
-        } else if (other.tag == "Boss") {
+        } /*else if (other.tag == "Boss") {
             Boss enemy = other.GetComponent<Boss> ();
-            enemy.ApplyDamage(myStats.damage.GetValue());
+            if (facing_right)
+            {
+                enemy.ApplyDamage(myStats.damage.GetValue(), 1);
+            }
+            else
+            {
+                enemy.ApplyDamage(myStats.damage.GetValue(), 2);
+            }
             knight.GetComponent<Player>().lockMovement = false;
-            Destroy (gameObject);
-        }
+            Destroy(gameObject.GetComponent<EdgeCollider2D>());
+        }*/
                 
 
     }

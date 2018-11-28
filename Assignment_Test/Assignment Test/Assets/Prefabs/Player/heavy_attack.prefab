@@ -20,7 +20,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4904803150143212}
   - component: {fileID: 212718670651925426}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Trailing Effect
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -37,7 +37,7 @@ GameObject:
   - component: {fileID: 4252986226119844}
   - component: {fileID: 212923927724111886}
   - component: {fileID: 95718430025106302}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Slash
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -54,10 +54,8 @@ GameObject:
   - component: {fileID: 4074629576093012}
   - component: {fileID: 114487481113895020}
   - component: {fileID: 50478303955059326}
-  - component: {fileID: 70231731873528272}
-  - component: {fileID: 58505783445969198}
   - component: {fileID: 68433911883197304}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: heavy_attack
   m_TagString: light_attack
   m_Icon: {fileID: 0}
@@ -125,21 +123,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!58 &58505783445969198
-CircleCollider2D:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1971073492973126}
-  m_Enabled: 0
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -1.21, y: 0.03}
-  serializedVersion: 2
-  m_Radius: 0.775105
 --- !u!68 &68433911883197304
 EdgeCollider2D:
   m_ObjectHideFlags: 1
@@ -163,21 +146,6 @@ EdgeCollider2D:
   - {x: -2.9, y: -0.39}
   - {x: -0.1, y: -0.84}
   - {x: 0.01, y: 0.15}
---- !u!70 &70231731873528272
-CapsuleCollider2D:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1971073492973126}
-  m_Enabled: 0
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -1.79, y: 0.04}
-  m_Size: {x: 2.69, y: 0.74}
-  m_Direction: 1
 --- !u!95 &95718430025106302
 Animator:
   serializedVersion: 3

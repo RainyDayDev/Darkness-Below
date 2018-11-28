@@ -33,8 +33,8 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
+  - Attacks
+  - Characters
   - 
   - 
   - 
@@ -60,4 +60,10 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Attacks
+    uniqueID: 168980525
+    locked: 0
+  - name: Characters
+    uniqueID: 3675790663
     locked: 0

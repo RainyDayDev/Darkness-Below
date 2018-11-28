@@ -8,6 +8,7 @@ public class enemyHeavy : MonoBehaviour {
 
     public const int Patrolling = 0;
     public const int Attacking = 1;
+    public float knockback;
 	public const int Dying = 2;
     public float detectionDistance = 10;
     public int state = Patrolling;
@@ -32,6 +33,7 @@ public class enemyHeavy : MonoBehaviour {
 	private bool facingRight = false;
 	private bool facingLeft = true;
 	private Vector3 tracker;
+    public GameObject successfulAttack;
 
 	public Material material;
 	private float colourValue;
@@ -122,7 +124,10 @@ public class enemyHeavy : MonoBehaviour {
                     if ((player.transform.position - transform.position).magnitude < 1 && timer <= 0)
                     {
                         state_change(2);
-                        Instantiate(attack, transform.position, transform.rotation);
+                        GameObject go = Instantiate(attack, transform.position, transform.rotation) as GameObject;
+                        go.SendMessage("TheStart", facingRight);
+
+
                         timer = 4.5f;
                         timing = 1f;
                     }
@@ -203,12 +208,21 @@ public class enemyHeavy : MonoBehaviour {
 	}
 
 	//Applies damage to player and sets the shader colour
-	public void ApplyDamage(float damage)
+	public void ApplyDamage(float damage, int isRight)
 	{
         stats.TakeDamage((int)damage);
         text.text = stats.currentHealth + "/" + stats.maxHealth;
         GetComponent<Renderer>().material.SetColor("_FlashColor", Color.red);
+        Instantiate(successfulAttack, transform.position, transform.rotation);
         colourValue = .9f;
+        if (isRight == 1)
+        {
+            this.GetComponent<Rigidbody2D>().velocity = new Vector3(knockback, 0f, 0f);
+        }
+        else if (isRight == 2)
+        {
+            this.GetComponent<Rigidbody2D>().velocity = new Vector3(-knockback, 0f, 0f);
+        }
 
 
         if (stats.currentHealth <= 0)

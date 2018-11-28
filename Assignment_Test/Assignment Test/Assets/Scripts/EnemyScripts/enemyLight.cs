@@ -195,7 +195,7 @@ public class enemyLight : MonoBehaviour {
     }
 
     //Applies damage to player and sets the shader colour
-    public void ApplyDamage(float damage)
+    public void ApplyDamage(float damage, int isRight)
     {
         //health -= damage;
         stats.TakeDamage((int)damage);

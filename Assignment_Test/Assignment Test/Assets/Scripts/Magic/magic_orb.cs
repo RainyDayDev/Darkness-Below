@@ -24,24 +24,24 @@ public class magic_orb : MonoBehaviour {
 	void OnTriggerEnter2D(Collider2D other){
 		if (other.tag == "EnemyArcher") {
 			enemyArcher enemy = other.GetComponent<enemyArcher> ();
-			enemy.ApplyDamage (myStats.magic.GetValue());
+			enemy.ApplyDamage (myStats.magic.GetValue(), 0);
 			Destroy (gameObject);
 		}
 		else if (other.tag == "EnemyLight") {
 			enemyLight enemy = other.GetComponent<enemyLight> ();
-            enemy.ApplyDamage(myStats.magic.GetValue());
+            enemy.ApplyDamage(myStats.magic.GetValue(), 0);
 			Destroy (gameObject);
 
 		}
 		else if (other.tag == "EnemyHeavy") {
 			enemyHeavy enemy = other.GetComponent<enemyHeavy> ();
-			enemy.ApplyDamage (myStats.magic.GetValue());
+			enemy.ApplyDamage (myStats.magic.GetValue(), 0);
 
 			Destroy (gameObject);
-		}else if (other.tag == "Boss") {
+		}/*else if (other.tag == "Boss") {
 			Boss enemy = other.GetComponent<Boss> ();
-			enemy.ApplyDamage(myStats.magic.GetValue());
+			enemy.ApplyDamage(myStats.magic.GetValue(), 0);
 			Destroy (gameObject);
-		}
+		}*/
 	}
 }

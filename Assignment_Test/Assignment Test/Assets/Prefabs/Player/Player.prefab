@@ -19,7 +19,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 224769868714752306}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: Fill Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36,7 +36,7 @@ GameObject:
   - component: {fileID: 224527307768252856}
   - component: {fileID: 222931458781049048}
   - component: {fileID: 114657451161951010}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: Image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -53,7 +53,7 @@ GameObject:
   - component: {fileID: 224265787188368348}
   - component: {fileID: 222231359899851186}
   - component: {fileID: 114001949257793434}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: Heart
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -71,7 +71,7 @@ GameObject:
   - component: {fileID: 222511809300191612}
   - component: {fileID: 114390968606956566}
   - component: {fileID: 114911650916806058}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: Button
   m_TagString: LeftButton
   m_Icon: {fileID: 0}
@@ -88,7 +88,7 @@ GameObject:
   - component: {fileID: 224205565979792318}
   - component: {fileID: 222015999596308198}
   - component: {fileID: 114257064925237716}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -105,7 +105,7 @@ GameObject:
   - component: {fileID: 224936647621091954}
   - component: {fileID: 222919066095111608}
   - component: {fileID: 114909831767940236}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: Fill
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -122,7 +122,7 @@ GameObject:
   - component: {fileID: 224923760253236514}
   - component: {fileID: 222381741928763228}
   - component: {fileID: 114141818413999498}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: Panel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -139,7 +139,7 @@ GameObject:
   - component: {fileID: 224276136766434320}
   - component: {fileID: 222136672308104054}
   - component: {fileID: 114910593685813604}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: Image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -156,7 +156,7 @@ GameObject:
   - component: {fileID: 224455276805915810}
   - component: {fileID: 222456579344018874}
   - component: {fileID: 114185436052354764}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -174,7 +174,7 @@ GameObject:
   - component: {fileID: 222223654412828220}
   - component: {fileID: 114826377364249232}
   - component: {fileID: 114501596215542816}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: Button (1)
   m_TagString: RightButton
   m_Icon: {fileID: 0}
@@ -191,7 +191,7 @@ GameObject:
   - component: {fileID: 224700021148794456}
   - component: {fileID: 222302988707812752}
   - component: {fileID: 114973366803197028}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: Text
   m_TagString: MiddleDescription
   m_Icon: {fileID: 0}
@@ -206,7 +206,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 224016414483281710}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: PotionUI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -221,7 +221,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 224436420915701000}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: KeyUI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -238,7 +238,7 @@ GameObject:
   - component: {fileID: 224770976260487856}
   - component: {fileID: 222790355443742166}
   - component: {fileID: 114995289168960692}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -255,7 +255,7 @@ GameObject:
   - component: {fileID: 224437547745193340}
   - component: {fileID: 222361546715733232}
   - component: {fileID: 114619438341938064}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: Image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -272,7 +272,7 @@ GameObject:
   - component: {fileID: 224411974630796298}
   - component: {fileID: 222718090317310900}
   - component: {fileID: 114434251344176520}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: HealthText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -289,7 +289,7 @@ GameObject:
   - component: {fileID: 224620579052942818}
   - component: {fileID: 222703859470891002}
   - component: {fileID: 114323117352032646}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -305,7 +305,7 @@ GameObject:
   m_Component:
   - component: {fileID: 224567341185887102}
   - component: {fileID: 114747820829120950}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: Stamina Slider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -324,7 +324,7 @@ GameObject:
   - component: {fileID: 114386446094216764}
   - component: {fileID: 114964832340146654}
   - component: {fileID: 114181482968215092}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: RingMenu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -341,7 +341,7 @@ GameObject:
   - component: {fileID: 4673461438359076}
   - component: {fileID: 212428534529658556}
   - component: {fileID: 114511997845482170}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: magic_spawn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -371,7 +371,7 @@ GameObject:
   - component: {fileID: 82866099377428070}
   - component: {fileID: 81757594418160744}
   - component: {fileID: 114493877054927108}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -388,7 +388,7 @@ GameObject:
   - component: {fileID: 224543508479812564}
   - component: {fileID: 222993678251771212}
   - component: {fileID: 114138268691475868}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: Image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -407,7 +407,7 @@ GameObject:
   - component: {fileID: 114035114412665914}
   - component: {fileID: 114489366001346374}
   - component: {fileID: 225530880443139564}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: UICanvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -424,7 +424,7 @@ GameObject:
   - component: {fileID: 224150841236930418}
   - component: {fileID: 222107632844880118}
   - component: {fileID: 114432748863335348}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -441,7 +441,7 @@ GameObject:
   - component: {fileID: 224485880520206730}
   - component: {fileID: 222500343162398322}
   - component: {fileID: 114437371207809376}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -456,7 +456,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 224400193026976356}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: MoneyUI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -473,7 +473,7 @@ GameObject:
   - component: {fileID: 224914728496795504}
   - component: {fileID: 222113390021415346}
   - component: {fileID: 114932024438553804}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -490,7 +490,7 @@ GameObject:
   - component: {fileID: 224639290764242498}
   - component: {fileID: 222436375659564830}
   - component: {fileID: 114126271487016964}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: Fill
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -505,7 +505,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 224627324802570446}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: Fill Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -520,7 +520,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 224366596984539282}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: HealthUI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -537,7 +537,7 @@ GameObject:
   - component: {fileID: 224390440630853978}
   - component: {fileID: 222536152951080160}
   - component: {fileID: 114858560241850016}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -555,7 +555,7 @@ GameObject:
   - component: {fileID: 223420674028930652}
   - component: {fileID: 114963327039319202}
   - component: {fileID: 114886326080194994}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: StaminaUI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -571,7 +571,7 @@ GameObject:
   m_Component:
   - component: {fileID: 224082011369908266}
   - component: {fileID: 114600002032245932}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: Health Slider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -589,7 +589,7 @@ GameObject:
   - component: {fileID: 223646590531251798}
   - component: {fileID: 114581978394755588}
   - component: {fileID: 114865367052837522}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: DamageUI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1382,7 +1382,7 @@ MonoBehaviour:
   lockMovement: 0
   speed: 3
   running_speed: 1.5
-  attack_time_light: 0.14
+  attack_time_light: 0.1
   attack_time_heavy: 0.5
   attack_time_magic: 0.5
   health: 100
@@ -1391,6 +1391,7 @@ MonoBehaviour:
   maxHealth: 100
   damage: 15
   baseDamage: 15
+  successfulAttack: {fileID: 100002, guid: d3e0d9dd3a0bb4bf4815b26939dce392, type: 2}
   light_attack: {fileID: 1514744479111350, guid: 10699d1c6da534d0e87ddee7ffebe6a8,
     type: 2}
   heavy_attack: {fileID: 1971073492973126, guid: 08d8a9b488efc4446a948c8ed989f1c2,
@@ -1420,6 +1421,7 @@ MonoBehaviour:
   deathText: {fileID: 1739293181870778, guid: 91fa59bdafe0e450ab6cabdcf5f100a6, type: 2}
   isSpawned: 0
   didDie: 0
+  equipmentText: {fileID: 0}
   heavy_sound: {fileID: 82866099377428070}
   light_sound: {fileID: 82157001045950292}
   magic_sound: {fileID: 82060449363363456}
