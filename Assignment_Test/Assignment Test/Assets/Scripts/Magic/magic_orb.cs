@@ -8,11 +8,14 @@ public class magic_orb : MonoBehaviour {
     public GameObject explosion;
     CharacterStats myStats;
     GameObject knight;
-	// Use this for initialization
-	void Start () {
+    float timeOfAttack;
+    // Use this for initialization
+    void Start () {
         knight = GameObject.FindGameObjectWithTag("Player");
         myStats = knight.GetComponent<CharacterStats>();
-	}
+        timeOfAttack = 0.14f;
+        knight.GetComponent<Player>().lockMovement = true;
+    }
 	void OnCollisionEnter2D(Collision2D coll) {
 		Destroy (gameObject);
 	}
@@ -20,6 +23,18 @@ public class magic_orb : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         transform.Translate(-Vector3.right * Time.deltaTime * magic_speed);
+        //transform.position = knight.transform.position;
+        //transform.Rotate (Vector3.forward * Time.deltaTime * speed);
+        if (timeOfAttack <= 0)
+        {
+            knight.GetComponent<Player>().lockMovement = false;
+            //Destroy(gameObject);
+        }
+        else
+        {
+            timeOfAttack -= Time.deltaTime;
+            //knight.GetComponent<Player>().lockMovement = true;
+        }
     }
 
 	void OnTriggerEnter2D(Collider2D other){

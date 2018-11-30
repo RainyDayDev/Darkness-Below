@@ -21,6 +21,7 @@ public class Player : MonoBehaviour {
     public float targetHealth = 100;
 	public float baseHealth = 100;
 	public float maxHealth = 100;
+    public float targetStamina = 100;
 	public float damage = 15;
 	public float baseDamage = 15;
     public float DeathTimer = 1.5f;
@@ -53,6 +54,8 @@ public class Player : MonoBehaviour {
     //UI---------------------------------------------------------------------
 	public Text moneyCount;
 	public Slider healthSlider;
+    public Slider staminaSlider;
+    public Text staminaText;
 	public Text healthText;
 	public Text damageText;
 	public Text potionText;
@@ -110,6 +113,9 @@ public class Player : MonoBehaviour {
         stats = GetComponent<PlayerStats>();
         stats.maxHealth = (int)maxHealth;
         stats.currentHealth = (int)maxHealth;
+        stats.maxStamina = 100;
+        stats.currentStamina = stats.maxStamina;
+        staminaText.text = stats.currentStamina + "/" + stats.maxStamina;
         healthSlider.maxValue = stats.maxHealth;
         equipmentText = EquipmentManager.instance.equipmentText;
         equipmentText.text = "Health =" + stats.maxHealth + "\nArmor = " + stats.armor.GetValue() + "\nDamage =" + stats.damage.GetValue() + "\nMagic = " + stats.magic.GetValue();
@@ -245,7 +251,7 @@ Movement to do
                     state_change(1);
                 }
             }
-            if (Input.GetKey(KeyCode.A) && Input.GetKey(KeyCode.LeftShift))
+            if (Input.GetKey(KeyCode.A) && Input.GetKey(KeyCode.LeftShift) && stats.currentStamina >= 1)
             {
                 transform.Translate(-x * Time.deltaTime * speed * running_speed);
                 if (facing_right == true)
@@ -254,6 +260,7 @@ Movement to do
                     facing_right = false;
                 }
                 state_change(2);
+                targetStamina = stats.currentStamina - 1;
             }
             else
             {
@@ -268,7 +275,7 @@ Movement to do
                     state_change(1);
                 }
             }
-            if (Input.GetKey(KeyCode.D) && Input.GetKey(KeyCode.LeftShift))
+            if (Input.GetKey(KeyCode.D) && Input.GetKey(KeyCode.LeftShift) && stats.currentStamina >= 1)
             {
                 transform.Translate(-x * Time.deltaTime * speed * running_speed);
                 if (facing_right == false)
@@ -277,6 +284,7 @@ Movement to do
                     facing_right = true;
                 }
                 state_change(2);
+                targetStamina = stats.currentStamina - 1;
             }
             else
             {
@@ -303,26 +311,35 @@ Movement to do
 		//ATTACKING-------------------------------------------------------------
 		if (attack_count < 0 && !didDie) {
 			//light attack
-            if ((Input.GetKey (KeyCode.J) || Input.GetMouseButtonDown(0)) && lightTimer<=0) {
+            if ((Input.GetKey (KeyCode.J) || Input.GetMouseButtonDown(0)) && lightTimer<=0 && stats.currentStamina >= 10) {
                 state_change(3);
                 Instantiate (light_attack, transform.position, transform.rotation);
 				light_sound.Play ();
                 lightTimer = 1;
-			}
+                stats.currentStamina = stats.currentStamina - 10;
+                targetStamina = stats.currentStamina;
+                staminaText.text = stats.currentStamina + "/" + stats.maxStamina;
+            }
 			//heavy attack
-			if ((Input.GetKey (KeyCode.K) || Input.GetMouseButtonDown(1)) && heavyTimer <= 0) {
+			if ((Input.GetKey (KeyCode.K) || Input.GetMouseButtonDown(1)) && heavyTimer <= 0 && lightTimer <= 0 && stats.currentStamina >= 15) {
                 state_change(4);
                 Instantiate (heavy_attack, transform.position, transform.rotation);
 				heavy_sound.Play ();
 				heavyTimer = 2;
-			}
+                stats.currentStamina = stats.currentStamina - 15;
+                targetStamina = stats.currentStamina;
+                staminaText.text = stats.currentStamina + "/" + stats.maxStamina;
+            }
 			//magic attack
-			if ((Input.GetKey (KeyCode.L) || Input.GetMouseButtonDown(2)) && magicTimer <= 0) {
+			if ((Input.GetKey (KeyCode.L) || Input.GetMouseButtonDown(2)) && magicTimer <= 0&& stats.currentStamina >= 10) {
                 state_change(5);
                 magic_spawn.fire ();
 				magic_sound.Play ();
                 magicTimer = 4;
-			}
+                stats.currentStamina = stats.currentStamina - 15;
+                targetStamina = stats.currentStamina;
+                staminaText.text = stats.currentStamina + "/" + stats.maxStamina;
+            }
 		}else {
 			attack_count -= Time.deltaTime;
 		}
@@ -372,6 +389,32 @@ Movement to do
             material.SetFloat("_FlashAmount", colourValue);
             colourValue -= .05f;
         }
+
+        if (targetStamina < stats.currentStamina)
+        {
+            stats.currentStamina = Mathf.Lerp(stats.currentStamina, targetStamina, 2 * Time.deltaTime);
+            staminaSlider.value = stats.currentStamina;
+            staminaText.text = (int)stats.currentStamina + "/" + stats.maxStamina;
+            if (stats.currentStamina- targetStamina < 0.40) {
+                targetStamina = stats.currentStamina;
+            }
+        }
+        else if (stats.currentStamina < stats.maxStamina)
+        {
+            targetStamina = stats.currentStamina + 5;
+            if (targetStamina > stats.maxStamina) {
+                targetStamina = stats.maxStamina;
+            }
+            stats.currentStamina = Mathf.Lerp(stats.currentStamina, targetStamina, Time.deltaTime);
+            staminaSlider.value = stats.currentStamina;
+            if (stats.maxStamina - stats.currentStamina < 0.40) {
+                stats.currentStamina = stats.maxStamina;
+            }
+            staminaText.text = (int)stats.currentStamina + "/" + stats.maxStamina;
+            //stats.currentStamina = Mathf.Lerp(stats.currentStamina, stats.currentStamina + 1, 2 *Time.deltaTime);
+            //staminaSlider.value = stats.currentStamina;
+        }
+
 
         //Healthslider smooth transition
         if(targetHealth > health){

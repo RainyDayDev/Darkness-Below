@@ -9,6 +9,8 @@ public class CharacterStats : MonoBehaviour {
 
     public int maxHealth;
     public int currentHealth;
+    public float maxStamina;
+    public float currentStamina;
 
     private void Awake()
     {
