@@ -7,8 +7,8 @@ public class CharacterStats : MonoBehaviour {
     public Stat magic;
     public Stat health;
 
-    public int maxHealth;
-    public int currentHealth;
+    public float maxHealth;
+    public float currentHealth;
     public float maxStamina;
     public float currentStamina;
 

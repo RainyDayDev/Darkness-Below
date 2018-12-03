@@ -205,6 +205,7 @@ public class Player : MonoBehaviour {
 			stats.currentHealth = stats.maxHealth;
 			healthSlider.value = stats.currentHealth;
             healthText.text = stats.currentHealth + "/" + stats.maxHealth;
+            targetHealth = stats.maxHealth;
 		}
 		Vector3 temp = transform.position;
 
@@ -429,7 +430,8 @@ Movement to do
         if(targetHealth > health){
             health = Mathf.Lerp(health, targetHealth, 2*Time.deltaTime);
             healthSlider.value = health;
-        }else if(targetHealth < health){
+        }else if(targetHealth < health)
+        {
             health = Mathf.Lerp(health, targetHealth, 2 * Time.deltaTime);
             healthSlider.value = health;
         }
