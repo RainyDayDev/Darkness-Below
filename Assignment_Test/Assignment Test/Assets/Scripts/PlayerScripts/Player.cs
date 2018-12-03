@@ -34,7 +34,8 @@ public class Player : MonoBehaviour {
     public GameObject light_attack;
 	public GameObject heavy_attack;
 	public magic_spawn magic_spawn;
-	public int level = 1;
+	public int farthestLevel = 1;
+    public int currentLevel = 1;
 
     //krises ring confusion--------------------------------------------------
     public Vector3 curDirection;
@@ -101,7 +102,7 @@ public class Player : MonoBehaviour {
 		last_position = transform.position;
 		curDirection = new Vector3 ();
 		ringMenu.SetActive (false);
-		PlayerPrefs.SetInt ("HighestLevel", level);
+		PlayerPrefs.SetInt ("HighestLevel", currentLevel);
 		
 		moneyCount.text = "x " + money;
 		potionText.text = "x " + potionCount + "/" + maxPotions;
@@ -229,6 +230,7 @@ Movement to do
             {
                 transform.Translate(y * Time.deltaTime * speed * running_speed);
                 state_change(2);
+                targetStamina = stats.currentStamina - 1;
             }
             else
             {
@@ -242,6 +244,7 @@ Movement to do
             {
                 transform.Translate(-y * Time.deltaTime * speed * running_speed);
                 state_change(2);
+                targetStamina = stats.currentStamina - 1;
             }
             else
             {
@@ -349,6 +352,9 @@ Movement to do
 
 		//DYING------------------------------------------------------------------
 		if (stats.currentHealth <= 0) {
+            EquipmentManager.instance.UnequipAll();
+            Inventory.instance.RemoveAll();
+
             death_sound.Play();
             state_change(7);
             lockMovement = true;
@@ -357,9 +363,11 @@ Movement to do
             {
                 SceneManager.LoadScene("Tavern");
                 stats.currentHealth = stats.maxHealth;
-                level = 1;
+                currentLevel = 1;
                 money = 0;
                 moneyCount.text = "x " + money;
+                potionCount = 3;
+                potionText.text = "x " + potionCount + "/" + maxPotions;
                 healthSlider.value = stats.maxHealth;
                 targetHealth = stats.maxHealth;
                 lockMovement = false;

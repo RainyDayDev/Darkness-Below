@@ -28,10 +28,11 @@ public class sword_attack : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        knight = GameObject.FindGameObjectWithTag("Player");
+        
         transform.position = knight.transform.position;
         //transform.Rotate (Vector3.forward * Time.deltaTime * speed);
         if(time_of_attack <= 0){
+            knight = GameObject.FindGameObjectWithTag("Player");
             knight.GetComponent<Player>().lockMovement = false;
             Destroy (gameObject);
         }else{

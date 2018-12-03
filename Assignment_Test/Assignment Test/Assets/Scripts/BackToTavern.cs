@@ -19,10 +19,10 @@ public class BackToTavern : MonoBehaviour {
 		if(other.CompareTag("Player")){
 			isTrigger = true;	
 			player = other.GetComponent<Player> ();
-			if (player.level % 5 == 0) {
+			if (player.currentLevel % 5 == 0) {
 				cost = 0;
 			} else {
-				cost = (player.level - 1) * 10;
+				cost = (player.currentLevel - 1) * 10;
 			}
 			text.text = "This staircase will let you head back to the Tavern for " + cost + " gems. Press E to accept";
 			canvas.SetActive (true);
@@ -42,7 +42,9 @@ public class BackToTavern : MonoBehaviour {
 			if (Input.GetKeyDown (KeyCode.E) && player.money >= cost && mapGenerator.bossSpawned == false) {
 				player.money -= cost;
 				player.moneyCount.text = "x " + player.money;
-				SceneManager.LoadScene ("Tavern");
+                player.potionCount = 3;
+                player.potionText.text = "x " + player.potionCount + "/" + player.maxPotions;
+                SceneManager.LoadScene ("Tavern");
 			}
 		}
 	}

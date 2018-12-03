@@ -1,17 +1,20 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Interactable : MonoBehaviour {
 
     public float radius = 0.5f;
 
     public Transform player;
-    bool canInteract;
+    public bool canInteract;
+    public Player knight;
 
     private void Start()
     {
-        player = FindObjectOfType<Player>().transform;
+        //player = FindObjectOfType<Player>().transform;
+        //knight = FindObjectOfType<Player>();
     }
 
     public virtual void Interact() {
@@ -20,12 +23,19 @@ public class Interactable : MonoBehaviour {
 
     private void Update()
     {
-        if (player == null) {
+        if (player == null)
+        {
             player = FindObjectOfType<Player>().transform;
         }
+        if (knight == null)
+        {
+            knight = FindObjectOfType<Player>();
+        }
         float distance = Vector3.Distance(player.position, transform.position);
+
         if (distance <= radius && Input.GetKeyDown(KeyCode.E))
         {
+            Debug.Log("Interacting");
             Interact();
             canInteract = true;
         }
@@ -33,10 +43,12 @@ public class Interactable : MonoBehaviour {
         {
             canInteract = false;
         }
+    }
+   
+        
         
 
-        
-    }
+
 
 
     private void OnDrawGizmosSelected()

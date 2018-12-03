@@ -38,11 +38,11 @@ public class AreaAttack : MonoBehaviour {
             Player enemy = other.GetComponent<Player>();
             if (skeleton_direction)
             {
-                enemy.ApplyDamage(damage + 3 * enemy.level, 1);
+                enemy.ApplyDamage(damage + 3 * enemy.currentLevel, 1);
             }
             else
             {
-                enemy.ApplyDamage(damage + 3 * enemy.level, 2);
+                enemy.ApplyDamage(damage + 3 * enemy.currentLevel, 2);
             }
             Destroy(gameObject.GetComponent<EdgeCollider2D>());
         }

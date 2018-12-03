@@ -37,9 +37,9 @@ public class Ring : MonoBehaviour {
 		}
 		else if (player != null && isTavern == false) {
 			int random = Random.Range (1, 4);
-			healthBonus = 10 + player.level * random;
+			healthBonus = 10 + player.currentLevel * random;
 			random = Random.Range (1, 4);
-			damageBonus = 10 + player.level * random;
+			damageBonus = 10 + player.currentLevel * random;
 			description = "Health Bonus = " + healthBonus + "\nDamage Bonus = " + damageBonus;
 			statsSet = true;
 			value = healthBonus + damageBonus * 5;

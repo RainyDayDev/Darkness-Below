@@ -24,6 +24,8 @@ TagManager:
   - Key
   - Boss
   - Item
+  - EquipmentParent
+  - EquipmentText
   layers:
   - Default
   - TransparentFX

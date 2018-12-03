@@ -63,7 +63,7 @@ public class Boss : MonoBehaviour {
         }
         else if (boss_anim == null)
         {
-            health = health + player.level * 10;
+            health = health + player.currentLevel * 10;
             maxHealth = health;
 			//text.text = health+"/" + maxHealth;
 			healthSlider.maxValue = maxHealth;
@@ -205,7 +205,7 @@ public class Boss : MonoBehaviour {
         }
 
         //Instantiate money
-		int money = Random.Range(player.GetComponent<Player>().level * 10, player.GetComponent<Player>().level * 15);
+		int money = Random.Range(player.GetComponent<Player>().currentLevel * 10, player.GetComponent<Player>().currentLevel * 15);
         gem.value = money;
         Instantiate(gem, transform.position, transform.rotation);
     }

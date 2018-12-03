@@ -13,12 +13,15 @@ public class Exit : MonoBehaviour {
 
 	void OnTriggerEnter2D(Collider2D other){
 		if(other.gameObject.CompareTag("Player") && mapGenerator.bossSpawned == false){
-			player.level++;
-			if (player.level > PlayerPrefs.GetInt ("HighestLevel")) {
-				PlayerPrefs.SetInt ("HighestLevel", player.level);
+			player.currentLevel++;
+			if (player.currentLevel > PlayerPrefs.GetInt ("HighestLevel")) {
+				PlayerPrefs.SetInt ("HighestLevel", player.currentLevel);
 			}
-			mapGenerator.width = mapGenerator.width + player.level * 2;
-			mapGenerator.height = mapGenerator.height + player.level * 2;
+            if (player.currentLevel > player.farthestLevel) {
+                player.farthestLevel = player.currentLevel;
+            }
+			mapGenerator.width = mapGenerator.width + player.currentLevel * 2;
+			mapGenerator.height = mapGenerator.height + player.currentLevel * 2;
 			mapGenerator.randomFillPercent = 50;
 			mapGenerator.GenerateMap ();
 		}

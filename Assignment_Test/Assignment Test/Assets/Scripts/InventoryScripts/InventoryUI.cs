@@ -10,7 +10,7 @@ public class InventoryUI : MonoBehaviour {
     // Use this for initialization
     private void Awake()
     {
-        DontDestroyOnLoad(this);
+        //DontDestroyOnLoad(this);
     }
 
     void Start () {

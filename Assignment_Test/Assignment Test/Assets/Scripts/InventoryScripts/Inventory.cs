@@ -57,5 +57,11 @@ public class Inventory : MonoBehaviour {
         }
     }
 
+    public void RemoveAll() {
+        for (int i = 0; i < items.Count; i++) {
+            Remove(items[i]);
+        }
+    }
+
 
 }

@@ -27,6 +27,7 @@ public class magic_orb : MonoBehaviour {
         //transform.Rotate (Vector3.forward * Time.deltaTime * speed);
         if (timeOfAttack <= 0)
         {
+            knight = GameObject.FindGameObjectWithTag("Player");
             knight.GetComponent<Player>().lockMovement = false;
             //Destroy(gameObject);
         }

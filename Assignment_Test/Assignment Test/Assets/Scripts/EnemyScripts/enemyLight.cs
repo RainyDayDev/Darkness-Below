@@ -53,7 +53,7 @@ public class enemyLight : MonoBehaviour {
         light_anim = GetComponent<Animator>();
         mapGenerator = FindObjectOfType<MapGenerator>();
 		int random = Random.Range (1, 5);
-		health = health + random * player.level;
+		health = health + random * player.currentLevel;
 		stats.maxHealth = (int)health;
         stats.currentHealth = stats.maxHealth;
 
@@ -242,7 +242,7 @@ public class enemyLight : MonoBehaviour {
 			Instantiate (key, transform.position, transform.rotation);
 		} else {
 			//Instantiate money
-			int money = Random.Range (player.GetComponent<Player>().level, player.GetComponent<Player> ().level * 5);
+			int money = Random.Range (player.GetComponent<Player>().currentLevel, player.GetComponent<Player> ().currentLevel * 5);
 			gem.value = money;
 			Instantiate (gem, transform.position, transform.rotation);
 		}

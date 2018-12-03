@@ -52,7 +52,7 @@ public class enemyArcher : MonoBehaviour {
 		mapGenerator = FindObjectOfType<MapGenerator> ();
 		player = FindObjectOfType<Player> ();
 		int random = Random.Range (1, 3);
-		health = health + random * player.level;
+		health = health + random * player.currentLevel;
         stats.maxHealth = (int)health;
         stats.currentHealth = stats.maxHealth;
 
@@ -252,7 +252,7 @@ public class enemyArcher : MonoBehaviour {
 			Instantiate (key, transform.position, transform.rotation);
 		} else {
 			//Instantiate money
-			int money = Random.Range (player.GetComponent<Player>().level, player.GetComponent<Player> ().level * 5);
+			int money = Random.Range (player.GetComponent<Player>().currentLevel, player.GetComponent<Player> ().currentLevel * 5);
 			gem.value = money;
 			Instantiate (gem, transform.position, transform.rotation);
 		}
