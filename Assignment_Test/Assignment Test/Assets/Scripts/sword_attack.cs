@@ -54,7 +54,7 @@ public class sword_attack : MonoBehaviour {
                 enemy.ApplyDamage(myStats.damage.GetValue()*scaling, 2, 50*scaling);
             }
             knight.GetComponent<Player>().lockMovement = false;
-            Destroy (gameObject);
+            Destroy(gameObject.GetComponent<EdgeCollider2D>());
 
         } else if (other.tag == "EnemyLight") {
             //CharacterStats enemy = other.GetComponent<CharacterStats> ();
