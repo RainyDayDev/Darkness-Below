@@ -7,21 +7,35 @@ EditorBuildSettings:
   m_Scenes:
   - enabled: 0
     path: Assets/MainDungeon.unity
+    guid: 00000000000000000000000000000000
   - enabled: 0
     path: Assets/MainMenu-4/Scenes/about.unity
+    guid: 00000000000000000000000000000000
   - enabled: 0
     path: Assets/MainMenu-4/Scenes/Main Menu.unity
+    guid: 00000000000000000000000000000000
   - enabled: 0
     path: Assets/MainMenu-4/Scenes/howtoplay.unity
+    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/Main Menu.unity
+    guid: 562bcab9315a54bff9dd3164c790fe2d
   - enabled: 1
     path: Assets/Scenes/howtoplay.unity
+    guid: b862443aa1fb94048848cf8d7c910acc
   - enabled: 1
     path: Assets/Scenes/about.unity
+    guid: dc41a1bb80515422b8c1d28bef4bb8ae
   - enabled: 0
     path: Assets/Tavern Stuff 2/Tavern.unity
+    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/MainDungeon.unity
+    guid: 742fb49f6c509462b9d962b774418a3d
   - enabled: 1
     path: Assets/Scenes/Tavern.unity
+    guid: 254e038834b514cd8a34fa849becd123
+  - enabled: 1
+    path: Assets/Scenes/DeathScreen.unity
+    guid: 8f42a442d99e24d2f8d0c2c99b1ab6e6
+  m_configObjects: {}

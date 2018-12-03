@@ -8,7 +8,6 @@ public class enemyHeavy : MonoBehaviour {
 
     public const int Patrolling = 0;
     public const int Attacking = 1;
-    public float knockback;
 	public const int Dying = 2;
     public float detectionDistance = 10;
     public int state = Patrolling;
@@ -208,7 +207,7 @@ public class enemyHeavy : MonoBehaviour {
 	}
 
 	//Applies damage to player and sets the shader colour
-	public void ApplyDamage(float damage, int isRight)
+    public void ApplyDamage(float damage, int isRight, float knockback)
 	{
         stats.TakeDamage((int)damage);
         text.text = stats.currentHealth + "/" + stats.maxHealth;

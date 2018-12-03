@@ -13,7 +13,7 @@ public class HealthPickup : MonoBehaviour {
 
 	void OnTriggerEnter2D(Collider2D other){
 		if (other.CompareTag ("Player")) {
-			other.GetComponent<Player> ().ApplyDamage (-20, 0);
+			other.GetComponent<Player> ().ApplyDamage (-20, 0, 50);
 			Destroy (gameObject);
 		}
 	

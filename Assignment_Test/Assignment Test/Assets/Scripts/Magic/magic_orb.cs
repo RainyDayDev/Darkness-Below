@@ -41,7 +41,7 @@ public class magic_orb : MonoBehaviour {
 	void OnTriggerEnter2D(Collider2D other){
 		if (other.tag == "EnemyArcher") {
 			enemyArcher enemy = other.GetComponent<enemyArcher> ();
-			enemy.ApplyDamage (myStats.magic.GetValue(), 0);
+			enemy.ApplyDamage (myStats.magic.GetValue(), 0, 50);
             Instantiate(explosion, transform.position, transform.rotation);
             knight = GameObject.FindGameObjectWithTag("Player");
             knight.GetComponent<Player>().lockMovement = false;
@@ -49,7 +49,7 @@ public class magic_orb : MonoBehaviour {
 		}
 		else if (other.tag == "EnemyLight") {
 			enemyLight enemy = other.GetComponent<enemyLight> ();
-            enemy.ApplyDamage(myStats.magic.GetValue(), 0);
+            enemy.ApplyDamage(myStats.magic.GetValue(), 0, 50);
             Instantiate(explosion, transform.position, transform.rotation);
             knight = GameObject.FindGameObjectWithTag("Player");
             knight.GetComponent<Player>().lockMovement = false;
@@ -58,9 +58,9 @@ public class magic_orb : MonoBehaviour {
 		}
 		else if (other.tag == "EnemyHeavy") {
 			enemyHeavy enemy = other.GetComponent<enemyHeavy> ();
-			enemy.ApplyDamage (myStats.magic.GetValue(), 0);
+			enemy.ApplyDamage (myStats.magic.GetValue(), 0, 50);
             Instantiate(explosion, transform.position, transform.rotation);
-
+            knight.GetComponent<Player>().lockMovement = false;
             Destroy (gameObject);
 		}
 	}

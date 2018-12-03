@@ -4,7 +4,6 @@ using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.UI;
 public class enemyArcher : MonoBehaviour {
-    public float knockback;
     public const int Patrolling = 0;
     public const int Attacking = 1;
 	public const int Dying = 2;
@@ -13,7 +12,7 @@ public class enemyArcher : MonoBehaviour {
     public float reloading = 0;
     public float followDistance = 5;
     public int state = Patrolling;
-    private float speed = 2;
+    private float speed = 1.85f;
     public Player player;
     public float health = 30;
     public Bow bow;
@@ -184,7 +183,7 @@ public class enemyArcher : MonoBehaviour {
         gameObject.transform.position -= temp * speed * Time.deltaTime;
     }
 
-    public void ApplyDamage(float damage, int isRight)
+    public void ApplyDamage(float damage, int isRight, float knockback)
     {
         stats.TakeDamage((int)damage);
         text.text = stats.currentHealth + "/" + stats.maxHealth;

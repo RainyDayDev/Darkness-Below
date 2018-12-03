@@ -47,11 +47,11 @@ public class sword_attack : MonoBehaviour {
             enemyArcher enemy = other.GetComponent<enemyArcher> ();
             if (facing_right)
             {
-                enemy.ApplyDamage(myStats.damage.GetValue(), 1);
+                enemy.ApplyDamage(myStats.damage.GetValue()*scaling, 1, 50*scaling);
             }
             else
             {
-                enemy.ApplyDamage(myStats.damage.GetValue(), 2);
+                enemy.ApplyDamage(myStats.damage.GetValue()*scaling, 2, 50*scaling);
             }
             knight.GetComponent<Player>().lockMovement = false;
             Destroy (gameObject);
@@ -65,9 +65,9 @@ public class sword_attack : MonoBehaviour {
             //enemy.ApplyDamage ((int)(knight.GetComponent<Player> ().damage * scaling));
             if (facing_right)
             {
-                enemy.ApplyDamage(myStats.damage.GetValue(), 1);
+                enemy.ApplyDamage(myStats.damage.GetValue()*scaling, 1, 50*scaling);
             }else{
-                enemy.ApplyDamage(myStats.damage.GetValue(), 2);
+                enemy.ApplyDamage(myStats.damage.GetValue()*scaling, 2, 50*scaling);
             }
             knight.GetComponent<Player>().lockMovement = false;
             Destroy(gameObject.GetComponent<EdgeCollider2D>());
@@ -76,11 +76,11 @@ public class sword_attack : MonoBehaviour {
             enemyHeavy enemy = other.GetComponent<enemyHeavy> ();
             if (facing_right)
             {
-                enemy.ApplyDamage(myStats.damage.GetValue(), 1);
+                enemy.ApplyDamage(myStats.damage.GetValue()*scaling, 1,50*scaling);
             }
             else
             {
-                enemy.ApplyDamage(myStats.damage.GetValue(), 2);
+                enemy.ApplyDamage(myStats.damage.GetValue()*scaling, 2, 50*scaling);
             }
             knight.GetComponent<Player>().lockMovement = false;
             Destroy(gameObject.GetComponent<EdgeCollider2D>());

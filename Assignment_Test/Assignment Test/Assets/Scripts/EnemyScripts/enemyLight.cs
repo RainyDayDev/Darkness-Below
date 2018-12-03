@@ -19,7 +19,6 @@ public class enemyLight : MonoBehaviour {
     public HealthPickup heart;
 	public PotionPickup potion;
 	public KeyPickup key;
-    public float knockback;
     private Vector3 wandering;
     private bool tester = true;
     private float testing = 2.0f;
@@ -36,7 +35,7 @@ public class enemyLight : MonoBehaviour {
 	private float colourValue;
     public GameObject successfulAttack;
 
-    private float attackDistance = 1f;
+    private float attackDistance = .75f;
 
     public EnemyStats stats;
 
@@ -197,7 +196,7 @@ public class enemyLight : MonoBehaviour {
     }
 
     //Applies damage to player and sets the shader colour
-    public void ApplyDamage(float damage, int isRight)
+    public void ApplyDamage(float damage, int isRight, float knockback)
     {
         //health -= damage;
         stats.TakeDamage((int)damage);

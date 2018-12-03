@@ -13,7 +13,6 @@ public class Player : MonoBehaviour {
 	public float attack_time_light;
 	public float attack_time_heavy;
 	public float attack_time_magic;
-    public float knockback;
     float heavyTimer;
     float magicTimer;
     float lightTimer;
@@ -157,7 +156,7 @@ public class Player : MonoBehaviour {
 
 
 
-    public void ApplyDamage(int damage, int isRight)
+    public void ApplyDamage(int damage, int isRight, float knockback)
     {
         //health -= damage;
 
@@ -205,7 +204,7 @@ public class Player : MonoBehaviour {
 		if (SceneManager.GetActiveScene ().name == "Tavern") {
 			stats.currentHealth = stats.maxHealth;
 			healthSlider.value = stats.currentHealth;
-			healthText.text = stats.currentHealth + "/" + stats.maxHealth;
+            healthText.text = stats.currentHealth + "/" + stats.maxHealth;
 		}
 		Vector3 temp = transform.position;
 
@@ -324,7 +323,7 @@ Movement to do
                 staminaText.text = stats.currentStamina + "/" + stats.maxStamina;
             }
 			//heavy attack
-			if ((Input.GetKey (KeyCode.K) || Input.GetMouseButtonDown(1)) && heavyTimer <= 0 && lightTimer <= 0 && stats.currentStamina >= 15) {
+			else if ((Input.GetKey (KeyCode.K) || Input.GetMouseButtonDown(1)) && heavyTimer <= 0 && lightTimer <= 0 && stats.currentStamina >= 15) {
                 state_change(4);
                 Instantiate (heavy_attack, transform.position, transform.rotation);
 				heavy_sound.Play ();
@@ -334,7 +333,7 @@ Movement to do
                 staminaText.text = stats.currentStamina + "/" + stats.maxStamina;
             }
 			//magic attack
-			if ((Input.GetKey (KeyCode.L) || Input.GetMouseButtonDown(2)) && magicTimer <= 0&& stats.currentStamina >= 10) {
+			 else if ((Input.GetKey (KeyCode.L) || Input.GetMouseButtonDown(2)) && magicTimer <= 0&& stats.currentStamina >= 10) {
                 state_change(5);
                 magic_spawn.fire ();
 				magic_sound.Play ();
@@ -361,7 +360,7 @@ Movement to do
             didDie = true;
             if (DeathTimer < 0)
             {
-                SceneManager.LoadScene("Tavern");
+                SceneManager.LoadScene("DeathScreen");
                 stats.currentHealth = stats.maxHealth;
                 currentLevel = 1;
                 money = 0;
@@ -371,6 +370,8 @@ Movement to do
                 healthSlider.value = stats.maxHealth;
                 targetHealth = stats.maxHealth;
                 lockMovement = false;
+                Destroy(this.gameObject);
+                Destroy(Inventory.instance.gameObject);
             }
             DeathTimer -= Time.deltaTime;
 
@@ -385,7 +386,7 @@ Movement to do
         //Drink potion
 		if (Input.GetKeyDown (KeyCode.P)) {
 			if (potionCount > 0) {
-				ApplyDamage (-20, 0);
+				ApplyDamage (-20, 0,50);
 				potionCount--;
 				potionText.text = "x " + potionCount + "/" + maxPotions;
 			}

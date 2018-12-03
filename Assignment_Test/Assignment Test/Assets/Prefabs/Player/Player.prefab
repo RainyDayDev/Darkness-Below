@@ -658,7 +658,7 @@ Rigidbody2D:
   m_AngularDrag: 0.05
   m_GravityScale: 0
   m_Material: {fileID: 0}
-  m_Interpolate: 1
+  m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
@@ -1402,7 +1402,6 @@ MonoBehaviour:
   attack_time_light: 0.4
   attack_time_heavy: 0.5
   attack_time_magic: 0.5
-  knockback: 50
   health: 100
   targetHealth: 100
   baseHealth: 100
@@ -1417,7 +1416,8 @@ MonoBehaviour:
   heavy_attack: {fileID: 1971073492973126, guid: 08d8a9b488efc4446a948c8ed989f1c2,
     type: 2}
   magic_spawn: {fileID: 114511997845482170}
-  level: 1
+  farthestLevel: 1
+  currentLevel: 1
   curDirection: {x: 0, y: 0, z: 0}
   leftRing: {fileID: 1423911103252990, guid: 3639a400d851f4053ab1c79276d544e4, type: 2}
   leftRingEquipped: 0

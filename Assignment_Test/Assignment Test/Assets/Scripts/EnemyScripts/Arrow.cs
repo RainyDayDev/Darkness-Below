@@ -11,7 +11,7 @@ public class Arrow : MonoBehaviour {
         if(other.tag == "Player")
         {
             Player player = other.GetComponent<Player>();
-			player.ApplyDamage(owner.GetComponent<EnemyStats>().damage.GetValue(), 0);
+			player.ApplyDamage(owner.GetComponent<EnemyStats>().damage.GetValue(), 0, 50);
             Destroy(gameObject);
         }
         if(other.tag == "Wall")
