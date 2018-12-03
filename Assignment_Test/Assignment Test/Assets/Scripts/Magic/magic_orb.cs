@@ -43,12 +43,16 @@ public class magic_orb : MonoBehaviour {
 			enemyArcher enemy = other.GetComponent<enemyArcher> ();
 			enemy.ApplyDamage (myStats.magic.GetValue(), 0);
             Instantiate(explosion, transform.position, transform.rotation);
+            knight = GameObject.FindGameObjectWithTag("Player");
+            knight.GetComponent<Player>().lockMovement = false;
             Destroy (gameObject);
 		}
 		else if (other.tag == "EnemyLight") {
 			enemyLight enemy = other.GetComponent<enemyLight> ();
             enemy.ApplyDamage(myStats.magic.GetValue(), 0);
             Instantiate(explosion, transform.position, transform.rotation);
+            knight = GameObject.FindGameObjectWithTag("Player");
+            knight.GetComponent<Player>().lockMovement = false;
             Destroy (gameObject);
 
 		}
@@ -56,6 +60,7 @@ public class magic_orb : MonoBehaviour {
 			enemyHeavy enemy = other.GetComponent<enemyHeavy> ();
 			enemy.ApplyDamage (myStats.magic.GetValue(), 0);
             Instantiate(explosion, transform.position, transform.rotation);
+
             Destroy (gameObject);
 		}
 	}
