@@ -39,6 +39,7 @@ public class enemyLight : MonoBehaviour {
     private float attackDistance = .75f;
 
     public EnemyStats stats;
+    public AudioSource hit_sound;
 
     private void Awake()
     {
@@ -205,6 +206,7 @@ public class enemyLight : MonoBehaviour {
 		GetComponent<Renderer>().material.SetColor("_FlashColor", Color.red);
 		colourValue = .9f;
         Instantiate(successfulAttack, transform.position, transform.rotation);
+        hit_sound.Play();
         if (isRight == 1)
         {
             this.GetComponent<Rigidbody2D>().velocity = new Vector3(knockback, 0f, 0f);

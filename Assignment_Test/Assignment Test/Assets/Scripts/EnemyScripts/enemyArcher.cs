@@ -39,6 +39,7 @@ public class enemyArcher : MonoBehaviour {
 	private float colourValue;
 
     public EnemyStats stats;
+    public AudioSource hit_sound;
 
     private void Awake()
     {
@@ -190,6 +191,7 @@ public class enemyArcher : MonoBehaviour {
         text.text = stats.currentHealth + "/" + stats.maxHealth;
         GetComponent<Renderer>().material.SetColor("_FlashColor", Color.red);
         Instantiate(successfulAttack, transform.position, transform.rotation);
+        hit_sound.Play();
         colourValue = .9f;
         if (isRight == 1)
         {
