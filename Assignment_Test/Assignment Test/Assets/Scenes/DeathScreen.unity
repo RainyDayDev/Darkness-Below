@@ -500,6 +500,7 @@ GameObject:
   - component: {fileID: 1365128006}
   - component: {fileID: 1365128008}
   - component: {fileID: 1365128007}
+  - component: {fileID: 1365128009}
   m_Layer: 5
   m_Name: Description
   m_TagString: Untagged
@@ -522,8 +523,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -59.3, y: 81}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: -34, y: 41}
+  m_SizeDelta: {x: 443.3, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1365128007
 MonoBehaviour:
@@ -554,10 +555,10 @@ MonoBehaviour:
     m_Alignment: 1
     m_AlignByGeometry: 0
     m_RichText: 1
-    m_HorizontalOverflow: 1
+    m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "YOU HAVE BEEN OVERCOME \nBY THE DARKNESS"
+  m_Text: 
 --- !u!222 &1365128008
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -565,6 +566,18 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1365128005}
   m_CullTransparentMesh: 0
+--- !u!114 &1365128009
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1365128005}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4598917c786264af29931fbb8f9bcc38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  level: {fileID: 1365128007}
 --- !u!1 &1380572627
 GameObject:
   m_ObjectHideFlags: 0
@@ -949,6 +962,6 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -81.09, y: -4.28}
+  m_AnchoredPosition: {x: -40, y: 1}
   m_SizeDelta: {x: 184.57, y: 52.97}
   m_Pivot: {x: 0.5, y: 0.5}

@@ -39,7 +39,7 @@ public class enemyHeavy : MonoBehaviour {
 
     public EnemyStats stats;
 
-    private float attackDistance = 1f;
+    private float attackDistance = .75f;
 
     private void Awake()
     {
