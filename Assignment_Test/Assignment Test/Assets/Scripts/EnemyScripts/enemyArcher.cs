@@ -21,7 +21,8 @@ public class enemyArcher : MonoBehaviour {
 	public MoneyPickup gem;
 	public HealthPickup heart;
 	public PotionPickup potion;
-	public KeyPickup key;
+    public ItemPickup item;
+    public KeyPickup key;
     public GameObject successfulAttack;
     Animator archer_anim;
 	public float maxHealth;
@@ -236,25 +237,32 @@ public class enemyArcher : MonoBehaviour {
 
 	public void Drop()
 	{
-		float range = Random.Range(0, 100);
-		if (range >= 95)
-		{
-			//Instantiate potion
-			Instantiate(potion, transform.position, transform.rotation);
-		}
-		else if (range >= 60 && range < 95)
-		{
-			Instantiate(heart, transform.position, transform.rotation);
-			//Instantiate heart
-		}
-		if (range >= 98) {
-			Instantiate (key, transform.position, transform.rotation);
-		} else {
-			//Instantiate money
-			int money = Random.Range (player.GetComponent<Player>().currentLevel, player.GetComponent<Player> ().currentLevel * 5);
-			gem.value = money;
-			Instantiate (gem, transform.position, transform.rotation);
-		}
-	}
+        float range = Random.Range(0, 101);
+        if (range >= 98)
+        {
+            Instantiate(item, transform.position, transform.rotation);
+        }
+        else if (range >= 95 && range < 98)
+        {
+            Instantiate(key, transform.position, transform.rotation);
+        }
+        else if (range >= 90 && range < 95)
+        {
+            //Instantiate potion
+            Instantiate(potion, transform.position, transform.rotation);
+        }
+        else if (range >= 70 && range < 90)
+        {
+            Instantiate(heart, transform.position, transform.rotation);
+            //Instantiate heart
+        }
+        else if (range >= 40 && range < 70)
+        {
+            //Instantiate money
+            int money = Random.Range(player.GetComponent<Player>().currentLevel, player.GetComponent<Player>().currentLevel * 5);
+            gem.value = money;
+            Instantiate(gem, transform.position, transform.rotation);
+        }
+    }
 }
     

@@ -8,7 +8,7 @@ public class Sellable : MonoBehaviour {
 	Player player;
 	Ring ring;
 	public GameObject canvas;
-	public Text text;
+	//public Text text;
 	public Text toolTip;
 	bool isRing = false;
 	bool isKey = false;
@@ -22,27 +22,23 @@ public class Sellable : MonoBehaviour {
 			ring = GetComponent<Ring> ();
 			if (ring != null) {
 				value = ring.value;
-				text.text = "" + ring.value;
 			}
 			Description = "This ring will boost your health and damage while in the dungeon.\n"+ring.description;
 			toolTip.text = Description;
 			isRing = true;
 		} else if (this.gameObject.CompareTag ("Key")) {
 			value = 100;
-			text.text = "" + value;
-			Description = "This key will enable you to unlock rare treasure chests found in the dungeon.";
+			Description = "This key will enable you to unlock rare treasure chests found in the dungeon.\nCost = "+value;
 			toolTip.text = Description;
 			isKey = true;
 		} else if (this.gameObject.CompareTag ("PotionBelt")) {
 			value = 100;
-			text.text = "" + value;
-			Description = "This potion belt allows you to carry one additional potion with you. Comes with a potion just because we're nice!";
+			Description = "This potion belt allows you to carry one additional potion with you. Comes with a potion just because we're nice!\nCost = "+value;
 			toolTip.text = Description;
 			isPotionBelt = true;
 		} else if (this.gameObject.CompareTag ("Potion")) {
 			value = 30;
-			text.text = "" + value;
-			Description = "This potion will heal you during your adventure. But you can only carry so many!";
+			Description = "This potion will heal you during your adventure. But you can only carry so many!\nCost = "+value;
 			toolTip.text = Description;
 			isPotion = true;
 		}

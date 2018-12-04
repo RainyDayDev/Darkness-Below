@@ -200,10 +200,8 @@ public class ItemPickup : Interactable {
         Player = FindObjectOfType<Player>();
         if (SceneManager.GetActiveScene().name == "Tavern")
         {
-            Debug.Log("In Tavern");
             if (Player.money >= item.cost)
             {
-                Debug.Log("SHould be buying");
                 base.Interact();
 
                 PickUp();
@@ -244,6 +242,9 @@ public class ItemPickup : Interactable {
             initialize();
             hasInit = true;
             descriptionText.text = item.description;
+            if (SceneManager.GetActiveScene().name == "Tavern") {
+                descriptionText.text += "\nCost = " + item.cost;
+            }
         }
         else
         {

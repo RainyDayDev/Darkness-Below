@@ -184,6 +184,8 @@ MonoBehaviour:
     baseValue: 0
   maxHealth: 20
   currentHealth: 0
+  maxStamina: 0
+  currentStamina: 0
 --- !u!114 &114822483716374850
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -258,8 +260,8 @@ MonoBehaviour:
   gem: {fileID: 114491064848176092, guid: fc9f23781b5614bcf856227e9cc178c7, type: 2}
   heart: {fileID: 114346352690469944, guid: 69d35fc0c83ec4e7099fb982707a8383, type: 2}
   potion: {fileID: 114180402540039812, guid: bf9dee8d0f46b4240b9539fdca6fc8c1, type: 2}
+  item: {fileID: 114061464194939432, guid: c450afdd09b20eb49b4b084b2c3df3ca, type: 2}
   key: {fileID: 114634447161954462, guid: 2e4f9c59896d34d8f95b69af540c020c, type: 2}
-  knockback: 50
   attack: {fileID: 1761714432850362, guid: 3235410e86632be45a8852ace57adf20, type: 2}
   maxHealth: 0
   material: {fileID: 2100000, guid: 5bdf8de937d764e17becd134cf880110, type: 2}

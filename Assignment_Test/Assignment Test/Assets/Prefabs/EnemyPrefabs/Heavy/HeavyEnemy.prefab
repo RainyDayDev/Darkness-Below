@@ -156,6 +156,8 @@ MonoBehaviour:
     baseValue: 0
   maxHealth: 30
   currentHealth: 0
+  maxStamina: 0
+  currentStamina: 0
 --- !u!114 &114046739572335096
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -233,7 +235,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 773e9cc56111c4d1fa056d2363de346d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  knockback: 50
   detectionDistance: 10
   state: 0
   player: {fileID: 0}
@@ -244,6 +245,7 @@ MonoBehaviour:
   heart: {fileID: 114346352690469944, guid: 69d35fc0c83ec4e7099fb982707a8383, type: 2}
   potion: {fileID: 114180402540039812, guid: bf9dee8d0f46b4240b9539fdca6fc8c1, type: 2}
   key: {fileID: 114634447161954462, guid: 2e4f9c59896d34d8f95b69af540c020c, type: 2}
+  item: {fileID: 114061464194939432, guid: c450afdd09b20eb49b4b084b2c3df3ca, type: 2}
   attack: {fileID: 1614623620613322, guid: 96af88973dca6d145ab66a967aea91fc, type: 2}
   maxHealth: 0
   successfulAttack: {fileID: 100000, guid: d321a98408cfc4e0299808f65181aab4, type: 2}

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Chest : MonoBehaviour {
 	bool isTrigger = false;
-	public Ring ring;
+    public ItemPickup item;
 	Player player;
 	// Use this for initialization
 	MapGenerator mapGenerator;
@@ -29,7 +29,9 @@ public class Chest : MonoBehaviour {
 			if(Input.GetKeyDown(KeyCode.E) && player.key > 0){
 				player.key--;
 				player.keyText.text = "x " + player.key;
-				Instantiate (ring.gameObject, transform.position, transform.rotation);
+                player.currentLevel += 2;
+				Instantiate (item, transform.position, transform.rotation);
+                player.currentLevel -= 2;
 				Destroy (gameObject);
 			}
 		}

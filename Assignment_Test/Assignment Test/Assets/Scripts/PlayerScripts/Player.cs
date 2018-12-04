@@ -106,7 +106,6 @@ public class Player : MonoBehaviour {
 		moneyCount.text = "x " + money;
 		potionText.text = "x " + potionCount + "/" + maxPotions;
 		keyText.text = "x " + key;
-		damageText.text = "" + damage;
 		//healthText.text = health + "/" + maxHealth;
         rightRingEquipped = false;
         leftRingEquipped = false;
@@ -124,7 +123,6 @@ public class Player : MonoBehaviour {
 
 
     public void updateUI() {
-        damageText.text = "" + stats.damage.GetValue();
         healthText.text = stats.currentHealth + "/" + stats.maxHealth;
         healthSlider.maxValue = stats.maxHealth;
         equipmentText.text = "Health ="+stats.maxHealth +"\nArmor = "+stats.armor.GetValue()+ "\nDamage =" + stats.damage.GetValue()+ "\nMagic = "+stats.magic.GetValue();
